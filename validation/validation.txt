@@ -1,0 +1,161 @@
+#Queries and answers validation section
+
+SPARQL endpoint: http://ontosoft.isi.edu:3030/ds/query
+
+Note there has been a recent change in the vocabularies and 
+
+https://w3id.org/mint/instance/cycles is now https://w3id.org/okn/i/mint/cycles
+
+https://w3id.org/mint/modelCatalog# is https://w3id.org/okn/o/sdm
+
+http://ontosoft.org/software# is https://w3id.org/okn/o/sd 
+
+
+Query 1: What are the available versions and configurations for the Cycles agricultural software model?
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sd: <http://ontosoft.org/software#> 
+prefix sdm: <https://w3id.org/mint/modelCatalog#>
+
+select  ?version ?configuration ?loc ?cont where {
+ ?s sd:hasSoftwareVersion ?version.
+ ?s rdfs:label "Cycles".
+ ?version sdm:hasConfiguration ?configuration.
+ OPTIONAL {?configuration sdm:hasComponentLocation ?loc}
+ OPTIONAL {?configuration sd:hasContainer ?cont.}
+}
+
+select  ?loc ?cont where {
+<https://w3id.org/mint/instance/cycles> 
+}
+Resutls:
+{
+  "head": {
+    "vars": [ "loc" , "cont" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "loc": { "type": "literal" , "value": "https://github.com/KnowledgeCaptureAndDiscovery/MINT-WorkflowDomain/raw/master/WINGSWorkflowComponents/cycles/cycles.zip" } ,
+        "cont": { "type": "literal" , "value": "mintproject/cycles:latest" }
+      }
+    ]
+  }
+}
+
+
+Query 2: Retrieve description and input types of a configuration This would be for understanding software:Show me how an input of a software is described. 
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sd: <http://ontosoft.org/software#> 
+prefix sdm: <https://w3id.org/mint/modelCatalog#>
+
+select  distinct (GROUP_CONCAT(DISTINCT ?input;SEPARATOR=', ') AS ?input_variables) (GROUP_CONCAT(DISTINCT ?output;SEPARATOR=', ') AS ?output_variables) where {
+ ?s sd:hasSoftwareVersion ?version.
+ ?s rdfs:label "Cycles".
+ ?version sdm:hasConfiguration ?configuration.
+  ?configuration sdm:hasInput/rdfs:label ?input;
+                 sdm:hasOutput/rdfs:label ?output .
+}
+
+Result: 
+Input Variables: "https://w3id.org/mint/instance/cycles_weather, https://w3id.org/mint/instance/cycles_reinit, https://w3id.org/mint/instance/cycles_soil, https://w3id.org/mint/instance/cycles_config, https://w3id.org/mint/instance/cycles_percent_increase_fertilizer, https://w3id.org/mint/instance/cycles_cropname"
+
+Output Variables:
+"https://w3id.org/mint/instance/cyles_crop, https://w3id.org/mint/instance/cycles_weatherOutput, https://w3id.org/mint/instance/cycles_nitrogen, https://w3id.org/mint/instance/cycles_somF, https://w3id.org/mint/instance/cycles_water, https://w3id.org/mint/instance/cycles_season, https://w3id.org/mint/instance/cycles_soilProfile, https://w3id.org/mint/instance/cycles_summary, https://w3id.org/mint/instance/cycles_seasonConfig"
+
+Query 3: understand the variables included in the weather file (https://w3id.org/mint/instance/cycles_weather)
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sd: <http://ontosoft.org/software#> 
+prefix sdm: <https://w3id.org/mint/modelCatalog#>
+
+select  distinct  ?label ?longName ?unit ?sn where {
+ <https://w3id.org/mint/instance/cycles_weather> sdm:hasPresentation ?variable.
+  ?variable sdm:usesUnit/rdfs:label ?unit;
+  rdfs:label ?label;
+  sdm:hasLongName ?longName;
+  sdm:hasStandardVariable/rdfs:label ?sn.
+}
+
+Results (in JSON is easier to see):
+{
+  "head": {
+    "vars": [ "label" , "longName" , "unit" , "sn" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "label": { "type": "literal" , "value": "Tn" } ,
+        "longName": { "type": "literal" , "value": "temperature minimum of the day" } ,
+        "unit": { "type": "literal" , "value": "degC" } ,
+        "sn": { "type": "literal" , "value": "air__daily_min_of_temperature" }
+      } ,
+      {
+        "label": { "type": "literal" , "value": "Solar" } ,
+        "longName": { "type": "literal" , "value": "solar radiation of the day" } ,
+        "unit": { "type": "literal" , "value": "MJ m-2 day-1" } ,
+        "sn": { "type": "literal" , "value": "land_surface~horizontal_radiation~incoming~shortwave__energy_flux" }
+      } ,
+      {
+        "label": { "type": "literal" , "value": "RHn" } ,
+        "longName": { "type": "literal" , "value": "relative humidity minimum" } ,
+        "unit": { "type": "literal" , "value": "%" } ,
+        "sn": { "type": "literal" , "value": "atmosphere_air_water~vapor__min_of_relative_saturation" }
+      } ,
+      {
+        "label": { "type": "literal" , "value": "RHx" } ,
+        "longName": { "type": "literal" , "value": "relative humidity maximum" } ,
+        "unit": { "type": "literal" , "value": "Pa Pa-1 x-100" } ,
+        "sn": { "type": "literal" , "value": "atmosphere_air_water~vapor__max_of_relative_saturation" }
+      } ,
+      {
+        "label": { "type": "literal" , "value": "Tx" } ,
+        "longName": { "type": "literal" , "value": "temperature air maximum of the day" } ,
+        "unit": { "type": "literal" , "value": "degC" } ,
+        "sn": { "type": "literal" , "value": "air__daily_max_of_temperature" }
+      } ,
+      {
+        "label": { "type": "literal" , "value": "PP" } ,
+        "longName": { "type": "literal" , "value": "precipitation" } ,
+        "unit": { "type": "literal" , "value": "mm" } ,
+        "sn": { "type": "literal" , "value": "atmosphere_water__time_integral_of_precipitation_leq_volume_flux" }
+      } ,
+      {
+        "label": { "type": "literal" , "value": "Wind" } ,
+        "longName": { "type": "literal" , "value": "wind speed" } ,
+        "unit": { "type": "literal" , "value": "m s-1" } ,
+        "sn": { "type": "literal" , "value": "land_surface_wind__speed" }
+      }
+    ]
+  }
+}
+
+Then Query 4: Composition: Show me other compatible inputs for this particular result type. Show that thanks to this we can bring in provenance and show the usefulness of describing input types. This is not only format! It’s done through variables
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdm: <https://w3id.org/mint/modelCatalog#>
+
+select distinct ?model_config where {
+  ?io a sdm:DatasetSpecification.
+  ?io sdm:hasPresentation /sdm:hasStandardVariable /rdfs:label "air__daily_min_of_temperature".
+  ?model_config sdm:hasOutput ?io.
+}
+Resutls: 
+{
+  "head": {
+    "vars": [ "model_config" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "model_config": { "type": "uri" , "value": "https://w3id.org/mint/instance/weather_generator" }
+      } ,
+      {
+        "model_config": { "type": "uri" , "value": "https://w3id.org/mint/instance/pihm_forcing_to_cycles_weather" }
+      }
+    ]
+  }
+}
+
+Give me which other software produces this variable
+
+
