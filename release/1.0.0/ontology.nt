@@ -1,0 +1,410 @@
+<https://w3id.org/okn/o/sd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/okn/o/sd/1.0.0> .
+<https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables"@en .
+<https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo"@en .
+<https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/creator> "Varun Ratnakar"@en .
+<https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/creator> "Yolanda Gil"@en .
+<https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/creator> "Deborah Khider" .
+<https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/title> "The Software Description Ontology"@en .
+<https://w3id.org/okn/o/sd> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> .
+<https://w3id.org/okn/o/sd> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en .
+<https://w3id.org/okn/o/sd> <http://purl.org/vocab/vann/preferredNamespaceURI> <https://w3id.org/okn/o/sd#> .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for describing software and their links to inputs, outputs and variables"@en .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceURI
+<http://purl.org/vocab/vann/preferredNamespaceURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#priorVersion
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ontosoft.org/software#hasContainer
+<http://ontosoft.org/software#hasContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontosoft.org/software#hasContainer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<http://ontosoft.org/software#hasContainer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#SoftwareImage> .
+<http://ontosoft.org/software#hasContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "Function to link a function with its corresponding container"@en .
+# 
+# https://w3id.org/okn/o/sd#hadGrid
+<https://w3id.org/okn/o/sd#hadGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hadGrid> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hadGrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Links the variable presentation to its grid"@en .
+<https://w3id.org/okn/o/sd#hadGrid> <http://www.w3.org/2000/01/rdf-schema#label> "has grid"@en .
+# 
+# https://w3id.org/okn/o/sd#hasConfiguration
+<https://w3id.org/okn/o/sd#hasConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareVersion> .
+<https://w3id.org/okn/o/sd#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a model to one of its configurations. A model may have multiple configurations, each of which is unique in terms of the inputs and outputs it uses."@en .
+<https://w3id.org/okn/o/sd#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "has configuration"@en .
+# 
+# https://w3id.org/okn/o/sd#hasDataset
+<https://w3id.org/okn/o/sd#hasDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasDataset> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/okn/o/sd#hasPresentation> .
+<https://w3id.org/okn/o/sd#hasDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#VariablePresentation> .
+<https://w3id.org/okn/o/sd#hasDataset> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hasDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a presentation with a dataset where the presentation occurs"@en .
+<https://w3id.org/okn/o/sd#hasDataset> <http://www.w3.org/2000/01/rdf-schema#label> "has dataset"@en .
+# 
+# https://w3id.org/okn/o/sd#hasFileStructure
+<https://w3id.org/okn/o/sd#hasFileStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasFileStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hasFileStructure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#DataStructureDefinition> .
+<https://w3id.org/okn/o/sd#hasFileStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a dataset specification to the data structure definition"@en .
+<https://w3id.org/okn/o/sd#hasFileStructure> <http://www.w3.org/2000/01/rdf-schema#label> "has file structure"@en .
+# 
+# https://w3id.org/okn/o/sd#hasInput
+<https://w3id.org/okn/o/sd#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasInput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#hasInput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hasInput> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a model configuration to the input types expected by it."@en .
+<https://w3id.org/okn/o/sd#hasInput> <http://www.w3.org/2000/01/rdf-schema#label> "has input"@en .
+# 
+# https://w3id.org/okn/o/sd#hasOutput
+<https://w3id.org/okn/o/sd#hasOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#hasOutput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hasOutput> <http://www.w3.org/2000/01/rdf-schema#comment> "Preoperty that expresses what are the outputs of a model"@en .
+<https://w3id.org/okn/o/sd#hasOutput> <http://www.w3.org/2000/01/rdf-schema#label> "has output"@en .
+# 
+# https://w3id.org/okn/o/sd#hasParameter
+<https://w3id.org/okn/o/sd#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#Parameter> .
+<https://w3id.org/okn/o/sd#hasParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that indicates the parameters of a model configuration"@en .
+<https://w3id.org/okn/o/sd#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "has parameter"@en .
+# 
+# https://w3id.org/okn/o/sd#hasPresentation
+<https://w3id.org/okn/o/sd#hasPresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#VariablePresentation> .
+<https://w3id.org/okn/o/sd#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links an instance of a dataset (or a dataset specification) to the presentation of a variable contained (or expected to be contained) on it."@en .
+<https://w3id.org/okn/o/sd#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#label> "has presentation"@en .
+# 
+# https://w3id.org/okn/o/sd#hasSoftwareVersion
+<https://w3id.org/okn/o/sd#hasSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#SoftwareVersion> .
+<https://w3id.org/okn/o/sd#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has software version"@en .
+# 
+# https://w3id.org/okn/o/sd#hasStandardVariable
+<https://w3id.org/okn/o/sd#hasStandardVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasStandardVariable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#VariablePresentation> .
+<https://w3id.org/okn/o/sd#hasStandardVariable> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#StandardVariable> .
+<https://w3id.org/okn/o/sd#hasStandardVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "the standard name of a variable"@en .
+<https://w3id.org/okn/o/sd#hasStandardVariable> <http://www.w3.org/2000/01/rdf-schema#label> "has standard variable"@en .
+# 
+# https://w3id.org/okn/o/sd#usesUnit
+<https://w3id.org/okn/o/sd#usesUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#usesUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/Unit> .
+<https://w3id.org/okn/o/sd#usesUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to link a variable presentation or time interval to the unit they are represented in"@en .
+<https://w3id.org/okn/o/sd#usesUnit> <http://www.w3.org/2000/01/rdf-schema#label> "uses unit"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ontosoft.org/software#hasExecutionCommand
+<http://ontosoft.org/software#hasExecutionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasExecutionCommand> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareImage> .
+<http://ontosoft.org/software#hasExecutionCommand> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontosoft.org/software#hasExecutionCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Execution instructions on how to run the image"@en .
+<http://ontosoft.org/software#hasExecutionCommand> <http://www.w3.org/2000/01/rdf-schema#label> "has execution command"@en .
+# 
+# http://ontosoft.org/software#hasIdentifier
+<http://ontosoft.org/software#hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareImage> .
+<http://ontosoft.org/software#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontosoft.org/software#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Container id"@en .
+<http://ontosoft.org/software#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has container"@en .
+# 
+# http://ontosoft.org/software#hasImplementationScriptLocation
+<http://ontosoft.org/software#hasImplementationScriptLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasImplementationScriptLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<http://ontosoft.org/software#hasImplementationScriptLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://ontosoft.org/software#hasImplementationScriptLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that points to the main runnable script for the current function"@en .
+<http://ontosoft.org/software#hasImplementationScriptLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has implementation script location"@en .
+# 
+# http://ontosoft.org/software#hasInstallationInstructions
+<http://ontosoft.org/software#hasInstallationInstructions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareImage> .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontosoft.org/software#hasInstallationInstructions> <http://www.w3.org/2000/01/rdf-schema#label> "has installation instructions"@en .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# https://w3id.org/okn/o/sd#hasAssumption
+<https://w3id.org/okn/o/sd#hasAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasAssumption> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#hasAssumption> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/sd#hasAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Assumptions of a model, e.g. the solver being used."@en .
+<https://w3id.org/okn/o/sd#hasAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "has assumption"@en .
+# 
+# https://w3id.org/okn/o/sd#hasComponentLocation
+<https://w3id.org/okn/o/sd#hasComponentLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasComponentLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#hasComponentLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/okn/o/sd#hasComponentLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts"@en .
+<https://w3id.org/okn/o/sd#hasComponentLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "has component location"@en .
+# 
+# https://w3id.org/okn/o/sd#hasConstraint
+<https://w3id.org/okn/o/sd#hasConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/sd#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "Constraint or rule associated to a  variable or software configuration. For example: \"This model accepts only monthly data\", or \"all inputs of this model configuration must share the same location\". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property"@en .
+<https://w3id.org/okn/o/sd#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "has constraint"@en .
+# 
+# https://w3id.org/okn/o/sd#hasDataType
+<https://w3id.org/okn/o/sd#hasDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Parameter> .
+<https://w3id.org/okn/o/sd#hasDataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/sd#hasDataType> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that indicates the data type of a parameter"@en .
+<https://w3id.org/okn/o/sd#hasDataType> <http://www.w3.org/2000/01/rdf-schema#label> "has data type"@en .
+# 
+# https://w3id.org/okn/o/sd#hasDefaultValue
+<https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Default accepted value of a variable presentation (or a parameter)"@en .
+<https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#label> "has default value"@en .
+# 
+# https://w3id.org/okn/o/sd#hasDimensionality
+<https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to indicate dimensionality of the input or output of a dataset specification"@en .
+<https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/2000/01/rdf-schema#label> "has dimensionality"@en .
+# 
+# https://w3id.org/okn/o/sd#hasDocumentation
+<https://w3id.org/okn/o/sd#hasDocumentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/okn/o/sd#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Pointer to the documentation of the model"@en .
+<https://w3id.org/okn/o/sd#hasDocumentation> <http://www.w3.org/2000/01/rdf-schema#label> "has documentation"@en .
+# 
+# https://w3id.org/okn/o/sd#hasFormat
+<https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Format followed by a file. For example, txt, nc, etc."@en .
+<https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/2000/01/rdf-schema#label> "has format"@en .
+# 
+# https://w3id.org/okn/o/sd#hasLongName
+<https://w3id.org/okn/o/sd#hasLongName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasLongName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#VariablePresentation> .
+<https://w3id.org/okn/o/sd#hasLongName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/sd#hasLongName> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties that relate the variable representation to its long name. The long name is useful for context (e.g., precipitation is less ambiguous than P) but not as precise as the standard name."@en .
+<https://w3id.org/okn/o/sd#hasLongName> <http://www.w3.org/2000/01/rdf-schema#label> "has long name"@en .
+# 
+# https://w3id.org/okn/o/sd#hasMaximumAcceptedValue
+<https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum accepted value of a variable presentation (or a parameter)"@en .
+<https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#label> "has maximum accepted value"@en .
+# 
+# https://w3id.org/okn/o/sd#hasMinimumAcceptedValue
+<https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum accepted value of a variable presentation (or a parameter)"@en .
+<https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#label> "has minimum accepted value"@en .
+# 
+# https://w3id.org/okn/o/sd#hasShortName
+<https://w3id.org/okn/o/sd#hasShortName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasShortName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#VariablePresentation> .
+<https://w3id.org/okn/o/sd#hasShortName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/sd#hasShortName> <http://www.w3.org/2000/01/rdf-schema#comment> "A short name (e.g., temperature) capturing the high-level concept of the variable"@en .
+<https://w3id.org/okn/o/sd#hasShortName> <http://www.w3.org/2000/01/rdf-schema#label> "has short name"@en .
+# 
+# https://w3id.org/okn/o/sd#hasSupportScriptLocation
+<https://w3id.org/okn/o/sd#hasSupportScriptLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasSupportScriptLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#hasSupportScriptLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/okn/o/sd#hasSupportScriptLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links to the location of scripts that may be used from the main runnable script."@en .
+<https://w3id.org/okn/o/sd#hasSupportScriptLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has support script location"@en .
+# 
+# https://w3id.org/okn/o/sd#hasVersionId
+<https://w3id.org/okn/o/sd#hasVersionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasVersionId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareVersion> .
+<https://w3id.org/okn/o/sd#hasVersionId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/sd#hasVersionId> <http://www.w3.org/2000/01/rdf-schema#label> "has version id"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/Unit
+<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/schema/qudt/Unit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://qudt.org/schema/qudt/> .
+# 
+# http://schema.org/Dataset
+<http://schema.org/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/SoftwareApplication
+<http://schema.org/SoftwareApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.geoscienceontology.org/geo-upper#Variable
+<http://www.geoscienceontology.org/geo-upper#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.geoscienceontology.org/geo-upper#Variable> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/okn/o/sd#GSNVariable> .
+<http://www.geoscienceontology.org/geo-upper#Variable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.geoscienceontology.org/geo-upper> .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/okn/o/sd#DataStructureDefinition
+<https://w3id.org/okn/o/sd#DataStructureDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#DataStructureDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "The schema the file follows. To make the input or output machin readable, we need to know how the file is organized."@en .
+<https://w3id.org/okn/o/sd#DataStructureDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Data structure definition"@en .
+# 
+# https://w3id.org/okn/o/sd#DatasetSpecification
+<https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Class designed to describe a type of input or output used or produced by a model. For example, Topoflow has several inputs. One of them is a text file with precipitation values. The representation of this input is an instance of a dataset specification."@en .
+<https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset specification"@en .
+# 
+# https://w3id.org/okn/o/sd#GSNVariable
+<https://w3id.org/okn/o/sd#GSNVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#GSNVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#StandardVariable> .
+<https://w3id.org/okn/o/sd#GSNVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Variable that follows the GSN standard: http://geoscienceontology.org/"@en .
+<https://w3id.org/okn/o/sd#GSNVariable> <http://www.w3.org/2000/01/rdf-schema#label> "GSN variable"@en .
+# 
+# https://w3id.org/okn/o/sd#ICASAVariable
+<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#StandardVariable> .
+<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Variable that follows the ICASA standard for agriculture: https://dssat.net/data/standards_v2"@en .
+<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#label> "ICASA variable"@en .
+# 
+# https://w3id.org/okn/o/sd#Parameter
+<https://w3id.org/okn/o/sd#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter of the model."@en .
+<https://w3id.org/okn/o/sd#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
+# 
+# https://w3id.org/okn/o/sd#Software
+<https://w3id.org/okn/o/sd#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/SoftwareApplication> .
+<https://w3id.org/okn/o/sd#Software> <http://www.w3.org/2000/01/rdf-schema#label> "Software"@en .
+# 
+# https://w3id.org/okn/o/sd#SoftwareConfiguration
+<https://w3id.org/okn/o/sd#SoftwareConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#SoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#SoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Function\" is part of an Ontosoft extension currently being developed"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/okn/o/sd#SoftwareConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "Software Configuration"@en .
+# 
+# https://w3id.org/okn/o/sd#SoftwareImage
+<https://w3id.org/okn/o/sd#SoftwareImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#SoftwareImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#SoftwareImage> <http://www.w3.org/2000/01/rdf-schema#label> "Software Image"@en .
+# 
+# https://w3id.org/okn/o/sd#SoftwareVersion
+<https://w3id.org/okn/o/sd#SoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#SoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "Software Version"@en .
+# 
+# https://w3id.org/okn/o/sd#StandardVariable
+<https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#Variable> .
+<https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology"@en .
+<https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Standard variable"@en .
+# 
+# https://w3id.org/okn/o/sd#Unit
+<https://w3id.org/okn/o/sd#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Unit> .
+<https://w3id.org/okn/o/sd#Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Class designed to distinguish the different types of units that are available in variables from datasets"@en .
+<https://w3id.org/okn/o/sd#Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit"@en .
+# 
+# https://w3id.org/okn/o/sd#Variable
+<https://w3id.org/okn/o/sd#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#Variable> <http://www.w3.org/2000/01/rdf-schema#comment> "A symbol that represents a quanity in a dataset or dataset specification"@en .
+<https://w3id.org/okn/o/sd#Variable> <http://www.w3.org/2000/01/rdf-schema#label> "Variable"@en .
+# 
+# https://w3id.org/okn/o/sd#VariablePresentation
+<https://w3id.org/okn/o/sd#VariablePresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#VariablePresentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#Variable> .
+<https://w3id.org/okn/o/sd#VariablePresentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept used to represent an instantiation of a variable in an input/output dataset. For example, a model A may use an input file with temperature expressed in Farenheit (variablePresentation1), while a model B may produce an output with temperature in Celsius (variablePresentation2). Both variable presentations refer to the concept of temperature."@en .
+<https://w3id.org/okn/o/sd#VariablePresentation> <http://www.w3.org/2000/01/rdf-schema#label> "Variable presentation"@en .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

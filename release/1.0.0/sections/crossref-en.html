@@ -1,0 +1,1298 @@
+<html><h2 id="crossreference" class="list">Cross reference for The Software Description Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Software Description Ontology.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#DataStructureDefinition"
+            title="https://w3id.org/okn/o/sd#DataStructureDefinition">Data structure definition</a>
+      </li>
+      <li>
+         <a href="#DatasetSpecification" title="https://w3id.org/okn/o/sd#DatasetSpecification">Dataset specification</a>
+      </li>
+      <li>
+         <a href="#GSNVariable" title="https://w3id.org/okn/o/sd#GSNVariable">GSN variable</a>
+      </li>
+      <li>
+         <a href="#ICASAVariable" title="https://w3id.org/okn/o/sd#ICASAVariable">ICASA variable</a>
+      </li>
+      <li>
+         <a href="#Parameter" title="https://w3id.org/okn/o/sd#Parameter">Parameter</a>
+      </li>
+      <li>
+         <a href="#Software" title="https://w3id.org/okn/o/sd#Software">Software</a>
+      </li>
+      <li>
+         <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+      </li>
+      <li>
+         <a href="#SoftwareImage" title="https://w3id.org/okn/o/sd#SoftwareImage">Software Image</a>
+      </li>
+      <li>
+         <a href="#SoftwareVersion" title="https://w3id.org/okn/o/sd#SoftwareVersion">Software Version</a>
+      </li>
+      <li>
+         <a href="#StandardVariable" title="https://w3id.org/okn/o/sd#StandardVariable">Standard variable</a>
+      </li>
+      <li>
+         <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">
+            <span>unit</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Unit" title="https://w3id.org/okn/o/sd#Unit">Unit</a>
+      </li>
+      <li>
+         <a href="#http://www.geoscienceontology.org/geo-upper#Variable"
+            title="http://www.geoscienceontology.org/geo-upper#Variable">
+            <span>variable</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Variable" title="https://w3id.org/okn/o/sd#Variable">Variable</a>
+      </li>
+      <li>
+         <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+      </li>
+   </ul>
+   <div class="entity" id="DataStructureDefinition">
+      <h3>Data structure definition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#DataStructureDefinition</p>
+      <div class="comment">
+         <span class="markdown">The schema the file follows. To make the input or output machin readable, we need to know how the file is organized.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasFileStructure" title="https://w3id.org/okn/o/sd#hasFileStructure">has file structure</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DatasetSpecification">
+      <h3>Dataset specification<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#DatasetSpecification</p>
+      <div class="comment">
+         <span class="markdown">Class designed to describe a type of input or output used or produced by a model. For example, Topoflow has several inputs. One of them is a text file with precipitation values. The representation of this input is an instance of a dataset specification.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDimensionality" title="https://w3id.org/okn/o/sd#hasDimensionality">has dimensionality</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFileStructure" title="https://w3id.org/okn/o/sd#hasFileStructure">has file structure</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFormat" title="https://w3id.org/okn/o/sd#hasFormat">has format</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hadGrid" title="https://w3id.org/okn/o/sd#hadGrid">has grid</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPresentation" title="https://w3id.org/okn/o/sd#hasPresentation">has presentation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasDataset" title="https://w3id.org/okn/o/sd#hasDataset">has dataset</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasInput" title="https://w3id.org/okn/o/sd#hasInput">has input</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOutput" title="https://w3id.org/okn/o/sd#hasOutput">has output</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GSNVariable">
+      <h3>GSN variable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#GSNVariable</p>
+      <div class="comment">
+         <span class="markdown">Variable that follows the GSN standard: http://geoscienceontology.org/</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#StandardVariable" title="https://w3id.org/okn/o/sd#StandardVariable">Standard variable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ICASAVariable">
+      <h3>ICASA variable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#ICASAVariable</p>
+      <div class="comment">
+         <span class="markdown">Variable that follows the ICASA standard for agriculture: https://dssat.net/data/standards_v2</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#StandardVariable" title="https://w3id.org/okn/o/sd#StandardVariable">Standard variable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Parameter">
+      <h3>Parameter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#Parameter</p>
+      <div class="comment">
+         <span class="markdown">A parameter of the model.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDataType" title="https://w3id.org/okn/o/sd#hasDataType">has data type</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasParameter" title="https://w3id.org/okn/o/sd#hasParameter">has parameter</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Software">
+      <h3>Software<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#Software</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/SoftwareApplication">software application</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoftwareImage" title="https://w3id.org/okn/o/sd#SoftwareImage">Software Image</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SoftwareVersion" title="https://w3id.org/okn/o/sd#SoftwareVersion">Software Version</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasAssumption" title="https://w3id.org/okn/o/sd#hasAssumption">has assumption</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDocumentation" title="https://w3id.org/okn/o/sd#hasDocumentation">has documentation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSoftwareVersion" title="https://w3id.org/okn/o/sd#hasSoftwareVersion">has software version</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SoftwareConfiguration">
+      <h3>Software Configuration<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#SoftwareConfiguration</p>
+      <div class="comment">
+         <span class="markdown">"Function" is part of an Ontosoft extension currently being developed</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Software" title="https://w3id.org/okn/o/sd#Software">Software</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasComponentLocation" title="https://w3id.org/okn/o/sd#hasComponentLocation">has component location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://ontosoft.org/software#hasContainer" title="http://ontosoft.org/software#hasContainer">has container</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://ontosoft.org/software#hasImplementationScriptLocation"
+               title="http://ontosoft.org/software#hasImplementationScriptLocation">has implementation script location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInput" title="https://w3id.org/okn/o/sd#hasInput">has input</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasOutput" title="https://w3id.org/okn/o/sd#hasOutput">has output</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasParameter" title="https://w3id.org/okn/o/sd#hasParameter">has parameter</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSupportScriptLocation"
+               title="https://w3id.org/okn/o/sd#hasSupportScriptLocation">has support script location</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasConfiguration" title="https://w3id.org/okn/o/sd#hasConfiguration">has configuration</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SoftwareImage">
+      <h3>Software Image<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#SoftwareImage</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Software" title="https://w3id.org/okn/o/sd#Software">Software</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://ontosoft.org/software#hasIdentifier" title="http://ontosoft.org/software#hasIdentifier">has container</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://ontosoft.org/software#hasExecutionCommand" title="http://ontosoft.org/software#hasExecutionCommand">has execution command</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://ontosoft.org/software#hasInstallationInstructions"
+               title="http://ontosoft.org/software#hasInstallationInstructions">has installation instructions</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://ontosoft.org/software#hasContainer" title="http://ontosoft.org/software#hasContainer">has container</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SoftwareVersion">
+      <h3>Software Version<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#SoftwareVersion</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Software" title="https://w3id.org/okn/o/sd#Software">Software</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasConfiguration" title="https://w3id.org/okn/o/sd#hasConfiguration">has configuration</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasVersionId" title="https://w3id.org/okn/o/sd#hasVersionId">has version id</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSoftwareVersion" title="https://w3id.org/okn/o/sd#hasSoftwareVersion">has software version</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StandardVariable">
+      <h3>Standard variable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#StandardVariable</p>
+      <div class="comment">
+         <span class="markdown">A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Variable" title="https://w3id.org/okn/o/sd#Variable">Variable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#GSNVariable" title="https://w3id.org/okn/o/sd#GSNVariable">GSN variable</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ICASAVariable" title="https://w3id.org/okn/o/sd#ICASAVariable">ICASA variable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasStandardVariable" title="https://w3id.org/okn/o/sd#hasStandardVariable">has standard variable</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://qudt.org/schema/qudt/Unit">
+      <h3>unit<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://qudt.org/schema/qudt/Unit</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://qudt.org/schema/qudt/">http://qudt.org/schema/qudt/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Unit" title="https://w3id.org/okn/o/sd#Unit">Unit</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#usesUnit" title="https://w3id.org/okn/o/sd#usesUnit">uses unit</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Unit">
+      <h3>Unit<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#Unit</p>
+      <div class="comment">
+         <span class="markdown">Class designed to distinguish the different types of units that are available in variables from datasets</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">unit</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.geoscienceontology.org/geo-upper#Variable">
+      <h3>variable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.geoscienceontology.org/geo-upper#Variable</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.geoscienceontology.org/geo-upper">http://www.geoscienceontology.org/geo-upper</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#GSNVariable" title="https://w3id.org/okn/o/sd#GSNVariable">GSN variable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Variable">
+      <h3>Variable<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#Variable</p>
+      <div class="comment">
+         <span class="markdown">A symbol that represents a quanity in a dataset or dataset specification</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#StandardVariable" title="https://w3id.org/okn/o/sd#StandardVariable">Standard variable</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VariablePresentation">
+      <h3>Variable presentation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#VariablePresentation</p>
+      <div class="comment">
+         <span class="markdown">Concept used to represent an instantiation of a variable in an input/output dataset. For example, a model A may use an input file with temperature expressed in Farenheit (variablePresentation1), while a model B may produce an output with temperature in Celsius (variablePresentation2). Both variable presentations refer to the concept of temperature.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Variable" title="https://w3id.org/okn/o/sd#Variable">Variable</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDataset" title="https://w3id.org/okn/o/sd#hasDataset">has dataset</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasLongName" title="https://w3id.org/okn/o/sd#hasLongName">has long name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasShortName" title="https://w3id.org/okn/o/sd#hasShortName">has short name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStandardVariable" title="https://w3id.org/okn/o/sd#hasStandardVariable">has standard variable</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPresentation" title="https://w3id.org/okn/o/sd#hasPresentation">has presentation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasConfiguration" title="https://w3id.org/okn/o/sd#hasConfiguration">has configuration</a>
+      </li>
+      <li>
+         <a href="#http://ontosoft.org/software#hasContainer" title="http://ontosoft.org/software#hasContainer">
+            <span>has container</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasDataset" title="https://w3id.org/okn/o/sd#hasDataset">has dataset</a>
+      </li>
+      <li>
+         <a href="#hasFileStructure" title="https://w3id.org/okn/o/sd#hasFileStructure">has file structure</a>
+      </li>
+      <li>
+         <a href="#hadGrid" title="https://w3id.org/okn/o/sd#hadGrid">has grid</a>
+      </li>
+      <li>
+         <a href="#hasInput" title="https://w3id.org/okn/o/sd#hasInput">has input</a>
+      </li>
+      <li>
+         <a href="#hasOutput" title="https://w3id.org/okn/o/sd#hasOutput">has output</a>
+      </li>
+      <li>
+         <a href="#hasParameter" title="https://w3id.org/okn/o/sd#hasParameter">has parameter</a>
+      </li>
+      <li>
+         <a href="#hasPresentation" title="https://w3id.org/okn/o/sd#hasPresentation">has presentation</a>
+      </li>
+      <li>
+         <a href="#hasSoftwareVersion" title="https://w3id.org/okn/o/sd#hasSoftwareVersion">has software version</a>
+      </li>
+      <li>
+         <a href="#hasStandardVariable" title="https://w3id.org/okn/o/sd#hasStandardVariable">has standard variable</a>
+      </li>
+      <li>
+         <a href="#usesUnit" title="https://w3id.org/okn/o/sd#usesUnit">uses unit</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasConfiguration">
+      <h3>has configuration<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasConfiguration</p>
+      <div class="comment">
+         <span class="markdown">Property that links a model to one of its configurations. A model may have multiple configurations, each of which is unique in terms of the inputs and outputs it uses.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareVersion" title="https://w3id.org/okn/o/sd#SoftwareVersion">Software Version</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://ontosoft.org/software#hasContainer">
+      <h3>has container<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ontosoft.org/software#hasContainer</p>
+      <div class="comment">
+         <span class="markdown">Function to link a function with its corresponding container</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SoftwareImage" title="https://w3id.org/okn/o/sd#SoftwareImage">Software Image</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDataset">
+      <h3>has dataset<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasDataset</p>
+      <div class="comment">
+         <span class="markdown">Associates a presentation with a dataset where the presentation occurs</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DatasetSpecification" title="https://w3id.org/okn/o/sd#DatasetSpecification">Dataset specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasPresentation" title="https://w3id.org/okn/o/sd#hasPresentation">has presentation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFileStructure">
+      <h3>has file structure<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasFileStructure</p>
+      <div class="comment">
+         <span class="markdown">Relates a dataset specification to the data structure definition</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatasetSpecification" title="https://w3id.org/okn/o/sd#DatasetSpecification">Dataset specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DataStructureDefinition"
+                  title="https://w3id.org/okn/o/sd#DataStructureDefinition">Data structure definition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hadGrid">
+      <h3>has grid<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hadGrid</p>
+      <div class="comment">
+         <span class="markdown">Links the variable presentation to its grid</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatasetSpecification" title="https://w3id.org/okn/o/sd#DatasetSpecification">Dataset specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasInput">
+      <h3>has input<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasInput</p>
+      <div class="comment">
+         <span class="markdown">Property that links a model configuration to the input types expected by it.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DatasetSpecification" title="https://w3id.org/okn/o/sd#DatasetSpecification">Dataset specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasOutput">
+      <h3>has output<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasOutput</p>
+      <div class="comment">
+         <span class="markdown">Preoperty that expresses what are the outputs of a model</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DatasetSpecification" title="https://w3id.org/okn/o/sd#DatasetSpecification">Dataset specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasParameter">
+      <h3>has parameter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasParameter</p>
+      <div class="comment">
+         <span class="markdown">Property that indicates the parameters of a model configuration</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/okn/o/sd#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPresentation">
+      <h3>has presentation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasPresentation</p>
+      <div class="comment">
+         <span class="markdown">Property that links an instance of a dataset (or a dataset specification) to the presentation of a variable contained (or expected to be contained) on it.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatasetSpecification" title="https://w3id.org/okn/o/sd#DatasetSpecification">Dataset specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasDataset" title="https://w3id.org/okn/o/sd#hasDataset">has dataset</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSoftwareVersion">
+      <h3>has software version<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasSoftwareVersion</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Software" title="https://w3id.org/okn/o/sd#Software">Software</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SoftwareVersion" title="https://w3id.org/okn/o/sd#SoftwareVersion">Software Version</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStandardVariable">
+      <h3>has standard variable<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasStandardVariable</p>
+      <div class="comment">
+         <span class="markdown">the standard name of a variable</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#StandardVariable" title="https://w3id.org/okn/o/sd#StandardVariable">Standard variable</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usesUnit">
+      <h3>uses unit<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#usesUnit</p>
+      <div class="comment">
+         <span class="markdown">Property used to link a variable presentation or time interval to the unit they are represented in</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://qudt.org/schema/qudt/Unit" title="http://qudt.org/schema/qudt/Unit">unit</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasAssumption" title="https://w3id.org/okn/o/sd#hasAssumption">has assumption</a>
+      </li>
+      <li>
+         <a href="#hasComponentLocation" title="https://w3id.org/okn/o/sd#hasComponentLocation">
+            <span>has component location</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasConstraint" title="https://w3id.org/okn/o/sd#hasConstraint">has constraint</a>
+      </li>
+      <li>
+         <a href="#http://ontosoft.org/software#hasIdentifier" title="http://ontosoft.org/software#hasIdentifier">has container</a>
+      </li>
+      <li>
+         <a href="#hasDataType" title="https://w3id.org/okn/o/sd#hasDataType">has data type</a>
+      </li>
+      <li>
+         <a href="#hasDefaultValue" title="https://w3id.org/okn/o/sd#hasDefaultValue">has default value</a>
+      </li>
+      <li>
+         <a href="#hasDimensionality" title="https://w3id.org/okn/o/sd#hasDimensionality">has dimensionality</a>
+      </li>
+      <li>
+         <a href="#hasDocumentation" title="https://w3id.org/okn/o/sd#hasDocumentation">has documentation</a>
+      </li>
+      <li>
+         <a href="#http://ontosoft.org/software#hasExecutionCommand" title="http://ontosoft.org/software#hasExecutionCommand">has execution command</a>
+      </li>
+      <li>
+         <a href="#hasFormat" title="https://w3id.org/okn/o/sd#hasFormat">has format</a>
+      </li>
+      <li>
+         <a href="#http://ontosoft.org/software#hasImplementationScriptLocation"
+            title="http://ontosoft.org/software#hasImplementationScriptLocation">has implementation script location</a>
+      </li>
+      <li>
+         <a href="#http://ontosoft.org/software#hasInstallationInstructions"
+            title="http://ontosoft.org/software#hasInstallationInstructions">has installation instructions</a>
+      </li>
+      <li>
+         <a href="#hasLongName" title="https://w3id.org/okn/o/sd#hasLongName">has long name</a>
+      </li>
+      <li>
+         <a href="#hasMaximumAcceptedValue"
+            title="https://w3id.org/okn/o/sd#hasMaximumAcceptedValue">has maximum accepted value</a>
+      </li>
+      <li>
+         <a href="#hasMinimumAcceptedValue"
+            title="https://w3id.org/okn/o/sd#hasMinimumAcceptedValue">has minimum accepted value</a>
+      </li>
+      <li>
+         <a href="#hasShortName" title="https://w3id.org/okn/o/sd#hasShortName">has short name</a>
+      </li>
+      <li>
+         <a href="#hasSupportScriptLocation"
+            title="https://w3id.org/okn/o/sd#hasSupportScriptLocation">has support script location</a>
+      </li>
+      <li>
+         <a href="#hasVersionId" title="https://w3id.org/okn/o/sd#hasVersionId">has version id</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/description">
+      <h3>description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="hasAssumption">
+      <h3>has assumption<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasAssumption</p>
+      <div class="comment">
+         <span class="markdown">Assumptions of a model, e.g. the solver being used.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Software" title="https://w3id.org/okn/o/sd#Software">Software</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasComponentLocation">
+      <h3>has component location<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasComponentLocation</p>
+      <div class="comment">
+         <span class="markdown">Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasConstraint">
+      <h3>has constraint<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasConstraint</p>
+      <div class="comment">
+         <span class="markdown">Constraint or rule associated to a  variable or software configuration. For example: "This model accepts only monthly data", or "all inputs of this model configuration must share the same location". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://ontosoft.org/software#hasIdentifier">
+      <h3>has container<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ontosoft.org/software#hasIdentifier</p>
+      <div class="comment">
+         <span class="markdown">Container id</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareImage" title="https://w3id.org/okn/o/sd#SoftwareImage">Software Image</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDataType">
+      <h3>has data type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasDataType</p>
+      <div class="comment">
+         <span class="markdown">Property that indicates the data type of a parameter</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/okn/o/sd#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDefaultValue">
+      <h3>has default value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasDefaultValue</p>
+      <div class="comment">
+         <span class="markdown">Default accepted value of a variable presentation (or a parameter)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/okn/o/sd#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDimensionality">
+      <h3>has dimensionality<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasDimensionality</p>
+      <div class="comment">
+         <span class="markdown">Property to indicate dimensionality of the input or output of a dataset specification</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatasetSpecification" title="https://w3id.org/okn/o/sd#DatasetSpecification">Dataset specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#int">int</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDocumentation">
+      <h3>has documentation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasDocumentation</p>
+      <div class="comment">
+         <span class="markdown">Pointer to the documentation of the model</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Software" title="https://w3id.org/okn/o/sd#Software">Software</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://ontosoft.org/software#hasExecutionCommand">
+      <h3>has execution command<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ontosoft.org/software#hasExecutionCommand</p>
+      <div class="comment">
+         <span class="markdown">Execution instructions on how to run the image</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareImage" title="https://w3id.org/okn/o/sd#SoftwareImage">Software Image</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFormat">
+      <h3>has format<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasFormat</p>
+      <div class="comment">
+         <span class="markdown">Format followed by a file. For example, txt, nc, etc.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DatasetSpecification" title="https://w3id.org/okn/o/sd#DatasetSpecification">Dataset specification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://ontosoft.org/software#hasImplementationScriptLocation">
+      <h3>has implementation script location<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ontosoft.org/software#hasImplementationScriptLocation</p>
+      <div class="comment">
+         <span class="markdown">Property that points to the main runnable script for the current function</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://ontosoft.org/software#hasInstallationInstructions">
+      <h3>has installation instructions<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ontosoft.org/software#hasInstallationInstructions</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareImage" title="https://w3id.org/okn/o/sd#SoftwareImage">Software Image</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLongName">
+      <h3>has long name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasLongName</p>
+      <div class="comment">
+         <span class="markdown">Properties that relate the variable representation to its long name. The long name is useful for context (e.g., precipitation is less ambiguous than P) but not as precise as the standard name.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMaximumAcceptedValue">
+      <h3>has maximum accepted value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasMaximumAcceptedValue</p>
+      <div class="comment">
+         <span class="markdown">Maximum accepted value of a variable presentation (or a parameter)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/okn/o/sd#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMinimumAcceptedValue">
+      <h3>has minimum accepted value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasMinimumAcceptedValue</p>
+      <div class="comment">
+         <span class="markdown">Minimum accepted value of a variable presentation (or a parameter)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/okn/o/sd#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasShortName">
+      <h3>has short name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasShortName</p>
+      <div class="comment">
+         <span class="markdown">A short name (e.g., temperature) capturing the high-level concept of the variable</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VariablePresentation" title="https://w3id.org/okn/o/sd#VariablePresentation">Variable presentation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSupportScriptLocation">
+      <h3>has support script location<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasSupportScriptLocation</p>
+      <div class="comment">
+         <span class="markdown">Property that links to the location of scripts that may be used from the main runnable script.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasVersionId">
+      <h3>has version id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasVersionId</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareVersion" title="https://w3id.org/okn/o/sd#SoftwareVersion">Software Version</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>
