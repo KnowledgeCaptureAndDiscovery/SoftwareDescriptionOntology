@@ -11,6 +11,62 @@ https://w3id.org/mint/modelCatalog# is https://w3id.org/okn/o/sdm
 http://ontosoft.org/software# is https://w3id.org/okn/o/sd 
 
 
+Query 0: What is the available metadata for Cycles software model?
+
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?property ?value
+WHERE {
+  ?model ?property ?value.
+  ?model rdfs:label "Cycles".
+}
+
+Results:
+{
+  "head": {
+    "vars": [ "property" , "value" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "property": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "value": { "type": "uri" , "value": "https://w3id.org/mint/modelCatalog#Model" }
+      } ,
+      {
+        "property": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" } ,
+        "value": { "type": "uri" , "value": "https://w3id.org/mint/modelCatalog#TheoryBasedModel" }
+      } ,
+      {
+        "property": { "type": "uri" , "value": "http://www.w3.org/2000/01/rdf-schema#label" } ,
+        "value": { "type": "literal" , "value": "Cycles" }
+      } ,
+      {
+        "property": { "type": "uri" , "value": "http://purl.org/dc/terms/description" } ,
+        "value": { "type": "literal" , "value": "Cycles simulates the productivity and the water-carbon and nitrogen balance of soil-crop systems subject to climate conditions and a large array of management constraints" }
+      } ,
+      {
+        "property": { "type": "uri" , "value": "https://w3id.org/mint/modelCatalog#hasAssumption" } ,
+        "value": { "type": "literal" , "value": "The simulation unit in Cycles is a field with a single soil (soil file) that is layered (user defined number of layers) exposed to a daily weather (weather file) and subject to operations (operations file) that control soil properties; vegetation properties (crop file) and surface residue properties. Variables in weather file are considered rigid forcings. Surface conditions do not alter air temperature or moisture. Soil is connected to the residues; aboveground living biomass; air; and radiation from the atmosphere; and with the bottom of the profile. There is no lateral water or solutes movement within the soil profile. When running stand alone; runoff and percolation water simply leaves the simulation unit. Vegetation can be composed of monocultures (single species) or multiple species. The parameters describing each plant of the community are described in the crop file. The operations file allows multiple types of interventions organized as tillage; fertilization; and planting events. Operations like kill crop are part of tillage. To enable coupling with other models; Cycles can be set to replace (re-initialize) internally calculated variable with external inputs. For example; infiltration can be an input from the PIHM model; soil moisture can be reset based on observations or data from other models. This flexibility extends to all state variables. Re-initialization algorithm can break the mass balance and is not recommended unless the goal override mass or energy balance concerns." }
+      } ,
+      {
+        "property": { "type": "uri" , "value": "https://w3id.org/mint/modelCatalog#hasModelCategory" } ,
+        "value": { "type": "literal" , "value": "Agriculture" }
+      } ,
+      {
+        "property": { "type": "uri" , "value": "http://ontosoft.org/software#hasSoftwareVersion" } ,
+        "value": { "type": "uri" , "value": "https://w3id.org/mint/instance/cycles_0.8.0_alpha" }
+      } ,
+      {
+        "property": { "type": "uri" , "value": "http://ontosoft.org/software#hasDocumentation" } ,
+        "value": { "type": "literal" , "value": "https://plantscience.psu.edu/research/labs/kemanian/models-and-tools/cycles" }
+      }
+    ]
+  }
+}
+
+
+
+
+
 Query 1: What are the available versions and configurations for the Cycles agricultural software model?
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix sd: <http://ontosoft.org/software#> 
