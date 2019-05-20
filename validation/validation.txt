@@ -11,7 +11,7 @@ https://w3id.org/mint/modelCatalog# is https://w3id.org/okn/o/sdm
 http://ontosoft.org/software# is https://w3id.org/okn/o/sd 
 
 
-Query 0: What is the available metadata for Cycles software model?
+Query 1: What is the available metadata for Cycles software model?
 
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?property ?value
@@ -67,7 +67,7 @@ Results:
 
 
 
-Query 1: What are the available versions and configurations for the Cycles agricultural software model?
+Query 2: What are the available versions and configurations for the Cycles agricultural software model?
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix sd: <http://ontosoft.org/software#> 
 prefix sdm: <https://w3id.org/mint/modelCatalog#>
@@ -99,7 +99,7 @@ Resutls:
 }
 
 
-Query 2: Retrieve description and input types of a configuration This would be for understanding software:Show me how an input of a software is described. 
+Query 3: Retrieve description and input types of a configuration This would be for understanding software:Show me how an input of a software is described. 
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix sd: <http://ontosoft.org/software#> 
@@ -119,7 +119,7 @@ Input Variables: "https://w3id.org/mint/instance/cycles_weather, https://w3id.or
 Output Variables:
 "https://w3id.org/mint/instance/cyles_crop, https://w3id.org/mint/instance/cycles_weatherOutput, https://w3id.org/mint/instance/cycles_nitrogen, https://w3id.org/mint/instance/cycles_somF, https://w3id.org/mint/instance/cycles_water, https://w3id.org/mint/instance/cycles_season, https://w3id.org/mint/instance/cycles_soilProfile, https://w3id.org/mint/instance/cycles_summary, https://w3id.org/mint/instance/cycles_seasonConfig"
 
-Query 3: understand the variables included in the weather file (https://w3id.org/mint/instance/cycles_weather)
+Query 4: understand the variables included in the weather file (https://w3id.org/mint/instance/cycles_weather)
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix sd: <http://ontosoft.org/software#> 
 prefix sdm: <https://w3id.org/mint/modelCatalog#>
@@ -185,7 +185,7 @@ Results (in JSON is easier to see):
   }
 }
 
-Then Query 4: Composition: Show me other compatible inputs for this particular result type. Show that thanks to this we can bring in provenance and show the usefulness of describing input types. This is not only format! It’s done through variables
+Then Query 5: Composition: Show me other compatible inputs for this particular result type. Show that thanks to this we can bring in provenance and show the usefulness of describing input types. This is not only format! It’s done through variables
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdm: <https://w3id.org/mint/modelCatalog#>
@@ -211,7 +211,3 @@ Resutls:
     ]
   }
 }
-
-Give me which other software produces this variable
-
-
