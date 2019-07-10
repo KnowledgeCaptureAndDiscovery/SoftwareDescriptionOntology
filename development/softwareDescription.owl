@@ -7,7 +7,7 @@
 @base <https://w3id.org/okn/o/sd> .
 
 <https://w3id.org/okn/o/sd> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://w3id.org/okn/o/sd/1.0.0> ;
+                             owl:versionIRI <https://w3id.org/okn/o/sd/1.1.0> ;
                              <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables"@en ;
                              <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo"@en ,
                                                                        "Deborah Khider" ,
@@ -18,7 +18,8 @@
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en ;
                              <http://purl.org/vocab/vann/preferredNamespaceURI> : ;
                              rdfs:comment "An ontology for describing software and their links to inputs, outputs and variables"@en ;
-                             owl:versionInfo "1.0.0" .
+                             owl:priorVersion <https://w3id.org/okn/o/sd/1.0.0> ;
+                             owl:versionInfo "1.1.0" .
 
 #################################################################
 #    Annotation properties
@@ -72,14 +73,68 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 <http://ontosoft.org/software#hasContainer> rdf:type owl:ObjectProperty ;
                                             rdfs:domain :SoftwareConfiguration ;
                                             rdfs:range :SoftwareImage ;
-                                            rdfs:comment "Function to link a function with its corresponding container"@en .
+                                            rdfs:comment "Function to link a function with its corresponding container"@en ;
+                                            rdfs:label "has container"@en .
 
 
-###  https://w3id.org/okn/o/sd#hadGrid
-:hadGrid rdf:type owl:ObjectProperty ;
-         rdfs:domain :DatasetSpecification;
-         rdfs:comment "Links the variable presentation to its grid"@en ;
-         rdfs:label "has grid"@en .
+###  http://schema.org/author
+<http://schema.org/author> rdf:type owl:ObjectProperty ;
+                           rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/contributor
+<http://schema.org/contributor> rdf:type owl:ObjectProperty ;
+                                rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/publisher
+<http://schema.org/publisher> rdf:type owl:ObjectProperty ;
+                              rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://codemeta.github.io/terms/funding
+<https://codemeta.github.io/terms/funding> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/okn/o/sd#author
+:author rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <http://schema.org/author> ;
+        rdfs:domain :Software ;
+        rdfs:range [ rdf:type owl:Class ;
+                     owl:unionOf ( :Organization
+                                   :Person
+                                 )
+                   ] ;
+        rdfs:label "author"@en .
+
+
+###  https://w3id.org/okn/o/sd#compatibleVisualizationSoftware
+:compatibleVisualizationSoftware rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :SoftwareConfiguration ;
+                                 rdfs:range :Software .
+
+
+###  https://w3id.org/okn/o/sd#contributor
+:contributor rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://schema.org/contributor> ;
+             rdfs:domain :Software ;
+             rdfs:range :Person ;
+             rdfs:label "contributor"@en .
+
+
+###  https://w3id.org/okn/o/sd#fundingSource
+:fundingSource rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <https://codemeta.github.io/terms/funding> ;
+               rdfs:domain :Software ;
+               rdfs:range :Organization .
 
 
 ###  https://w3id.org/okn/o/sd#hasConfiguration
@@ -90,19 +145,16 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "has configuration"@en .
 
 
-###  https://w3id.org/okn/o/sd#hasDataset
-:hasDataset rdf:type owl:ObjectProperty ;
-            owl:inverseOf :hasPresentation ;
-            rdfs:domain :VariablePresentation ;
-            rdfs:range :DatasetSpecification ;
-            rdfs:comment "Associates a presentation with a dataset where the presentation occurs"@en ;
-            rdfs:label "has dataset"@en .
+###  https://w3id.org/okn/o/sd#hasContactPerson
+:hasContactPerson rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Software ;
+                  rdfs:range :Person ;
+                  rdfs:label "has contact person"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasFileStructure
 :hasFileStructure rdf:type owl:ObjectProperty ;
                   rdfs:domain :DatasetSpecification ;
-                  rdfs:range :DataStructureDefinition ;
                   rdfs:comment "Relates a dataset specification to the data structure definition"@en ;
                   rdfs:label "has file structure"@en .
 
@@ -133,17 +185,33 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#hasPresentation
 :hasPresentation rdf:type owl:ObjectProperty ;
-                 rdfs:domain :DatasetSpecification;
+                 owl:inverseOf :partOfDataset ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( :DatasetSpecification
+                                             :Parameter
+                                           )
+                             ] ;
                  rdfs:range :VariablePresentation ;
                  rdfs:comment "Property that links an instance of a dataset (or a dataset specification) to the presentation of a variable contained (or expected to be contained) on it."@en ;
                  rdfs:label "has presentation"@en .
 
 
-###  https://w3id.org/okn/o/sd#hasSoftwareVersion
-:hasSoftwareVersion rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Software ;
-                    rdfs:range :SoftwareVersion ;
-                    rdfs:label "has software version"@en .
+###  https://w3id.org/okn/o/sd#hasSampleExecution
+:hasSampleExecution rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SoftwareConfiguration ;
+                    rdfs:range :SampleExecution .
+
+
+###  https://w3id.org/okn/o/sd#hasSampleResult
+:hasSampleResult rdf:type owl:ObjectProperty ;
+                 rdfs:domain :SoftwareConfiguration ;
+                 rdfs:range :SampleResource .
+
+
+###  https://w3id.org/okn/o/sd#hasSourceCode
+:hasSourceCode rdf:type owl:ObjectProperty ;
+               rdfs:domain :Software ;
+               rdfs:range :SourceCode .
 
 
 ###  https://w3id.org/okn/o/sd#hasStandardVariable
@@ -154,8 +222,36 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                      rdfs:label "has standard variable"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasVersion
+:hasVersion rdf:type owl:ObjectProperty ;
+            rdfs:domain :Software ;
+            rdfs:range :SoftwareVersion ;
+            rdfs:label "has software version"@en .
+
+
+###  https://w3id.org/okn/o/sd#partOfDataset
+:partOfDataset rdf:type owl:ObjectProperty ;
+               rdfs:domain :VariablePresentation ;
+               rdfs:range :DatasetSpecification ;
+               rdfs:comment "Associates a presentation with a dataset where the presentation occurs"@en ;
+               rdfs:label "part of dataset"@en .
+
+
+###  https://w3id.org/okn/o/sd#publisher
+:publisher rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://schema.org/publisher> ;
+           rdfs:domain :Software ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :Organization
+                                      :Person
+                                    )
+                      ] ;
+           rdfs:label "publisher"@en .
+
+
 ###  https://w3id.org/okn/o/sd#usesUnit
 :usesUnit rdf:type owl:ObjectProperty ;
+          rdfs:domain :VariablePresentation ;
           rdfs:range <http://qudt.org/schema/qudt/Unit> ;
           rdfs:comment "Property used to link a variable presentation or time interval to the unit they are represented in"@en ;
           rdfs:label "uses unit"@en .
@@ -191,14 +287,133 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  http://ontosoft.org/software#hasInstallationInstructions
 <http://ontosoft.org/software#hasInstallationInstructions> rdf:type owl:DatatypeProperty ;
-                                                           rdfs:domain :SoftwareImage ;
+                                                           rdfs:domain :Software ;
                                                            rdfs:range xsd:string ;
                                                            rdfs:label "has installation instructions"@en .
 
 
-###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty ;
-                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+###  http://schema.org/citation
+<http://schema.org/citation> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/codeRepository
+<http://schema.org/codeRepository> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/dateCreated
+<http://schema.org/dateCreated> rdf:type owl:DatatypeProperty ;
+                                rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/datePublished
+<http://schema.org/datePublished> rdf:type owl:DatatypeProperty ;
+                                  rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/description
+<http://schema.org/description> rdf:type owl:DatatypeProperty ;
+                                rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/email
+<http://schema.org/email> rdf:type owl:DatatypeProperty ;
+                          rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:DatatypeProperty ;
+                               rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/keywords
+<http://schema.org/keywords> rdf:type owl:DatatypeProperty ;
+                             rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/license
+<http://schema.org/license> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/memoryRequirements
+<http://schema.org/memoryRequirements> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Software ;
+                                       rdfs:range xsd:string .
+
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:DatatypeProperty ;
+                         rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/operatingSystems
+<http://schema.org/operatingSystems> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/processorRequirements
+<http://schema.org/processorRequirements> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/programmingLanguage
+<http://schema.org/programmingLanguage> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/screenshot
+<http://schema.org/screenshot> rdf:type owl:DatatypeProperty .
+
+
+###  http://schema.org/softwareRequirements
+<http://schema.org/softwareRequirements> rdf:type owl:DatatypeProperty .
+
+
+###  https://codemeta.github.io/terms/referencePublication
+<https://codemeta.github.io/terms/referencePublication> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:isDefinedBy <https://codemeta.github.io/terms/> .
+
+
+###  https://w3id.org/okn/o/sd#citation
+:citation rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <http://schema.org/citation> ;
+          rdfs:domain :Software ;
+          rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#codeRepository
+:codeRepository rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf <http://schema.org/codeRepository> ;
+                rdfs:domain :SourceCode ;
+                rdfs:range xsd:anyURI .
+
+
+###  https://w3id.org/okn/o/sd#dateCreated
+:dateCreated rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://schema.org/dateCreated> ;
+             rdfs:domain :Software ;
+             rdfs:range xsd:dateTime ;
+             rdfs:label "date created"@en .
+
+
+###  https://w3id.org/okn/o/sd#datePublished
+:datePublished rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <http://schema.org/datePublished> ;
+               rdfs:domain :Software ;
+               rdfs:range xsd:dateTime ;
+               rdfs:label "date published"@en .
+
+
+###  https://w3id.org/okn/o/sd#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://schema.org/description> ;
+             rdfs:domain :Software ;
+             rdfs:range xsd:string ;
+             rdfs:label "description"@en .
+
+
+###  https://w3id.org/okn/o/sd#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf <http://schema.org/email> ;
+       rdfs:domain :Person ;
+       rdfs:range xsd:string ;
+       rdfs:label "email"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasAssumption
@@ -213,8 +428,8 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasComponentLocation rdf:type owl:DatatypeProperty ;
                       rdfs:domain :SoftwareConfiguration ;
                       rdfs:range xsd:anyURI ;
-                      rdfs:comment "Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts"@en ,
-                                   "has component location"@en .
+                      rdfs:comment "Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts"@en ;
+                      rdfs:label "has component location"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasConstraint
@@ -244,7 +459,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                              :VariablePresentation
                                            )
                              ] ;
-                 rdfs:range xsd:float ;
                  rdfs:comment "Default accepted value of a variable presentation (or a parameter)"@en ;
                  rdfs:label "has default value"@en .
 
@@ -265,12 +479,28 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "has documentation"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasFAQ
+:hasFAQ rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Software ;
+        rdfs:range xsd:string .
+
+
 ###  https://w3id.org/okn/o/sd#hasFormat
 :hasFormat rdf:type owl:DatatypeProperty ;
            rdfs:domain :DatasetSpecification ;
            rdfs:range xsd:string ;
            rdfs:comment "Format followed by a file. For example, txt, nc, etc."@en ;
            rdfs:label "has format"@en .
+
+
+###  https://w3id.org/okn/o/sd#hasInvocationCommand
+:hasInvocationCommand rdf:type owl:DatatypeProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :SampleExecution
+                                                  :SoftwareConfiguration
+                                                )
+                                  ] ;
+                      rdfs:range xsd:string .
 
 
 ###  https://w3id.org/okn/o/sd#hasLongName
@@ -305,6 +535,18 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                          rdfs:label "has minimum accepted value"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasPurpose
+:hasPurpose rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Software ;
+            rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#hasSampleVisualization
+:hasSampleVisualization rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Software ;
+                        rdfs:range xsd:anyURI .
+
+
 ###  https://w3id.org/okn/o/sd#hasShortName
 :hasShortName rdf:type owl:DatatypeProperty ;
               rdfs:domain :VariablePresentation ;
@@ -321,16 +563,137 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                           rdfs:label "has support script location"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasTypicalDataSource
+:hasTypicalDataSource rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Software ;
+                      rdfs:range xsd:anyURI .
+
+
 ###  https://w3id.org/okn/o/sd#hasVersionId
 :hasVersionId rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <http://schema.org/identifier> ;
               rdfs:domain :SoftwareVersion ;
               rdfs:range xsd:string ;
               rdfs:label "has version id"@en .
 
 
+###  https://w3id.org/okn/o/sd#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://schema.org/identifier> ;
+            rdfs:domain :Software ;
+            rdfs:range xsd:string ;
+            rdfs:label "identifier"@en .
+
+
+###  https://w3id.org/okn/o/sd#keywords
+:keywords rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <http://schema.org/keywords> ;
+          rdfs:domain :Software ;
+          rdfs:range xsd:string ;
+          rdfs:label "keywords"@en .
+
+
+###  https://w3id.org/okn/o/sd#license
+:license rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf <http://schema.org/license> ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Software
+                                     :SourceCode
+                                   )
+                     ] ;
+         rdfs:range xsd:anyURI .
+
+
+###  https://w3id.org/okn/o/sd#logo
+:logo rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Software ;
+      rdfs:range xsd:anyURI .
+
+
+###  https://w3id.org/okn/o/sd#memoryRequirements
+:memoryRequirements rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf <http://schema.org/memoryRequirements> ;
+                    rdfs:domain :Software ;
+                    rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf <http://schema.org/name> ;
+      rdfs:range xsd:string ;
+      rdfs:label "name"@en .
+
+
+###  https://w3id.org/okn/o/sd#operatingSystems
+:operatingSystems rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf <http://schema.org/operatingSystems> ;
+                  rdfs:domain :Software ;
+                  rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#processorRequirements
+:processorRequirements rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf <http://schema.org/processorRequirements> ;
+                       rdfs:domain :Software ;
+                       rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#programmingLanguage
+:programmingLanguage rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf <http://schema.org/programmingLanguage> ;
+                     rdfs:domain :SourceCode ;
+                     rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#referencePublication
+:referencePublication rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf <https://codemeta.github.io/terms/referencePublication> ;
+                      rdfs:domain :Software ;
+                      rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#screenshot
+:screenshot rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://schema.org/screenshot> ;
+            rdfs:domain :Software ;
+            rdfs:range xsd:anyURI .
+
+
+###  https://w3id.org/okn/o/sd#shortDescription
+:shortDescription rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :description ;
+                  rdfs:domain :Software ;
+                  rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#softwareRequirements
+:softwareRequirements rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf <http://schema.org/softwareRequirements> ;
+                      rdfs:domain :Software ;
+                      rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#supportDetails
+:supportDetails rdf:type owl:DatatypeProperty ;
+                rdfs:label "support details"@en .
+
+
+###  https://w3id.org/okn/o/sd#website
+:website rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Software ;
+         rdfs:range xsd:anyURI ;
+         rdfs:comment "Website of the software"@en ;
+         rdfs:label "website"@en .
+
+
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.org/linked-data/cube#DataStructureDefinition
+<http://purl.org/linked-data/cube#DataStructureDefinition> rdf:type owl:Class ;
+                                                           rdfs:isDefinedBy <http://purl.org/linked-data/cube#> .
+
 
 ###  http://qudt.org/schema/qudt/Unit
 <http://qudt.org/schema/qudt/Unit> rdf:type owl:Class ;
@@ -341,38 +704,43 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 <http://schema.org/Dataset> rdf:type owl:Class .
 
 
+###  http://schema.org/Organization
+<http://schema.org/Organization> rdf:type owl:Class ;
+                                 rdfs:isDefinedBy <http://schema.org/> .
+
+
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:Class ;
+                           rdfs:isDefinedBy <http://schema.org/> .
+
+
 ###  http://schema.org/SoftwareApplication
 <http://schema.org/SoftwareApplication> rdf:type owl:Class .
 
 
+###  http://schema.org/SoftwareSourceCode
+<http://schema.org/SoftwareSourceCode> rdf:type owl:Class .
+
+
 ###  http://www.geoscienceontology.org/geo-upper#Variable
 <http://www.geoscienceontology.org/geo-upper#Variable> rdf:type owl:Class ;
-                                                       owl:equivalentClass :GSNVariable ;
+                                                       owl:equivalentClass :SVOVariable ;
                                                        rdfs:isDefinedBy <http://www.geoscienceontology.org/geo-upper> .
 
 
-###  http://www.w3.org/ns/dcat#Dataset
-<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class .
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
 
 
-
-###  https://w3id.org/okn/o/sd#DataStructureDefinition
-:DataStructureDefinition rdf:type owl:Class ;
-                         rdfs:comment "The schema the file follows. To make the input or output machin readable, we need to know how the file is organized."@en ;
-                         rdfs:label "Data structure definition"@en .
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
 
 
 ###  https://w3id.org/okn/o/sd#DatasetSpecification
 :DatasetSpecification rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.org/linked-data/cube#DataStructureDefinition> ;
                       rdfs:comment "Class designed to describe a type of input or output used or produced by a model. For example, Topoflow has several inputs. One of them is a text file with precipitation values. The representation of this input is an instance of a dataset specification."@en ;
                       rdfs:label "Dataset specification"@en .
-
-
-###  https://w3id.org/okn/o/sd#GSNVariable
-:GSNVariable rdf:type owl:Class ;
-             rdfs:subClassOf :StandardVariable ;
-             rdfs:comment "Variable that follows the GSN standard: http://geoscienceontology.org/"@en ;
-             rdfs:label "GSN variable"@en .
 
 
 ###  https://w3id.org/okn/o/sd#ICASAVariable
@@ -382,10 +750,45 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                rdfs:label "ICASA variable"@en .
 
 
+###  https://w3id.org/okn/o/sd#Image
+:Image rdf:type owl:Class ;
+       rdfs:subClassOf :DatasetSpecification ;
+       rdfs:label "Image"@en .
+
+
+###  https://w3id.org/okn/o/sd#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf <http://schema.org/Organization> ;
+              rdfs:label "Organization"@en .
+
+
 ###  https://w3id.org/okn/o/sd#Parameter
 :Parameter rdf:type owl:Class ;
            rdfs:comment "A parameter of the model."@en ;
            rdfs:label "Parameter"@en .
+
+
+###  https://w3id.org/okn/o/sd#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf <http://schema.org/Person> ;
+        rdfs:label "Person"@en .
+
+
+###  https://w3id.org/okn/o/sd#SVOVariable
+:SVOVariable rdf:type owl:Class ;
+             rdfs:subClassOf :StandardVariable ;
+             rdfs:comment "Variable that follows the Scientific Variables Ontology: http://geoscienceontology.org/"@en ;
+             rdfs:label "SVO variable"@en .
+
+
+###  https://w3id.org/okn/o/sd#SampleExecution
+:SampleExecution rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> .
+
+
+###  https://w3id.org/okn/o/sd#SampleResource
+:SampleResource rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
 
 
 ###  https://w3id.org/okn/o/sd#Software
@@ -411,6 +814,11 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :SoftwareVersion rdf:type owl:Class ;
                  rdfs:subClassOf :Software ;
                  rdfs:label "Software Version"@en .
+
+
+###  https://w3id.org/okn/o/sd#SourceCode
+:SourceCode rdf:type owl:Class ;
+            rdfs:subClassOf <http://schema.org/SoftwareSourceCode> .
 
 
 ###  https://w3id.org/okn/o/sd#StandardVariable
