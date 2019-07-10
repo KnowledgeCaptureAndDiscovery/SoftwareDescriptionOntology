@@ -1,0 +1,433 @@
+<html>
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Modified classes</u></summary>
+<ul><li><a href="#http://www.geoscienceontology.org/geo-upper#Variable">http://www.geoscienceontology.org/geo-upper#Variable</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://www.geoscienceontology.org/geo-upper#Variable&gt; &lt;https://w3id.org/okn/o/sd#SVOVariable&gt; )</li>
+</ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://www.geoscienceontology.org/geo-upper#Variable&gt; &lt;https://w3id.org/okn/o/sd#GSNVariable&gt; )</li>
+</ul>
+</li>
+<li><a href="#DatasetSpecification">https://w3id.org/okn/o/sd#DatasetSpecification</a>
+<ul>
+<li>Added: SubClass of http://purl.org/linked-data/cube#DataStructureDefinition</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added classes</u></summary>
+<ul><li><a href="#http://purl.org/linked-data/cube#DataStructureDefinition">http://purl.org/linked-data/cube#DataStructureDefinition</a>
+</li>
+<li><a href="#http://schema.org/Organization">http://schema.org/Organization</a>
+</li>
+<li><a href="#http://schema.org/Person">http://schema.org/Person</a>
+</li>
+<li><a href="#http://schema.org/SoftwareSourceCode">http://schema.org/SoftwareSourceCode</a>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#Activity">http://www.w3.org/ns/prov#Activity</a>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#Entity">http://www.w3.org/ns/prov#Entity</a>
+</li>
+<li><a href="#Image">https://w3id.org/okn/o/sd#Image</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/okn/o/sd#DatasetSpecification</li>
+</ul>
+</li>
+<li><a href="#Organization">https://w3id.org/okn/o/sd#Organization</a>
+<ul>
+<li>Added: SubClass of http://schema.org/Organization</li>
+</ul>
+</li>
+<li><a href="#Person">https://w3id.org/okn/o/sd#Person</a>
+<ul>
+<li>Added: SubClass of http://schema.org/Person</li>
+</ul>
+</li>
+<li><a href="#SVOVariable">https://w3id.org/okn/o/sd#SVOVariable</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/okn/o/sd#StandardVariable</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://www.geoscienceontology.org/geo-upper#Variable&gt; &lt;https://w3id.org/okn/o/sd#SVOVariable&gt; )</li>
+</ul>
+</li>
+<li><a href="#SampleExecution">https://w3id.org/okn/o/sd#SampleExecution</a>
+<ul>
+<li>Added: SubClass of http://www.w3.org/ns/prov#Activity</li>
+</ul>
+</li>
+<li><a href="#SampleResource">https://w3id.org/okn/o/sd#SampleResource</a>
+<ul>
+<li>Added: SubClass of http://www.w3.org/ns/prov#Entity</li>
+</ul>
+</li>
+<li><a href="#SourceCode">https://w3id.org/okn/o/sd#SourceCode</a>
+<ul>
+<li>Added: SubClass of http://schema.org/SoftwareSourceCode</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted classes</u></summary>
+<ul><li><a href="#http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+</li>
+<li><a href="#DataStructureDefinition">https://w3id.org/okn/o/sd#DataStructureDefinition</a>
+</li>
+<li><a href="#GSNVariable">https://w3id.org/okn/o/sd#GSNVariable</a>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Modified properties</u></summary>
+<ul><li><a href="#http://ontosoft.org/software#hasContainer">http://ontosoft.org/software#hasContainer</a>
+<ul>
+<li>Added: rdfs:label "has container"@en</li>
+</ul>
+</li>
+<li><a href="#hasFileStructure">https://w3id.org/okn/o/sd#hasFileStructure</a>
+<ul>
+<li>Deleted: Range https://w3id.org/okn/o/sd#DataStructureDefinition</li>
+</ul>
+</li>
+<li><a href="#hasPresentation">https://w3id.org/okn/o/sd#hasPresentation</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;https://w3id.org/okn/o/sd#hasPresentation&gt; &lt;https://w3id.org/okn/o/sd#partOfDataset&gt;)</li>
+<li>Added: domain Union of (https://w3id.org/okn/o/sd#DatasetSpecification, https://w3id.org/okn/o/sd#Parameter)</li>
+</ul>
+<ul>
+<li>Deleted: domain https://w3id.org/okn/o/sd#DatasetSpecification</li>
+<li>Deleted: InverseObjectProperties InverseObjectProperties(&lt;https://w3id.org/okn/o/sd#hasDataset&gt; &lt;https://w3id.org/okn/o/sd#hasPresentation&gt;)</li>
+</ul>
+</li>
+<li><a href="#usesUnit">https://w3id.org/okn/o/sd#usesUnit</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#VariablePresentation</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added properties</u></summary>
+<ul><li><a href="#http://schema.org/author">http://schema.org/author</a>
+</li>
+<li><a href="#http://schema.org/contributor">http://schema.org/contributor</a>
+</li>
+<li><a href="#http://schema.org/publisher">http://schema.org/publisher</a>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#used">http://www.w3.org/ns/prov#used</a>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#wasGeneratedBy">http://www.w3.org/ns/prov#wasGeneratedBy</a>
+</li>
+<li><a href="#https://codemeta.github.io/terms/funding">https://codemeta.github.io/terms/funding</a>
+</li>
+<li><a href="#author">https://w3id.org/okn/o/sd#author</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range Union of (https://w3id.org/okn/o/sd#Organization, https://w3id.org/okn/o/sd#Person)</li>
+<li>Added: SubProperty of http://schema.org/author</li>
+</ul>
+</li>
+<li><a href="#compatibleVisualizationSoftware">https://w3id.org/okn/o/sd#compatibleVisualizationSoftware</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+<li>Added: Range https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#contributor">https://w3id.org/okn/o/sd#contributor</a>
+<ul>
+<li>Added: SubProperty of http://schema.org/contributor</li>
+<li>Added: Range https://w3id.org/okn/o/sd#Person</li>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#fundingSource">https://w3id.org/okn/o/sd#fundingSource</a>
+<ul>
+<li>Added: SubProperty of https://codemeta.github.io/terms/funding</li>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range https://w3id.org/okn/o/sd#Organization</li>
+</ul>
+</li>
+<li><a href="#hasContactPerson">https://w3id.org/okn/o/sd#hasContactPerson</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#Person</li>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#hasSampleExecution">https://w3id.org/okn/o/sd#hasSampleExecution</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+<li>Added: Range https://w3id.org/okn/o/sd#SampleExecution</li>
+</ul>
+</li>
+<li><a href="#hasSampleResult">https://w3id.org/okn/o/sd#hasSampleResult</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#SampleResource</li>
+<li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+</ul>
+</li>
+<li><a href="#hasSourceCode">https://w3id.org/okn/o/sd#hasSourceCode</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#SourceCode</li>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#hasVersion">https://w3id.org/okn/o/sd#hasVersion</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#SoftwareVersion</li>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#partOfDataset">https://w3id.org/okn/o/sd#partOfDataset</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;https://w3id.org/okn/o/sd#hasPresentation&gt; &lt;https://w3id.org/okn/o/sd#partOfDataset&gt;)</li>
+<li>Added: domain https://w3id.org/okn/o/sd#VariablePresentation</li>
+<li>Added: Range https://w3id.org/okn/o/sd#DatasetSpecification</li>
+</ul>
+</li>
+<li><a href="#publisher">https://w3id.org/okn/o/sd#publisher</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range Union of (https://w3id.org/okn/o/sd#Organization, https://w3id.org/okn/o/sd#Person)</li>
+<li>Added: SubProperty of http://schema.org/publisher</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted properties</u></summary>
+<ul><li><a href="#hadGrid">https://w3id.org/okn/o/sd#hadGrid</a>
+</li>
+<li><a href="#hasDataset">https://w3id.org/okn/o/sd#hasDataset</a>
+</li>
+<li><a href="#hasSoftwareVersion">https://w3id.org/okn/o/sd#hasSoftwareVersion</a>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Modified data properties</u></summary>
+<ul><li><a href="#http://ontosoft.org/software#hasInstallationInstructions">http://ontosoft.org/software#hasInstallationInstructions</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+<ul>
+<li>Deleted: Domain https://w3id.org/okn/o/sd#SoftwareImage</li>
+</ul>
+</li>
+<li><a href="#hasComponentLocation">https://w3id.org/okn/o/sd#hasComponentLocation</a>
+<ul>
+<li>Added: rdfs:label "has component location"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "has component location"@en</li>
+</ul>
+</li>
+<li><a href="#hasDefaultValue">https://w3id.org/okn/o/sd#hasDefaultValue</a>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#float</li>
+</ul>
+</li>
+<li><a href="#hasVersionId">https://w3id.org/okn/o/sd#hasVersionId</a>
+<ul>
+<li>Added: SubProperty of http://schema.org/identifier</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#http://schema.org/citation">http://schema.org/citation</a>
+</li>
+<li><a href="#http://schema.org/codeRepository">http://schema.org/codeRepository</a>
+</li>
+<li><a href="#http://schema.org/dateCreated">http://schema.org/dateCreated</a>
+</li>
+<li><a href="#http://schema.org/datePublished">http://schema.org/datePublished</a>
+</li>
+<li><a href="#http://schema.org/description">http://schema.org/description</a>
+</li>
+<li><a href="#http://schema.org/email">http://schema.org/email</a>
+</li>
+<li><a href="#http://schema.org/identifier">http://schema.org/identifier</a>
+</li>
+<li><a href="#http://schema.org/keywords">http://schema.org/keywords</a>
+</li>
+<li><a href="#http://schema.org/license">http://schema.org/license</a>
+</li>
+<li><a href="#http://schema.org/memoryRequirements">http://schema.org/memoryRequirements</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/name">http://schema.org/name</a>
+</li>
+<li><a href="#http://schema.org/operatingSystems">http://schema.org/operatingSystems</a>
+</li>
+<li><a href="#http://schema.org/processorRequirements">http://schema.org/processorRequirements</a>
+</li>
+<li><a href="#http://schema.org/programmingLanguage">http://schema.org/programmingLanguage</a>
+</li>
+<li><a href="#http://schema.org/screenshot">http://schema.org/screenshot</a>
+</li>
+<li><a href="#http://schema.org/softwareRequirements">http://schema.org/softwareRequirements</a>
+</li>
+<li><a href="#https://codemeta.github.io/terms/referencePublication">https://codemeta.github.io/terms/referencePublication</a>
+</li>
+<li><a href="#citation">https://w3id.org/okn/o/sd#citation</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of http://schema.org/citation</li>
+</ul>
+</li>
+<li><a href="#codeRepository">https://w3id.org/okn/o/sd#codeRepository</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: SubProperty of http://schema.org/codeRepository</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#SourceCode</li>
+</ul>
+</li>
+<li><a href="#dateCreated">https://w3id.org/okn/o/sd#dateCreated</a>
+<ul>
+<li>Added: SubProperty of http://schema.org/dateCreated</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#dateTime</li>
+</ul>
+</li>
+<li><a href="#datePublished">https://w3id.org/okn/o/sd#datePublished</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#dateTime</li>
+<li>Added: SubProperty of http://schema.org/datePublished</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#description">https://w3id.org/okn/o/sd#description</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: SubProperty of http://schema.org/description</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#email">https://w3id.org/okn/o/sd#email</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of http://schema.org/email</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Person</li>
+</ul>
+</li>
+<li><a href="#hasFAQ">https://w3id.org/okn/o/sd#hasFAQ</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#hasInvocationCommand">https://w3id.org/okn/o/sd#hasInvocationCommand</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain Union of (https://w3id.org/okn/o/sd#SampleExecution, https://w3id.org/okn/o/sd#SoftwareConfiguration)</li>
+</ul>
+</li>
+<li><a href="#hasPurpose">https://w3id.org/okn/o/sd#hasPurpose</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#hasSampleVisualization">https://w3id.org/okn/o/sd#hasSampleVisualization</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#hasTypicalDataSource">https://w3id.org/okn/o/sd#hasTypicalDataSource</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#identifier">https://w3id.org/okn/o/sd#identifier</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of http://schema.org/identifier</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#keywords">https://w3id.org/okn/o/sd#keywords</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: SubProperty of http://schema.org/keywords</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#license">https://w3id.org/okn/o/sd#license</a>
+<ul>
+<li>Added: Domain Union of (https://w3id.org/okn/o/sd#Software, https://w3id.org/okn/o/sd#SourceCode)</li>
+<li>Added: SubProperty of http://schema.org/license</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+</ul>
+</li>
+<li><a href="#logo">https://w3id.org/okn/o/sd#logo</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+</ul>
+</li>
+<li><a href="#memoryRequirements">https://w3id.org/okn/o/sd#memoryRequirements</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of http://schema.org/memoryRequirements</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#name">https://w3id.org/okn/o/sd#name</a>
+<ul>
+<li>Added: SubProperty of http://schema.org/name</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#operatingSystems">https://w3id.org/okn/o/sd#operatingSystems</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of http://schema.org/operatingSystems</li>
+</ul>
+</li>
+<li><a href="#processorRequirements">https://w3id.org/okn/o/sd#processorRequirements</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: SubProperty of http://schema.org/processorRequirements</li>
+</ul>
+</li>
+<li><a href="#programmingLanguage">https://w3id.org/okn/o/sd#programmingLanguage</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#SourceCode</li>
+<li>Added: SubProperty of http://schema.org/programmingLanguage</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#referencePublication">https://w3id.org/okn/o/sd#referencePublication</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of https://codemeta.github.io/terms/referencePublication</li>
+</ul>
+</li>
+<li><a href="#screenshot">https://w3id.org/okn/o/sd#screenshot</a>
+<ul>
+<li>Added: SubProperty of http://schema.org/screenshot</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#shortDescription">https://w3id.org/okn/o/sd#shortDescription</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of https://w3id.org/okn/o/sd#description</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#softwareRequirements">https://w3id.org/okn/o/sd#softwareRequirements</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of http://schema.org/softwareRequirements</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#supportDetails">https://w3id.org/okn/o/sd#supportDetails</a>
+</li>
+<li><a href="#website">https://w3id.org/okn/o/sd#website</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted data properties</u></summary>
+<ul><li><a href="#http://purl.org/dc/terms/description">http://purl.org/dc/terms/description</a>
+</li>
+</ul></details></div>
+<html>
