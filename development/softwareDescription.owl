@@ -69,8 +69,8 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://ontosoft.org/software#hasSoftwareImage
-<http://ontosoft.org/software#hasSoftwareImage> rdf:type owl:ObjectProperty ;
+###  https://w3id.org/okn/o/sd#hasSoftwareImage
+<https://w3id.org/okn/o/sd#hasSoftwareImage> rdf:type owl:ObjectProperty ;
                                                 rdfs:domain :SoftwareConfiguration ;
                                                 rdfs:range :SoftwareImage ;
                                                 rdfs:comment "Function to link a function with its corresponding container"@en ;
@@ -261,8 +261,8 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://ontosoft.org/software#hasExecutionCommand
-<http://ontosoft.org/software#hasExecutionCommand> rdf:type owl:DatatypeProperty ;
+###  https://w3id.org/okn/o/sd#hasExecutionCommand
+<https://w3id.org/okn/o/sd#hasExecutionCommand> rdf:type owl:DatatypeProperty ;
                                                    rdfs:domain [ rdf:type owl:Class ;
                                                                  owl:unionOf ( :SampleExecution
                                                                                :SoftwareConfiguration
@@ -274,24 +274,16 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                                    rdfs:label "has execution command"@en .
 
 
-###  http://ontosoft.org/software#hasIdentifier
-<http://ontosoft.org/software#hasIdentifier> rdf:type owl:DatatypeProperty ;
-                                             rdfs:domain :SoftwareImage ;
-                                             rdfs:range xsd:string ;
-                                             rdfs:comment "Container id"@en ;
-                                             rdfs:label "has container"@en .
-
-
-###  http://ontosoft.org/software#hasImplementationScriptLocation
-<http://ontosoft.org/software#hasImplementationScriptLocation> rdf:type owl:DatatypeProperty ;
+###  https://w3id.org/okn/o/sd#hasImplementationScriptLocation
+<https://w3id.org/okn/o/sd#hasImplementationScriptLocation> rdf:type owl:DatatypeProperty ;
                                                                rdfs:domain :SoftwareConfiguration ;
                                                                rdfs:range xsd:anyURI ;
                                                                rdfs:comment "Property that points to the main runnable script for the current function"@en ;
                                                                rdfs:label "has implementation script location"@en .
 
 
-###  http://ontosoft.org/software#hasInstallationInstructions
-<http://ontosoft.org/software#hasInstallationInstructions> rdf:type owl:DatatypeProperty ;
+###  https://w3id.org/okn/o/sd#hasInstallationInstructions
+<https://w3id.org/okn/o/sd#hasInstallationInstructions> rdf:type owl:DatatypeProperty ;
                                                            rdfs:domain :Software ;
                                                            rdfs:range xsd:string ;
                                                            rdfs:label "has installation instructions"@en .
