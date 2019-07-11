@@ -69,12 +69,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://ontosoft.org/software#hasContainer
-<http://ontosoft.org/software#hasContainer> rdf:type owl:ObjectProperty ;
-                                            rdfs:domain :SoftwareConfiguration ;
-                                            rdfs:range :SoftwareImage ;
-                                            rdfs:comment "Function to link a function with its corresponding container"@en ;
-                                            rdfs:label "has container"@en .
+###  http://ontosoft.org/software#hasSoftwareImage
+<http://ontosoft.org/software#hasSoftwareImage> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain :SoftwareConfiguration ;
+                                                rdfs:range :SoftwareImage ;
+                                                rdfs:comment "Function to link a function with its corresponding container"@en ;
+                                                rdfs:label "has software image"@en .
 
 
 ###  http://schema.org/author
@@ -263,7 +263,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  http://ontosoft.org/software#hasExecutionCommand
 <http://ontosoft.org/software#hasExecutionCommand> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain :SoftwareImage ;
+                                                   rdfs:domain [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( :SampleExecution
+                                                                               :SoftwareConfiguration
+                                                                               :SoftwareImage
+                                                                             )
+                                                               ] ;
                                                    rdfs:range xsd:string ;
                                                    rdfs:comment "Execution instructions on how to run the image"@en ;
                                                    rdfs:label "has execution command"@en .
@@ -493,16 +498,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
            rdfs:label "has format"@en .
 
 
-###  https://w3id.org/okn/o/sd#hasInvocationCommand
-:hasInvocationCommand rdf:type owl:DatatypeProperty ;
-                      rdfs:domain [ rdf:type owl:Class ;
-                                    owl:unionOf ( :SampleExecution
-                                                  :SoftwareConfiguration
-                                                )
-                                  ] ;
-                      rdfs:range xsd:string .
-
-
 ###  https://w3id.org/okn/o/sd#hasLongName
 :hasLongName rdf:type owl:DatatypeProperty ;
              rdfs:domain :VariablePresentation ;
@@ -698,10 +693,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  http://qudt.org/schema/qudt/Unit
 <http://qudt.org/schema/qudt/Unit> rdf:type owl:Class ;
                                    rdfs:isDefinedBy <http://qudt.org/schema/qudt/> .
-
-
-###  http://schema.org/Dataset
-<http://schema.org/Dataset> rdf:type owl:Class .
 
 
 ###  http://schema.org/Organization

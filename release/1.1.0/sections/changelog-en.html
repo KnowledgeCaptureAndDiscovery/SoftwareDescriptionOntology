@@ -66,7 +66,9 @@
 </ul>
 </li>
 </ul></details><details><summary><u>Deleted classes</u></summary>
-<ul><li><a href="#http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+<ul><li><a href="#http://schema.org/Dataset">http://schema.org/Dataset</a>
+</li>
+<li><a href="#http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
 </li>
 <li><a href="#DataStructureDefinition">https://w3id.org/okn/o/sd#DataStructureDefinition</a>
 </li>
@@ -74,12 +76,7 @@
 </li>
 </ul></details><h3 id="changeProp" class="list">Object Properties</h3>
 <details><summary><u>Modified properties</u></summary>
-<ul><li><a href="#http://ontosoft.org/software#hasContainer">http://ontosoft.org/software#hasContainer</a>
-<ul>
-<li>Added: rdfs:label "has container"@en</li>
-</ul>
-</li>
-<li><a href="#hasFileStructure">https://w3id.org/okn/o/sd#hasFileStructure</a>
+<ul><li><a href="#hasFileStructure">https://w3id.org/okn/o/sd#hasFileStructure</a>
 <ul>
 <li>Deleted: Range https://w3id.org/okn/o/sd#DataStructureDefinition</li>
 </ul>
@@ -100,7 +97,13 @@
 </ul>
 </li>
 </ul></details><details><summary><u>Added properties</u></summary>
-<ul><li><a href="#http://schema.org/author">http://schema.org/author</a>
+<ul><li><a href="#http://ontosoft.org/software#hasSoftwareImage">http://ontosoft.org/software#hasSoftwareImage</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#SoftwareImage</li>
+<li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/author">http://schema.org/author</a>
 </li>
 <li><a href="#http://schema.org/contributor">http://schema.org/contributor</a>
 </li>
@@ -184,7 +187,9 @@
 </ul>
 </li>
 </ul></details><details><summary><u>Deleted properties</u></summary>
-<ul><li><a href="#hadGrid">https://w3id.org/okn/o/sd#hadGrid</a>
+<ul><li><a href="#http://ontosoft.org/software#hasContainer">http://ontosoft.org/software#hasContainer</a>
+</li>
+<li><a href="#hadGrid">https://w3id.org/okn/o/sd#hadGrid</a>
 </li>
 <li><a href="#hasDataset">https://w3id.org/okn/o/sd#hasDataset</a>
 </li>
@@ -192,7 +197,15 @@
 </li>
 </ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
 <details><summary><u>Modified data properties</u></summary>
-<ul><li><a href="#http://ontosoft.org/software#hasInstallationInstructions">http://ontosoft.org/software#hasInstallationInstructions</a>
+<ul><li><a href="#http://ontosoft.org/software#hasExecutionCommand">http://ontosoft.org/software#hasExecutionCommand</a>
+<ul>
+<li>Added: Domain Union of (https://w3id.org/okn/o/sd#SampleExecution, https://w3id.org/okn/o/sd#SoftwareConfiguration, https://w3id.org/okn/o/sd#SoftwareImage)</li>
+</ul>
+<ul>
+<li>Deleted: Domain https://w3id.org/okn/o/sd#SoftwareImage</li>
+</ul>
+</li>
+<li><a href="#http://ontosoft.org/software#hasInstallationInstructions">http://ontosoft.org/software#hasInstallationInstructions</a>
 <ul>
 <li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
 </ul>
@@ -303,12 +316,6 @@
 <ul>
 <li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
-</ul>
-</li>
-<li><a href="#hasInvocationCommand">https://w3id.org/okn/o/sd#hasInvocationCommand</a>
-<ul>
-<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
-<li>Added: Domain Union of (https://w3id.org/okn/o/sd#SampleExecution, https://w3id.org/okn/o/sd#SoftwareConfiguration)</li>
 </ul>
 </li>
 <li><a href="#hasPurpose">https://w3id.org/okn/o/sd#hasPurpose</a>

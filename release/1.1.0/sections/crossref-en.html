@@ -418,14 +418,14 @@ This section provides details for each class and property defined by The Softwar
             <a href="#compatibleVisualizationSoftware"
                title="https://w3id.org/okn/o/sd#compatibleVisualizationSoftware">compatible visualization software</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasComponentLocation" title="https://w3id.org/okn/o/sd#hasComponentLocation">has component location</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://ontosoft.org/software#hasContainer" title="http://ontosoft.org/software#hasContainer">has container</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://ontosoft.org/software#hasImplementationScriptLocation"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://ontosoft.org/software#hasImplementationScriptLocation"
                title="http://ontosoft.org/software#hasImplementationScriptLocation">has implementation script location</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInput" title="https://w3id.org/okn/o/sd#hasInput">has input</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasOutput" title="https://w3id.org/okn/o/sd#hasOutput">has output</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasParameter" title="https://w3id.org/okn/o/sd#hasParameter">has parameter</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSampleExecution" title="https://w3id.org/okn/o/sd#hasSampleExecution">has sample execution</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSampleResult" title="https://w3id.org/okn/o/sd#hasSampleResult">has sample result</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://ontosoft.org/software#hasSoftwareImage" title="http://ontosoft.org/software#hasSoftwareImage">has software image</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSupportScriptLocation"
                title="https://w3id.org/okn/o/sd#hasSupportScriptLocation">has support script location</a>
             <sup class="type-dp" title="data property">dp</sup>
@@ -453,12 +453,11 @@ This section provides details for each class and property defined by The Softwar
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://ontosoft.org/software#hasIdentifier" title="http://ontosoft.org/software#hasIdentifier">has container</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://ontosoft.org/software#hasExecutionCommand" title="http://ontosoft.org/software#hasExecutionCommand">has execution command</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#http://ontosoft.org/software#hasContainer" title="http://ontosoft.org/software#hasContainer">has container</a>
+            <a href="#http://ontosoft.org/software#hasSoftwareImage" title="http://ontosoft.org/software#hasSoftwareImage">has software image</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -715,9 +714,6 @@ This section provides details for each class and property defined by The Softwar
          <a href="#hasContactPerson" title="https://w3id.org/okn/o/sd#hasContactPerson">has contact person</a>
       </li>
       <li>
-         <a href="#http://ontosoft.org/software#hasContainer" title="http://ontosoft.org/software#hasContainer">has container</a>
-      </li>
-      <li>
          <a href="#hasFileStructure" title="https://w3id.org/okn/o/sd#hasFileStructure">has file structure</a>
       </li>
       <li>
@@ -741,6 +737,9 @@ This section provides details for each class and property defined by The Softwar
          <a href="#hasSampleResult" title="https://w3id.org/okn/o/sd#hasSampleResult">
             <span>has sample result</span>
          </a>
+      </li>
+      <li>
+         <a href="#http://ontosoft.org/software#hasSoftwareImage" title="http://ontosoft.org/software#hasSoftwareImage">has software image</a>
       </li>
       <li>
          <a href="#hasVersion" title="https://w3id.org/okn/o/sd#hasVersion">has software version</a>
@@ -967,31 +966,6 @@ This section provides details for each class and property defined by The Softwar
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://ontosoft.org/software#hasContainer">
-      <h3>has container<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://ontosoft.org/software#hasContainer</p>
-      <div class="comment">
-         <span class="markdown">Function to link a function with its corresponding container</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#SoftwareImage" title="https://w3id.org/okn/o/sd#SoftwareImage">Software Image</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasFileStructure">
       <h3>has file structure<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1159,6 +1133,31 @@ This section provides details for each class and property defined by The Softwar
             <dt>has range</dt>
             <dd>
                <a href="#SampleResource" title="https://w3id.org/okn/o/sd#SampleResource">sample resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://ontosoft.org/software#hasSoftwareImage">
+      <h3>has software image<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ontosoft.org/software#hasSoftwareImage</p>
+      <div class="comment">
+         <span class="markdown">Function to link a function with its corresponding container</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SoftwareImage" title="https://w3id.org/okn/o/sd#SoftwareImage">Software Image</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1428,11 +1427,6 @@ This section provides details for each class and property defined by The Softwar
       <li>
          <a href="#http://ontosoft.org/software#hasInstallationInstructions"
             title="http://ontosoft.org/software#hasInstallationInstructions">has installation instructions</a>
-      </li>
-      <li>
-         <a href="#hasInvocationCommand" title="https://w3id.org/okn/o/sd#hasInvocationCommand">
-            <span>has invocation command</span>
-         </a>
       </li>
       <li>
          <a href="#hasLongName" title="https://w3id.org/okn/o/sd#hasLongName">has long name</a>
@@ -2023,6 +2017,12 @@ This section provides details for each class and property defined by The Softwar
          <dl>
             <dt>has domain</dt>
             <dd>
+               <a href="#SampleExecution" title="https://w3id.org/okn/o/sd#SampleExecution">sample execution</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#SoftwareImage" title="https://w3id.org/okn/o/sd#SoftwareImage">Software Image</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -2114,30 +2114,6 @@ This section provides details for each class and property defined by The Softwar
             <dt>has domain</dt>
             <dd>
                <a href="#Software" title="https://w3id.org/okn/o/sd#Software">Software</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasInvocationCommand">
-      <h3>has invocation command<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasInvocationCommand</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#SampleExecution" title="https://w3id.org/okn/o/sd#SampleExecution">sample execution</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#SoftwareConfiguration" title="https://w3id.org/okn/o/sd#SoftwareConfiguration">Software Configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
