@@ -579,7 +579,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#identifier
 :identifier rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf <http://schema.org/identifier> ;
-            rdfs:domain :Software ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Organization
+                                        :Person
+                                        :Software
+                                      )
+                        ] ;
             rdfs:range xsd:string ;
             rdfs:label "identifier"@en .
 
@@ -679,7 +684,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#website
 :website rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Software ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Organization
+                                     :Person
+                                     :Software
+                                   )
+                     ] ;
          rdfs:range xsd:anyURI ;
          rdfs:comment "Website of the software"@en ;
          rdfs:label "website"@en .
