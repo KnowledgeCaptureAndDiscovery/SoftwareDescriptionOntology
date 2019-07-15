@@ -97,13 +97,7 @@
 </ul>
 </li>
 </ul></details><details><summary><u>Added properties</u></summary>
-<ul><li><a href="#http://ontosoft.org/software#hasSoftwareImage">http://ontosoft.org/software#hasSoftwareImage</a>
-<ul>
-<li>Added: Range https://w3id.org/okn/o/sd#SoftwareImage</li>
-<li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
-</ul>
-</li>
-<li><a href="#http://schema.org/author">http://schema.org/author</a>
+<ul><li><a href="#http://schema.org/author">http://schema.org/author</a>
 </li>
 <li><a href="#http://schema.org/contributor">http://schema.org/contributor</a>
 </li>
@@ -160,6 +154,12 @@
 <li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
 </ul>
 </li>
+<li><a href="#hasSoftwareImage">https://w3id.org/okn/o/sd#hasSoftwareImage</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#SoftwareImage</li>
+<li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+</ul>
+</li>
 <li><a href="#hasSourceCode">https://w3id.org/okn/o/sd#hasSourceCode</a>
 <ul>
 <li>Added: Range https://w3id.org/okn/o/sd#SourceCode</li>
@@ -197,23 +197,7 @@
 </li>
 </ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
 <details><summary><u>Modified data properties</u></summary>
-<ul><li><a href="#http://ontosoft.org/software#hasExecutionCommand">http://ontosoft.org/software#hasExecutionCommand</a>
-<ul>
-<li>Added: Domain Union of (https://w3id.org/okn/o/sd#SampleExecution, https://w3id.org/okn/o/sd#SoftwareConfiguration, https://w3id.org/okn/o/sd#SoftwareImage)</li>
-</ul>
-<ul>
-<li>Deleted: Domain https://w3id.org/okn/o/sd#SoftwareImage</li>
-</ul>
-</li>
-<li><a href="#http://ontosoft.org/software#hasInstallationInstructions">http://ontosoft.org/software#hasInstallationInstructions</a>
-<ul>
-<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
-</ul>
-<ul>
-<li>Deleted: Domain https://w3id.org/okn/o/sd#SoftwareImage</li>
-</ul>
-</li>
-<li><a href="#hasComponentLocation">https://w3id.org/okn/o/sd#hasComponentLocation</a>
+<ul><li><a href="#hasComponentLocation">https://w3id.org/okn/o/sd#hasComponentLocation</a>
 <ul>
 <li>Added: rdfs:label "has component location"@en</li>
 </ul>
@@ -312,7 +296,31 @@
 <li>Added: Domain https://w3id.org/okn/o/sd#Person</li>
 </ul>
 </li>
+<li><a href="#hasExecutionCommand">https://w3id.org/okn/o/sd#hasExecutionCommand</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain Union of (https://w3id.org/okn/o/sd#SampleExecution, https://w3id.org/okn/o/sd#SoftwareConfiguration, https://w3id.org/okn/o/sd#SoftwareImage)</li>
+</ul>
+</li>
 <li><a href="#hasFAQ">https://w3id.org/okn/o/sd#hasFAQ</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#hasFixedValue">https://w3id.org/okn/o/sd#hasFixedValue</a>
+<ul>
+<li>Added: Domain Union of (https://w3id.org/okn/o/sd#DatasetSpecification, https://w3id.org/okn/o/sd#Parameter)</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#hasImplementationScriptLocation">https://w3id.org/okn/o/sd#hasImplementationScriptLocation</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+</ul>
+</li>
+<li><a href="#hasInstallationInstructions">https://w3id.org/okn/o/sd#hasInstallationInstructions</a>
 <ul>
 <li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
@@ -434,7 +442,15 @@
 </ul>
 </li>
 </ul></details><details><summary><u>Deleted data properties</u></summary>
-<ul><li><a href="#http://purl.org/dc/terms/description">http://purl.org/dc/terms/description</a>
+<ul><li><a href="#http://ontosoft.org/software#hasExecutionCommand">http://ontosoft.org/software#hasExecutionCommand</a>
+</li>
+<li><a href="#http://ontosoft.org/software#hasIdentifier">http://ontosoft.org/software#hasIdentifier</a>
+</li>
+<li><a href="#http://ontosoft.org/software#hasImplementationScriptLocation">http://ontosoft.org/software#hasImplementationScriptLocation</a>
+</li>
+<li><a href="#http://ontosoft.org/software#hasInstallationInstructions">http://ontosoft.org/software#hasInstallationInstructions</a>
+</li>
+<li><a href="#http://purl.org/dc/terms/description">http://purl.org/dc/terms/description</a>
 </li>
 </ul></details></div>
 <html>
