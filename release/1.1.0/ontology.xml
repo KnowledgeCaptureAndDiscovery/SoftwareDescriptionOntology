@@ -148,6 +148,20 @@
     
 
 
+    <!-- http://schema.org/screenshot -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/screenshot"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource"/>
+    
+
+
     <!-- http://www.w3.org/ns/prov#used -->
 
 
@@ -255,6 +269,25 @@
     
 
 
+    <!-- https://w3id.org/okn/o/sd#hasFixedValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasFixedValue">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#DatasetSpecification"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Parameter"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#SampleResource"/>
+        <rdfs:comment xml:lang="en">Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region.</rdfs:comment>
+        <rdfs:label xml:lang="en">has fixed value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/okn/o/sd#hasInput -->
 
 
@@ -331,6 +364,17 @@
     
 
 
+    <!-- https://w3id.org/okn/o/sd#hasSampleVisualization -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasSampleVisualization">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#Image"/>
+        <rdfs:comment xml:lang="en">A typical sample visualization of the softwware outputs</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/okn/o/sd#hasSoftwareImage -->
 
 
@@ -403,6 +447,17 @@
             </owl:Class>
         </rdfs:range>
         <rdfs:label xml:lang="en">publisher</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#screenshot -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#screenshot">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/screenshot"/>
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#Image"/>
     </owl:ObjectProperty>
     
 
@@ -546,17 +601,17 @@
     
 
 
-    <!-- http://schema.org/screenshot -->
-
-
-    <owl:DatatypeProperty rdf:about="http://schema.org/screenshot"/>
-    
-
-
     <!-- http://schema.org/softwareRequirements -->
 
 
     <owl:DatatypeProperty rdf:about="http://schema.org/softwareRequirements"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#value -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#value"/>
     
 
 
@@ -587,6 +642,18 @@
         <rdfs:subPropertyOf rdf:resource="http://schema.org/codeRepository"/>
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#SourceCode"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#dataCatalogIdentifier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#dataCatalogIdentifier">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/identifier"/>
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#SampleResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An identifier for resources with metadata entries in a data catalog</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -736,6 +803,16 @@
     
 
 
+    <!-- https://w3id.org/okn/o/sd#hasDownloadURL -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#hasDownloadURL">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/okn/o/sd#hasExecutionCommand -->
 
 
@@ -762,25 +839,6 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#hasFAQ">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/okn/o/sd#hasFixedValue -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#hasFixedValue">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#DatasetSpecification"/>
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Parameter"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region.</rdfs:comment>
-        <rdfs:label xml:lang="en">has fixed value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -876,16 +934,6 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#hasPurpose">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/okn/o/sd#hasSampleVisualization -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#hasSampleVisualization">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
@@ -1058,17 +1106,6 @@
         <rdfs:subPropertyOf rdf:resource="https://codemeta.github.io/terms/referencePublication"/>
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/okn/o/sd#screenshot -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#screenshot">
-        <rdfs:subPropertyOf rdf:resource="http://schema.org/screenshot"/>
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 

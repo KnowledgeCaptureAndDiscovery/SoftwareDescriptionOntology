@@ -103,6 +103,10 @@
 </li>
 <li><a href="#http://schema.org/publisher">http://schema.org/publisher</a>
 </li>
+<li><a href="#http://schema.org/screenshot">http://schema.org/screenshot</a>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#hadPrimarySource">http://www.w3.org/ns/prov#hadPrimarySource</a>
+</li>
 <li><a href="#http://www.w3.org/ns/prov#used">http://www.w3.org/ns/prov#used</a>
 </li>
 <li><a href="#http://www.w3.org/ns/prov#wasGeneratedBy">http://www.w3.org/ns/prov#wasGeneratedBy</a>
@@ -142,6 +146,12 @@
 <li>Added: domain https://w3id.org/okn/o/sd#Software</li>
 </ul>
 </li>
+<li><a href="#hasFixedValue">https://w3id.org/okn/o/sd#hasFixedValue</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#SampleResource</li>
+<li>Added: domain Union of (https://w3id.org/okn/o/sd#DatasetSpecification, https://w3id.org/okn/o/sd#Parameter)</li>
+</ul>
+</li>
 <li><a href="#hasSampleExecution">https://w3id.org/okn/o/sd#hasSampleExecution</a>
 <ul>
 <li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
@@ -152,6 +162,12 @@
 <ul>
 <li>Added: Range https://w3id.org/okn/o/sd#SampleResource</li>
 <li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+</ul>
+</li>
+<li><a href="#hasSampleVisualization">https://w3id.org/okn/o/sd#hasSampleVisualization</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range https://w3id.org/okn/o/sd#Image</li>
 </ul>
 </li>
 <li><a href="#hasSoftwareImage">https://w3id.org/okn/o/sd#hasSoftwareImage</a>
@@ -184,6 +200,13 @@
 <li>Added: domain https://w3id.org/okn/o/sd#Software</li>
 <li>Added: Range Union of (https://w3id.org/okn/o/sd#Organization, https://w3id.org/okn/o/sd#Person)</li>
 <li>Added: SubProperty of http://schema.org/publisher</li>
+</ul>
+</li>
+<li><a href="#screenshot">https://w3id.org/okn/o/sd#screenshot</a>
+<ul>
+<li>Added: SubProperty of http://schema.org/screenshot</li>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range https://w3id.org/okn/o/sd#Image</li>
 </ul>
 </li>
 </ul></details><details><summary><u>Deleted properties</u></summary>
@@ -248,9 +271,9 @@
 </li>
 <li><a href="#http://schema.org/programmingLanguage">http://schema.org/programmingLanguage</a>
 </li>
-<li><a href="#http://schema.org/screenshot">http://schema.org/screenshot</a>
-</li>
 <li><a href="#http://schema.org/softwareRequirements">http://schema.org/softwareRequirements</a>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#value">http://www.w3.org/ns/prov#value</a>
 </li>
 <li><a href="#https://codemeta.github.io/terms/referencePublication">https://codemeta.github.io/terms/referencePublication</a>
 </li>
@@ -266,6 +289,13 @@
 <li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
 <li>Added: SubProperty of http://schema.org/codeRepository</li>
 <li>Added: Domain https://w3id.org/okn/o/sd#SourceCode</li>
+</ul>
+</li>
+<li><a href="#dataCatalogIdentifier">https://w3id.org/okn/o/sd#dataCatalogIdentifier</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of http://schema.org/identifier</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#SampleResource</li>
 </ul>
 </li>
 <li><a href="#dateCreated">https://w3id.org/okn/o/sd#dateCreated</a>
@@ -296,6 +326,12 @@
 <li>Added: Domain https://w3id.org/okn/o/sd#Person</li>
 </ul>
 </li>
+<li><a href="#hasDownloadURL">https://w3id.org/okn/o/sd#hasDownloadURL</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
 <li><a href="#hasExecutionCommand">https://w3id.org/okn/o/sd#hasExecutionCommand</a>
 <ul>
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
@@ -305,12 +341,6 @@
 <li><a href="#hasFAQ">https://w3id.org/okn/o/sd#hasFAQ</a>
 <ul>
 <li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
-<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
-</ul>
-</li>
-<li><a href="#hasFixedValue">https://w3id.org/okn/o/sd#hasFixedValue</a>
-<ul>
-<li>Added: Domain Union of (https://w3id.org/okn/o/sd#DatasetSpecification, https://w3id.org/okn/o/sd#Parameter)</li>
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
 </ul>
 </li>
@@ -329,12 +359,6 @@
 <li><a href="#hasPurpose">https://w3id.org/okn/o/sd#hasPurpose</a>
 <ul>
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
-<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
-</ul>
-</li>
-<li><a href="#hasSampleVisualization">https://w3id.org/okn/o/sd#hasSampleVisualization</a>
-<ul>
-<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
 <li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
 </ul>
 </li>
@@ -410,13 +434,6 @@
 <li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
 <li>Added: SubProperty of https://codemeta.github.io/terms/referencePublication</li>
-</ul>
-</li>
-<li><a href="#screenshot">https://w3id.org/okn/o/sd#screenshot</a>
-<ul>
-<li>Added: SubProperty of http://schema.org/screenshot</li>
-<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
-<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
 </ul>
 </li>
 <li><a href="#shortDescription">https://w3id.org/okn/o/sd#shortDescription</a>

@@ -84,6 +84,14 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                               rdfs:isDefinedBy <http://schema.org/> .
 
 
+###  http://schema.org/screenshot
+<http://schema.org/screenshot> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#hadPrimarySource
+<http://www.w3.org/ns/prov#hadPrimarySource> rdf:type owl:ObjectProperty .
+
+
 ###  http://www.w3.org/ns/prov#used
 <http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty .
 
@@ -151,6 +159,18 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "has file structure"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasFixedValue
+:hasFixedValue rdf:type owl:ObjectProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :DatasetSpecification
+                                           :Parameter
+                                         )
+                           ] ;
+               rdfs:range :SampleResource ;
+               rdfs:comment "Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region."@en ;
+               rdfs:label "has fixed value"@en .
+
+
 ###  https://w3id.org/okn/o/sd#hasInput
 :hasInput rdf:type owl:ObjectProperty ;
           rdfs:domain :SoftwareConfiguration ;
@@ -200,6 +220,13 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                  rdfs:range :SampleResource .
 
 
+###  https://w3id.org/okn/o/sd#hasSampleVisualization
+:hasSampleVisualization rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Software ;
+                        rdfs:range :Image ;
+                        rdfs:comment "A typical sample visualization of the softwware outputs"@en .
+
+
 ###  https://w3id.org/okn/o/sd#hasSoftwareImage
 :hasSoftwareImage rdf:type owl:ObjectProperty ;
                   rdfs:domain :SoftwareConfiguration ;
@@ -247,6 +274,13 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                     )
                       ] ;
            rdfs:label "publisher"@en .
+
+
+###  https://w3id.org/okn/o/sd#screenshot
+:screenshot rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://schema.org/screenshot> ;
+            rdfs:domain :Software ;
+            rdfs:range :Image .
 
 
 ###  https://w3id.org/okn/o/sd#usesUnit
@@ -326,12 +360,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 <http://schema.org/programmingLanguage> rdf:type owl:DatatypeProperty .
 
 
-###  http://schema.org/screenshot
-<http://schema.org/screenshot> rdf:type owl:DatatypeProperty .
-
-
 ###  http://schema.org/softwareRequirements
 <http://schema.org/softwareRequirements> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/ns/prov#value
+<http://www.w3.org/ns/prov#value> rdf:type owl:DatatypeProperty .
 
 
 ###  https://codemeta.github.io/terms/referencePublication
@@ -351,6 +385,14 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                 rdfs:subPropertyOf <http://schema.org/codeRepository> ;
                 rdfs:domain :SourceCode ;
                 rdfs:range xsd:anyURI .
+
+
+###  https://w3id.org/okn/o/sd#dataCatalogIdentifier
+:dataCatalogIdentifier rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf <http://schema.org/identifier> ;
+                       rdfs:domain :SampleResource ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "An identifier for resources with metadata entries in a data catalog"@en .
 
 
 ###  https://w3id.org/okn/o/sd#dateCreated
@@ -448,6 +490,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "has documentation"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasDownloadURL
+:hasDownloadURL rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Software ;
+                rdfs:range xsd:anyURI .
+
+
 ###  https://w3id.org/okn/o/sd#hasExecutionCommand
 :hasExecutionCommand rdf:type owl:DatatypeProperty ;
                      rdfs:domain [ rdf:type owl:Class ;
@@ -465,18 +513,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasFAQ rdf:type owl:DatatypeProperty ;
         rdfs:domain :Software ;
         rdfs:range xsd:string .
-
-
-###  https://w3id.org/okn/o/sd#hasFixedValue
-:hasFixedValue rdf:type owl:DatatypeProperty ;
-               rdfs:domain [ rdf:type owl:Class ;
-                             owl:unionOf ( :DatasetSpecification
-                                           :Parameter
-                                         )
-                           ] ;
-               rdfs:range xsd:string ;
-               rdfs:comment "Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region."@en ;
-               rdfs:label "has fixed value"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasFormat
@@ -538,12 +574,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasPurpose rdf:type owl:DatatypeProperty ;
             rdfs:domain :Software ;
             rdfs:range xsd:string .
-
-
-###  https://w3id.org/okn/o/sd#hasSampleVisualization
-:hasSampleVisualization rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :Software ;
-                        rdfs:range xsd:anyURI .
 
 
 ###  https://w3id.org/okn/o/sd#hasShortName
@@ -654,13 +684,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                       rdfs:subPropertyOf <https://codemeta.github.io/terms/referencePublication> ;
                       rdfs:domain :Software ;
                       rdfs:range xsd:string .
-
-
-###  https://w3id.org/okn/o/sd#screenshot
-:screenshot rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf <http://schema.org/screenshot> ;
-            rdfs:domain :Software ;
-            rdfs:range xsd:anyURI .
 
 
 ###  https://w3id.org/okn/o/sd#shortDescription
