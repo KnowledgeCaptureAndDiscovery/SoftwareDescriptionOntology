@@ -232,6 +232,11 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <https://w3id.org/okn/o/sd#hasVersion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#SoftwareVersion> .
 <https://w3id.org/okn/o/sd#hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has software version"@en .
 # 
+# https://w3id.org/okn/o/sd#logo
+<https://w3id.org/okn/o/sd#logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#logo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#logo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#Image> .
+# 
 # https://w3id.org/okn/o/sd#partOfDataset
 <https://w3id.org/okn/o/sd#partOfDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/okn/o/sd#partOfDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#VariablePresentation> .
@@ -602,11 +607,6 @@ _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SourceCode> .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#license> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
-# 
-# https://w3id.org/okn/o/sd#logo
-<https://w3id.org/okn/o/sd#logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/o/sd#logo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
-<https://w3id.org/okn/o/sd#logo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 # 
 # https://w3id.org/okn/o/sd#memoryRequirements
 <https://w3id.org/okn/o/sd#memoryRequirements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

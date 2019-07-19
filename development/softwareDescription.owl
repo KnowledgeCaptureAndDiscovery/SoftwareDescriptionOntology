@@ -256,6 +256,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
             rdfs:label "has software version"@en .
 
 
+###  https://w3id.org/okn/o/sd#logo
+:logo rdf:type owl:ObjectProperty ;
+      rdfs:domain :Software ;
+      rdfs:range :Image .
+
+
 ###  https://w3id.org/okn/o/sd#partOfDataset
 :partOfDataset rdf:type owl:ObjectProperty ;
                rdfs:domain :VariablePresentation ;
@@ -636,12 +642,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                    )
                      ] ;
          rdfs:range xsd:anyURI .
-
-
-###  https://w3id.org/okn/o/sd#logo
-:logo rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Software ;
-      rdfs:range xsd:anyURI .
 
 
 ###  https://w3id.org/okn/o/sd#memoryRequirements
