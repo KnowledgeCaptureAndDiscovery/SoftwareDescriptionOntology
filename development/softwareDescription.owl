@@ -669,6 +669,18 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:range xsd:string .
 
 
+###  https://w3id.org/okn/o/sd#position
+:position rdf:type owl:DatatypeProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :DatasetSpecification
+                                      :Parameter
+                                    )
+                      ] ;
+          rdfs:range xsd:int ;
+          rdfs:comment "Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution"@en ;
+          rdfs:label "position"@en .
+
+
 ###  https://w3id.org/okn/o/sd#processorRequirements
 :processorRequirements rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf <http://schema.org/processorRequirements> ;
