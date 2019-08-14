@@ -65,6 +65,8 @@
 <li>Added: SubClass of http://schema.org/SoftwareSourceCode</li>
 </ul>
 </li>
+<li><a href="#Visualization">https://w3id.org/okn/o/sd#Visualization</a>
+</li>
 </ul></details><details><summary><u>Deleted classes</u></summary>
 <ul><li><a href="#http://schema.org/Dataset">http://schema.org/Dataset</a>
 </li>
@@ -109,9 +111,17 @@
 </li>
 <li><a href="#http://www.w3.org/ns/prov#used">http://www.w3.org/ns/prov#used</a>
 </li>
+<li><a href="#http://www.w3.org/ns/prov#wasDerivedFrom">http://www.w3.org/ns/prov#wasDerivedFrom</a>
+</li>
 <li><a href="#http://www.w3.org/ns/prov#wasGeneratedBy">http://www.w3.org/ns/prov#wasGeneratedBy</a>
 </li>
 <li><a href="#https://codemeta.github.io/terms/funding">https://codemeta.github.io/terms/funding</a>
+</li>
+<li><a href="#adjustsVariable">https://w3id.org/okn/o/sd#adjustsVariable</a>
+<ul>
+<li>Added: Range http://www.geoscienceontology.org/geo-upper#Variable</li>
+<li>Added: domain https://w3id.org/okn/o/sd#Parameter</li>
+</ul>
 </li>
 <li><a href="#author">https://w3id.org/okn/o/sd#author</a>
 <ul>
@@ -146,10 +156,10 @@
 <li>Added: domain https://w3id.org/okn/o/sd#Software</li>
 </ul>
 </li>
-<li><a href="#hasFixedValue">https://w3id.org/okn/o/sd#hasFixedValue</a>
+<li><a href="#hasFixedResource">https://w3id.org/okn/o/sd#hasFixedResource</a>
 <ul>
+<li>Added: domain https://w3id.org/okn/o/sd#DatasetSpecification</li>
 <li>Added: Range https://w3id.org/okn/o/sd#SampleResource</li>
-<li>Added: domain Union of (https://w3id.org/okn/o/sd#DatasetSpecification, https://w3id.org/okn/o/sd#Parameter)</li>
 </ul>
 </li>
 <li><a href="#hasSampleExecution">https://w3id.org/okn/o/sd#hasSampleExecution</a>
@@ -166,8 +176,8 @@
 </li>
 <li><a href="#hasSampleVisualization">https://w3id.org/okn/o/sd#hasSampleVisualization</a>
 <ul>
+<li>Added: Range https://w3id.org/okn/o/sd#Visualization</li>
 <li>Added: domain https://w3id.org/okn/o/sd#Software</li>
-<li>Added: Range https://w3id.org/okn/o/sd#Image</li>
 </ul>
 </li>
 <li><a href="#hasSoftwareImage">https://w3id.org/okn/o/sd#hasSoftwareImage</a>
@@ -215,6 +225,13 @@
 <li>Added: Range https://w3id.org/okn/o/sd#Image</li>
 </ul>
 </li>
+<li><a href="#wasDerivedFromSoftware">https://w3id.org/okn/o/sd#wasDerivedFromSoftware</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#Visualization</li>
+<li>Added: Range https://w3id.org/okn/o/sd#Software</li>
+<li>Added: SubProperty of http://www.w3.org/ns/prov#wasDerivedFrom</li>
+</ul>
+</li>
 </ul></details><details><summary><u>Deleted properties</u></summary>
 <ul><li><a href="#http://ontosoft.org/software#hasContainer">http://ontosoft.org/software#hasContainer</a>
 </li>
@@ -235,6 +252,24 @@
 </ul>
 </li>
 <li><a href="#hasDefaultValue">https://w3id.org/okn/o/sd#hasDefaultValue</a>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#float</li>
+</ul>
+</li>
+<li><a href="#hasFormat">https://w3id.org/okn/o/sd#hasFormat</a>
+<ul>
+<li>Added: Domain Union of (https://w3id.org/okn/o/sd#DatasetSpecification, https://w3id.org/okn/o/sd#Visualization)</li>
+</ul>
+<ul>
+<li>Deleted: Domain https://w3id.org/okn/o/sd#DatasetSpecification</li>
+</ul>
+</li>
+<li><a href="#hasMaximumAcceptedValue">https://w3id.org/okn/o/sd#hasMaximumAcceptedValue</a>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#float</li>
+</ul>
+</li>
+<li><a href="#hasMinimumAcceptedValue">https://w3id.org/okn/o/sd#hasMinimumAcceptedValue</a>
 <ul>
 <li>Deleted: Range http://www.w3.org/2001/XMLSchema#float</li>
 </ul>
@@ -350,6 +385,11 @@
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
 </ul>
 </li>
+<li><a href="#hasFixedValue">https://w3id.org/okn/o/sd#hasFixedValue</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Parameter</li>
+</ul>
+</li>
 <li><a href="#hasImplementationScriptLocation">https://w3id.org/okn/o/sd#hasImplementationScriptLocation</a>
 <ul>
 <li>Added: Domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
@@ -413,6 +453,12 @@
 <li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
 <li>Added: SubProperty of http://schema.org/operatingSystems</li>
+</ul>
+</li>
+<li><a href="#position">https://w3id.org/okn/o/sd#position</a>
+<ul>
+<li>Added: Domain Union of (https://w3id.org/okn/o/sd#DatasetSpecification, https://w3id.org/okn/o/sd#Parameter)</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#int</li>
 </ul>
 </li>
 <li><a href="#processorRequirements">https://w3id.org/okn/o/sd#processorRequirements</a>
