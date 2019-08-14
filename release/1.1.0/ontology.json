@@ -13,23 +13,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/okn/o/sd#Organization"
-    }, {
-      "@id" : "https://w3id.org/okn/o/sd#Person"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
       "@id" : "https://w3id.org/okn/o/sd#SoftwareConfiguration"
     }, {
       "@id" : "https://w3id.org/okn/o/sd#VariablePresentation"
     } ]
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -39,7 +29,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid19",
+  "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -48,6 +38,16 @@
       "@id" : "https://w3id.org/okn/o/sd#SoftwareConfiguration"
     }, {
       "@id" : "https://w3id.org/okn/o/sd#SoftwareImage"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/okn/o/sd#DatasetSpecification"
+    }, {
+      "@id" : "https://w3id.org/okn/o/sd#Visualization"
     } ]
   } ]
 }, {
@@ -97,6 +97,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
+      "@id" : "https://w3id.org/okn/o/sd#DatasetSpecification"
+    }, {
+      "@id" : "https://w3id.org/okn/o/sd#Parameter"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
       "@id" : "https://w3id.org/okn/o/sd#Organization"
     }, {
       "@id" : "https://w3id.org/okn/o/sd#Person"
@@ -119,9 +129,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/okn/o/sd#DatasetSpecification"
+      "@id" : "https://w3id.org/okn/o/sd#Organization"
     }, {
-      "@id" : "https://w3id.org/okn/o/sd#Parameter"
+      "@id" : "https://w3id.org/okn/o/sd#Person"
     } ]
   } ]
 }, {
@@ -301,6 +311,9 @@
 }, {
   "@id" : "http://www.w3.org/ns/prov#value",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
@@ -558,6 +571,34 @@
     "@id" : "https://w3id.org/okn/o/sd#Variable"
   } ]
 }, {
+  "@id" : "https://w3id.org/okn/o/sd#Visualization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class to represent any type of visualization related to a software. For exmaple, a dynamic HTML page, a video, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Visualization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/okn/o/sd#adjustsVariable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property that links parameter with the variable they adjust. This property can be used when parameters quantify variables without directly representing them. For example, a \"fertilizer percentage adjustment\" parameter can quantify a \"fertilizer price\" variable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/okn/o/sd#Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "adjustsVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.geoscienceontology.org/geo-upper#Variable"
+  } ]
+}, {
   "@id" : "https://w3id.org/okn/o/sd#author",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -773,7 +814,7 @@
     "@value" : "Constraint or rule associated to a  variable or software configuration. For example: \"This model accepts only monthly data\", or \"all inputs of this model configuration must share the same location\". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid10"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -820,7 +861,7 @@
     "@value" : "Default accepted value of a variable presentation (or a parameter)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid16"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -877,7 +918,7 @@
     "@value" : "Execution instructions on how to run the image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid19"
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -910,21 +951,31 @@
     "@value" : "has file structure"
   } ]
 }, {
-  "@id" : "https://w3id.org/okn/o/sd#hasFixedValue",
+  "@id" : "https://w3id.org/okn/o/sd#hasFixedResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid4"
+    "@id" : "https://w3id.org/okn/o/sd#DatasetSpecification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has fixed value"
+    "@value" : "has fixed resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/okn/o/sd#SampleResource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/okn/o/sd#hasFixedValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/okn/o/sd#Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasFixedValue"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasFormat",
@@ -934,7 +985,7 @@
     "@value" : "Format followed by a file. For example, txt, nc, etc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/okn/o/sd#DatasetSpecification"
+    "@id" : "_:genid20"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1020,9 +1071,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has maximum accepted value"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasMinimumAcceptedValue",
@@ -1037,9 +1085,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has minimum accepted value"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasOutput",
@@ -1083,7 +1128,7 @@
     "@value" : "Property that links an instance of a dataset (or a dataset specification) to the presentation of a variable contained (or expected to be contained) on it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid7"
+    "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1133,7 +1178,7 @@
     "@id" : "https://w3id.org/okn/o/sd#Software"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/okn/o/sd#Image"
+    "@id" : "https://w3id.org/okn/o/sd#Visualization"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasShortName",
@@ -1358,6 +1403,23 @@
     "@id" : "https://w3id.org/okn/o/sd#DatasetSpecification"
   } ]
 }, {
+  "@id" : "https://w3id.org/okn/o/sd#position",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid36"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
   "@id" : "https://w3id.org/okn/o/sd#processorRequirements",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1392,7 +1454,7 @@
     "@value" : "publisher"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid10"
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/publisher"
@@ -1470,6 +1532,18 @@
     "@id" : "http://qudt.org/schema/qudt/Unit"
   } ]
 }, {
+  "@id" : "https://w3id.org/okn/o/sd#wasDerivedFromSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/okn/o/sd#Visualization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/okn/o/sd#Software"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+  } ]
+}, {
   "@id" : "https://w3id.org/okn/o/sd#website",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1477,7 +1551,7 @@
     "@value" : "Website of the software"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid36"
+    "@id" : "_:genid39"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",

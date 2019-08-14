@@ -96,12 +96,24 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 <http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty .
 
 
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty .
+
+
 ###  http://www.w3.org/ns/prov#wasGeneratedBy
 <http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:ObjectProperty .
 
 
 ###  https://codemeta.github.io/terms/funding
 <https://codemeta.github.io/terms/funding> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/okn/o/sd#adjustsVariable
+:adjustsVariable rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Parameter ;
+                 rdfs:range <http://www.geoscienceontology.org/geo-upper#Variable> ;
+                 rdfs:comment "Property that links parameter with the variable they adjust. This property can be used when parameters quantify variables without directly representing them. For example, a \"fertilizer percentage adjustment\" parameter can quantify a \"fertilizer price\" variable"@en ;
+                 rdfs:label "adjustsVariable"@en .
 
 
 ###  https://w3id.org/okn/o/sd#author
@@ -159,16 +171,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "has file structure"@en .
 
 
-###  https://w3id.org/okn/o/sd#hasFixedValue
-:hasFixedValue rdf:type owl:ObjectProperty ;
-               rdfs:domain [ rdf:type owl:Class ;
-                             owl:unionOf ( :DatasetSpecification
-                                           :Parameter
-                                         )
-                           ] ;
-               rdfs:range :SampleResource ;
-               rdfs:comment "Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region."@en ;
-               rdfs:label "has fixed value"@en .
+###  https://w3id.org/okn/o/sd#hasFixedResource
+:hasFixedResource rdf:type owl:ObjectProperty ;
+                  rdfs:domain :DatasetSpecification ;
+                  rdfs:range :SampleResource ;
+                  rdfs:comment "Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region."@en ;
+                  rdfs:label "has fixed resource"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasInput
@@ -223,7 +231,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#hasSampleVisualization
 :hasSampleVisualization rdf:type owl:ObjectProperty ;
                         rdfs:domain :Software ;
-                        rdfs:range :Image ;
+                        rdfs:range :Visualization ;
                         rdfs:comment "A typical sample visualization of the softwware outputs"@en .
 
 
@@ -295,6 +303,13 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
           rdfs:range <http://qudt.org/schema/qudt/Unit> ;
           rdfs:comment "Property used to link a variable presentation or time interval to the unit they are represented in"@en ;
           rdfs:label "uses unit"@en .
+
+
+###  https://w3id.org/okn/o/sd#wasDerivedFromSoftware
+:wasDerivedFromSoftware rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+                        rdfs:domain :Visualization ;
+                        rdfs:range :Software .
 
 
 #################################################################
@@ -521,9 +536,19 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
         rdfs:range xsd:string .
 
 
+###  https://w3id.org/okn/o/sd#hasFixedValue
+:hasFixedValue rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Parameter ;
+               rdfs:label "hasFixedValue"@en .
+
+
 ###  https://w3id.org/okn/o/sd#hasFormat
 :hasFormat rdf:type owl:DatatypeProperty ;
-           rdfs:domain :DatasetSpecification ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :DatasetSpecification
+                                       :Visualization
+                                     )
+                       ] ;
            rdfs:range xsd:string ;
            rdfs:comment "Format followed by a file. For example, txt, nc, etc."@en ;
            rdfs:label "has format"@en .
@@ -559,7 +584,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                                      :VariablePresentation
                                                    )
                                      ] ;
-                         rdfs:range xsd:float ;
                          rdfs:comment "Maximum accepted value of a variable presentation (or a parameter)"@en ;
                          rdfs:label "has maximum accepted value"@en .
 
@@ -571,7 +595,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                                      :VariablePresentation
                                                    )
                                      ] ;
-                         rdfs:range xsd:float ;
                          rdfs:comment "Minimum accepted value of a variable presentation (or a parameter)"@en ;
                          rdfs:label "has minimum accepted value"@en .
 
@@ -663,6 +686,18 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:subPropertyOf <http://schema.org/operatingSystems> ;
                   rdfs:domain :Software ;
                   rdfs:range xsd:string .
+
+
+###  https://w3id.org/okn/o/sd#position
+:position rdf:type owl:DatatypeProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :DatasetSpecification
+                                      :Parameter
+                                    )
+                      ] ;
+          rdfs:range xsd:int ;
+          rdfs:comment "Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution"@en ;
+          rdfs:label "position"@en .
 
 
 ###  https://w3id.org/okn/o/sd#processorRequirements
@@ -874,6 +909,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                       rdfs:subClassOf :Variable ;
                       rdfs:comment "Concept used to represent an instantiation of a variable in an input/output dataset. For example, a model A may use an input file with temperature expressed in Farenheit (variablePresentation1), while a model B may produce an output with temperature in Celsius (variablePresentation2). Both variable presentations refer to the concept of temperature."@en ;
                       rdfs:label "Variable presentation"@en .
+
+
+###  https://w3id.org/okn/o/sd#Visualization
+:Visualization rdf:type owl:Class ;
+               rdfs:comment "Class to represent any type of visualization related to a software. For exmaple, a dynamic HTML page, a video, etc."@en ;
+               rdfs:label "Visualization"@en .
 
 
 ###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

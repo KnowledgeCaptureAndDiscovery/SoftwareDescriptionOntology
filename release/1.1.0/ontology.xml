@@ -169,6 +169,13 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
     <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
 
 
@@ -180,6 +187,18 @@
 
 
     <owl:ObjectProperty rdf:about="https://codemeta.github.io/terms/funding"/>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#adjustsVariable -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#adjustsVariable">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Parameter"/>
+        <rdfs:range rdf:resource="http://www.geoscienceontology.org/geo-upper#Variable"/>
+        <rdfs:comment xml:lang="en">Property that links parameter with the variable they adjust. This property can be used when parameters quantify variables without directly representing them. For example, a &quot;fertilizer percentage adjustment&quot; parameter can quantify a &quot;fertilizer price&quot; variable</rdfs:comment>
+        <rdfs:label xml:lang="en">adjustsVariable</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -269,21 +288,14 @@
     
 
 
-    <!-- https://w3id.org/okn/o/sd#hasFixedValue -->
+    <!-- https://w3id.org/okn/o/sd#hasFixedResource -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasFixedValue">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#DatasetSpecification"/>
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Parameter"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasFixedResource">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#DatasetSpecification"/>
         <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#SampleResource"/>
         <rdfs:comment xml:lang="en">Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region.</rdfs:comment>
-        <rdfs:label xml:lang="en">has fixed value</rdfs:label>
+        <rdfs:label xml:lang="en">has fixed resource</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -369,7 +381,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasSampleVisualization">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#Image"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#Visualization"/>
         <rdfs:comment xml:lang="en">A typical sample visualization of the softwware outputs</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -480,6 +492,17 @@
         <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
         <rdfs:comment xml:lang="en">Property used to link a variable presentation or time interval to the unit they are represented in</rdfs:comment>
         <rdfs:label xml:lang="en">uses unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#wasDerivedFromSoftware -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#wasDerivedFromSoftware">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Visualization"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#Software"/>
     </owl:ObjectProperty>
     
 
@@ -853,11 +876,28 @@
     
 
 
+    <!-- https://w3id.org/okn/o/sd#hasFixedValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#hasFixedValue">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Parameter"/>
+        <rdfs:label xml:lang="en">hasFixedValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/okn/o/sd#hasFormat -->
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#hasFormat">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#DatasetSpecification"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#DatasetSpecification"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Visualization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Format followed by a file. For example, txt, nc, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">has format</rdfs:label>
@@ -912,7 +952,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Maximum accepted value of a variable presentation (or a parameter)</rdfs:comment>
         <rdfs:label xml:lang="en">has maximum accepted value</rdfs:label>
     </owl:DatatypeProperty>
@@ -931,7 +970,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Minimum accepted value of a variable presentation (or a parameter)</rdfs:comment>
         <rdfs:label xml:lang="en">has minimum accepted value</rdfs:label>
     </owl:DatatypeProperty>
@@ -1073,6 +1111,25 @@
         <rdfs:subPropertyOf rdf:resource="http://schema.org/operatingSystems"/>
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#position -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#position">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#DatasetSpecification"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Parameter"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution</rdfs:comment>
+        <rdfs:label xml:lang="en">position</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1427,6 +1484,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#Variable"/>
         <rdfs:comment xml:lang="en">Concept used to represent an instantiation of a variable in an input/output dataset. For example, a model A may use an input file with temperature expressed in Farenheit (variablePresentation1), while a model B may produce an output with temperature in Celsius (variablePresentation2). Both variable presentations refer to the concept of temperature.</rdfs:comment>
         <rdfs:label xml:lang="en">Variable presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#Visualization -->
+
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sd#Visualization">
+        <rdfs:comment xml:lang="en">Class to represent any type of visualization related to a software. For exmaple, a dynamic HTML page, a video, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Visualization</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
