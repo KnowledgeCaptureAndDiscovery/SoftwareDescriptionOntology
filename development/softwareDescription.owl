@@ -9,6 +9,7 @@
 <https://w3id.org/okn/o/sd> rdf:type owl:Ontology ;
                              owl:versionIRI <https://w3id.org/okn/o/sd/1.2.0> ;
                              <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables"@en ;
+                             <http://purl.org/dc/elements/1.1/created> "October 8th, 2019" ;
                              <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo"@en ,
                                                                        "Deborah Khider" ,
                                                                        "Varun Ratnakar"@en ,
@@ -18,7 +19,7 @@
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en ;
                              <http://purl.org/vocab/vann/preferredNamespaceURI> : ;
                              rdfs:comment "An ontology for describing software and their links to inputs, outputs and variables"@en ;
-                             owl:priorVersion <https://w3id.org/okn/o/sd/1.0.0> ;
+                             owl:priorVersion <https://w3id.org/okn/o/sd/1.1.0> ;
                              owl:versionInfo "1.2.0" .
 
 #################################################################
@@ -31,6 +32,10 @@
 
 ###  http://purl.org/dc/elements/1.1/contributor
 <http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/creator
