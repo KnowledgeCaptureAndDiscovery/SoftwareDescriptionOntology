@@ -1,0 +1,397 @@
+<html>
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Modified classes</u></summary>
+<ul><li><a href="#Image">https://w3id.org/okn/o/sd#Image</a>
+<ul>
+<li>Added: rdfs:comment "An image (e.g. tiff file) is a type of dataset specification used to define things like soil, crops, etc."@en</li>
+</ul>
+</li>
+<li><a href="#Organization">https://w3id.org/okn/o/sd#Organization</a>
+<ul>
+<li>Added: rdfs:comment "An organized ody of people with a particular purpose"@en</li>
+</ul>
+</li>
+<li><a href="#SampleExecution">https://w3id.org/okn/o/sd#SampleExecution</a>
+<ul>
+<li>Added: rdfs:comment "A sample execution of a given software"@en</li>
+<li>Added: rdfs:label "Sample execution"@en</li>
+</ul>
+</li>
+<li><a href="#SampleResource">https://w3id.org/okn/o/sd#SampleResource</a>
+<ul>
+<li>Added: rdfs:label "Sample resource"@en</li>
+<li>Added: rdfs:comment "A sample resource associated with a software"@en</li>
+</ul>
+</li>
+<li><a href="#SoftwareConfiguration">https://w3id.org/okn/o/sd#SoftwareConfiguration</a>
+<ul>
+<li>Added: rdfs:comment "A software configuration represents a particular way of invoking a function of a software component. A software configuration exposes the precise inputs and outputs that are used for that function. Multiple software configurations may be associated to a software component. A software configuration facilitates the encapsulation of software, and it can be used to represent components of scientific workflows."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "\"Function\" is part of an Ontosoft extension currently being developed"^^xsd:anyURI</li>
+</ul>
+</li>
+<li><a href="#SoftwareImage">https://w3id.org/okn/o/sd#SoftwareImage</a>
+<ul>
+<li>Added: rdfs:comment "An image that virtualizes the functionality of a given software. For example, a Docker container."@en</li>
+</ul>
+</li>
+<li><a href="#SoftwareVersion">https://w3id.org/okn/o/sd#SoftwareVersion</a>
+<ul>
+<li>Added: rdfs:comment "A software version is a specificf type of software that represents a particular set of functionalities. New functionalities and error fixes may occur between software versions"@en</li>
+</ul>
+</li>
+<li><a href="#SourceCode">https://w3id.org/okn/o/sd#SourceCode</a>
+<ul>
+<li>Added: rdfs:label "Source code"@en</li>
+<li>Added: rdfs:comment "Class representing the characteristics of the code associated with a  software component"@en</li>
+</ul>
+</li>
+<li><a href="#Unit">https://w3id.org/okn/o/sd#Unit</a>
+<ul>
+<li>Added: rdfs:comment "Class designed to distinguish the different types of units that are available in variables from datasets or parameters"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Class designed to distinguish the different types of units that are available in variables from datasets"@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added classes</u></summary>
+<ul><li><a href="#FundingInformation">https://w3id.org/okn/o/sd#FundingInformation</a>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Modified properties</u></summary>
+<ul><li><a href="#http://schema.org/screenshot">http://schema.org/screenshot</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#hadPrimarySource">http://www.w3.org/ns/prov#hadPrimarySource</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://www.w3.org/ns/prov#</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#used">http://www.w3.org/ns/prov#used</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://www.w3.org/ns/prov#</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#wasDerivedFrom">http://www.w3.org/ns/prov#wasDerivedFrom</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://www.w3.org/ns/prov#</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#wasGeneratedBy">http://www.w3.org/ns/prov#wasGeneratedBy</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://www.w3.org/ns/prov#</li>
+</ul>
+</li>
+<li><a href="#adjustsVariable">https://w3id.org/okn/o/sd#adjustsVariable</a>
+<ul>
+<li>Added: rdfs:label "adjusts variable"@en</li>
+<li>Added: FunctionalObjectProperty FunctionalObjectProperty(&lt;https://w3id.org/okn/o/sd#adjustsVariable&gt;)</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "adjustsVariable"@en</li>
+</ul>
+</li>
+<li><a href="#compatibleVisualizationSoftware">https://w3id.org/okn/o/sd#compatibleVisualizationSoftware</a>
+<ul>
+<li>Added: rdfs:label "compatible visualization software"^^xsd:string</li>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: rdfs:comment "Property that links a software component to other useful software that canbe used to visualize its outputs"@en</li>
+</ul>
+<ul>
+<li>Deleted: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+</ul>
+</li>
+<li><a href="#fundingSource">https://w3id.org/okn/o/sd#fundingSource</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#FundingInformation</li>
+<li>Added: rdfs:label "funding source"@en</li>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+<ul>
+<li>Deleted: SubProperty of https://codemeta.github.io/terms/funding</li>
+<li>Deleted: domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#hasContactPerson">https://w3id.org/okn/o/sd#hasContactPerson</a>
+<ul>
+<li>Added: Range Union of (https://w3id.org/okn/o/sd#Organization, https://w3id.org/okn/o/sd#Person)</li>
+</ul>
+<ul>
+<li>Deleted: Range https://w3id.org/okn/o/sd#Person</li>
+</ul>
+</li>
+<li><a href="#hasFileStructure">https://w3id.org/okn/o/sd#hasFileStructure</a>
+<ul>
+<li>Added: FunctionalObjectProperty FunctionalObjectProperty(&lt;https://w3id.org/okn/o/sd#hasFileStructure&gt;)</li>
+</ul>
+</li>
+<li><a href="#hasSampleExecution">https://w3id.org/okn/o/sd#hasSampleExecution</a>
+<ul>
+<li>Added: rdfs:label "has sample execution"@en</li>
+</ul>
+</li>
+<li><a href="#hasSampleResult">https://w3id.org/okn/o/sd#hasSampleResult</a>
+<ul>
+<li>Added: rdfs:label "has sample result"@en</li>
+</ul>
+</li>
+<li><a href="#hasSampleVisualization">https://w3id.org/okn/o/sd#hasSampleVisualization</a>
+<ul>
+<li>Added: rdfs:label "has sample visualization"@en</li>
+</ul>
+</li>
+<li><a href="#hasSoftwareImage">https://w3id.org/okn/o/sd#hasSoftwareImage</a>
+<ul>
+<li>Added: FunctionalObjectProperty FunctionalObjectProperty(&lt;https://w3id.org/okn/o/sd#hasSoftwareImage&gt;)</li>
+</ul>
+</li>
+<li><a href="#hasSourceCode">https://w3id.org/okn/o/sd#hasSourceCode</a>
+<ul>
+<li>Added: FunctionalObjectProperty FunctionalObjectProperty(&lt;https://w3id.org/okn/o/sd#hasSourceCode&gt;)</li>
+<li>Added: rdfs:label "has source code"@en</li>
+</ul>
+</li>
+<li><a href="#hasStandardVariable">https://w3id.org/okn/o/sd#hasStandardVariable</a>
+<ul>
+<li>Added: FunctionalObjectProperty FunctionalObjectProperty(&lt;https://w3id.org/okn/o/sd#hasStandardVariable&gt;)</li>
+</ul>
+</li>
+<li><a href="#usesUnit">https://w3id.org/okn/o/sd#usesUnit</a>
+<ul>
+<li>Added: FunctionalObjectProperty FunctionalObjectProperty(&lt;https://w3id.org/okn/o/sd#usesUnit&gt;)</li>
+<li>Added: domain Union of (https://w3id.org/okn/o/sd#Parameter, https://w3id.org/okn/o/sd#VariablePresentation)</li>
+</ul>
+<ul>
+<li>Deleted: domain https://w3id.org/okn/o/sd#VariablePresentation</li>
+</ul>
+</li>
+<li><a href="#wasDerivedFromSoftware">https://w3id.org/okn/o/sd#wasDerivedFromSoftware</a>
+<ul>
+<li>Added: rdfs:label "was derived from software"@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added properties</u></summary>
+<ul><li><a href="#http://schema.org/copyrightHolder">http://schema.org/copyrightHolder</a>
+</li>
+<li><a href="#http://schema.org/copyrightYear">http://schema.org/copyrightYear</a>
+</li>
+<li><a href="#http://www.w3.org/2002/07/owl#topObjectProperty">http://www.w3.org/2002/07/owl#topObjectProperty</a>
+</li>
+<li><a href="#adjustableParameter">https://w3id.org/okn/o/sd#adjustableParameter</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+<li>Added: Range https://w3id.org/okn/o/sd#Parameter</li>
+</ul>
+</li>
+<li><a href="#copyrightHolder">https://w3id.org/okn/o/sd#copyrightHolder</a>
+<ul>
+<li>Added: SubProperty of http://schema.org/copyrightHolder</li>
+</ul>
+</li>
+<li><a href="#copyrightYear">https://w3id.org/okn/o/sd#copyrightYear</a>
+<ul>
+<li>Added: SubProperty of http://schema.org/copyrightYear</li>
+</ul>
+</li>
+<li><a href="#hasFunding">https://w3id.org/okn/o/sd#hasFunding</a>
+</li>
+<li><a href="#hasSetup">https://w3id.org/okn/o/sd#hasSetup</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+<li>Added: Range https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted properties</u></summary>
+<ul><li><a href="#https://codemeta.github.io/terms/funding">https://codemeta.github.io/terms/funding</a>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Modified data properties</u></summary>
+<ul><li><a href="#http://schema.org/citation">http://schema.org/citation</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/codeRepository">http://schema.org/codeRepository</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/license">http://schema.org/license</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/memoryRequirements">http://schema.org/memoryRequirements</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/operatingSystems">http://schema.org/operatingSystems</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/processorRequirements">http://schema.org/processorRequirements</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/programmingLanguage">http://schema.org/programmingLanguage</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/softwareRequirements">http://schema.org/softwareRequirements</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#value">http://www.w3.org/ns/prov#value</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://www.w3.org/ns/prov#</li>
+</ul>
+</li>
+<li><a href="#citation">https://w3id.org/okn/o/sd#citation</a>
+<ul>
+<li>Added: rdfs:label "citation"@en</li>
+<li>Added: rdfs:comment "How to cite this software"@en</li>
+</ul>
+</li>
+<li><a href="#codeRepository">https://w3id.org/okn/o/sd#codeRepository</a>
+<ul>
+<li>Added: rdfs:comment "URL to the code repository of a software component"@en</li>
+<li>Added: rdfs:label "code repository"@en</li>
+</ul>
+</li>
+<li><a href="#dataCatalogIdentifier">https://w3id.org/okn/o/sd#dataCatalogIdentifier</a>
+<ul>
+<li>Added: rdfs:label "data catalog identifier"@en</li>
+</ul>
+</li>
+<li><a href="#description">https://w3id.org/okn/o/sd#description</a>
+<ul>
+<li>Added: Domain Union of (http://purl.org/linked-data/cube#DataStructureDefinition, http://qudt.org/schema/qudt/Unit, http://www.geoscienceontology.org/geo-upper#Variable, https://w3id.org/okn/o/sd#Organization, https://w3id.org/okn/o/sd#Parameter, https://w3id.org/okn/o/sd#Person, https://w3id.org/okn/o/sd#SampleExecution, https://w3id.org/okn/o/sd#SampleResource, https://w3id.org/okn/o/sd#Software, https://w3id.org/okn/o/sd#SourceCode, https://w3id.org/okn/o/sd#Visualization)</li>
+<li>Added: rdfs:comment "A description of a resource"@en</li>
+</ul>
+<ul>
+<li>Deleted: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#hasAssumption">https://w3id.org/okn/o/sd#hasAssumption</a>
+<ul>
+<li>Added: rdfs:comment "Assumptions of a software, e.g. the solver being used for a particular model, the source of the data (e.g., all data must have a given resolution), etc."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Assumptions of a model, e.g. the solver being used."@en</li>
+</ul>
+</li>
+<li><a href="#hasComponentLocation">https://w3id.org/okn/o/sd#hasComponentLocation</a>
+<ul>
+<li>Added: rdfs:comment "Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts, including specification files"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts"@en</li>
+</ul>
+</li>
+<li><a href="#hasDownloadURL">https://w3id.org/okn/o/sd#hasDownloadURL</a>
+<ul>
+<li>Added: rdfs:label "has download URL"@en</li>
+<li>Added: rdfs:comment "Download URL where to obtain the source/executable of the software"@en</li>
+</ul>
+</li>
+<li><a href="#hasFAQ">https://w3id.org/okn/o/sd#hasFAQ</a>
+<ul>
+<li>Added: rdfs:comment "Frequently asked questions about a software"@en</li>
+<li>Added: rdfs:label "has FAQ"@en</li>
+</ul>
+</li>
+<li><a href="#hasFixedValue">https://w3id.org/okn/o/sd#hasFixedValue</a>
+<ul>
+<li>Added: rdfs:label "has fixed value"@en</li>
+<li>Added: rdfs:comment "Value of a parameter in a software setup."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "hasFixedValue"@en</li>
+</ul>
+</li>
+<li><a href="#hasInstallationInstructions">https://w3id.org/okn/o/sd#hasInstallationInstructions</a>
+<ul>
+<li>Added: rdfs:comment "Instructions requires to install this particular piece of software."@en</li>
+</ul>
+</li>
+<li><a href="#hasPurpose">https://w3id.org/okn/o/sd#hasPurpose</a>
+<ul>
+<li>Added: rdfs:label "has purpose"@en</li>
+<li>Added: rdfs:comment "Objective or main functionality that can be achieved by running this software"@en</li>
+</ul>
+</li>
+<li><a href="#hasTypicalDataSource">https://w3id.org/okn/o/sd#hasTypicalDataSource</a>
+<ul>
+<li>Added: rdfs:label "has typical data source"@en</li>
+</ul>
+</li>
+<li><a href="#memoryRequirements">https://w3id.org/okn/o/sd#memoryRequirements</a>
+<ul>
+<li>Added: rdfs:label "memory requirements"@en</li>
+</ul>
+</li>
+<li><a href="#operatingSystems">https://w3id.org/okn/o/sd#operatingSystems</a>
+<ul>
+<li>Added: rdfs:label "operating systems"@en</li>
+</ul>
+</li>
+<li><a href="#processorRequirements">https://w3id.org/okn/o/sd#processorRequirements</a>
+<ul>
+<li>Added: rdfs:label "processor requirements"@en</li>
+</ul>
+</li>
+<li><a href="#programmingLanguage">https://w3id.org/okn/o/sd#programmingLanguage</a>
+<ul>
+<li>Added: rdfs:label "programming language"@en</li>
+</ul>
+</li>
+<li><a href="#referencePublication">https://w3id.org/okn/o/sd#referencePublication</a>
+<ul>
+<li>Added: rdfs:label "reference publication"@en</li>
+<li>Added: rdfs:comment "Main publication to cite in this software"@en</li>
+</ul>
+</li>
+<li><a href="#shortDescription">https://w3id.org/okn/o/sd#shortDescription</a>
+<ul>
+<li>Added: rdfs:label "short description"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#softwareRequirements">https://w3id.org/okn/o/sd#softwareRequirements</a>
+<ul>
+<li>Added: rdfs:label "software requirements"@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#https://codemeta.github.io/terms/funding">https://codemeta.github.io/terms/funding</a>
+</li>
+<li><a href="#fundingGrant">https://w3id.org/okn/o/sd#fundingGrant</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#FundingInformation</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: SubProperty of https://codemeta.github.io/terms/funding</li>
+</ul>
+</li>
+<li><a href="#hasExample">https://w3id.org/okn/o/sd#hasExample</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#hasUsageNotes">https://w3id.org/okn/o/sd#hasUsageNotes</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+</ul></details></div>
+<html>
