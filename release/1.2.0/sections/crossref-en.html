@@ -167,6 +167,11 @@ This section provides details for each class and property defined by The Softwar
             <sup class="type-dp" title="data property">dp</sup>, <a href="#fundingSource" title="https://w3id.org/okn/o/sd#fundingSource">funding source</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasFunding" title="https://w3id.org/okn/o/sd#hasFunding">has funding information</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="ICASAVariable">
@@ -275,7 +280,7 @@ This section provides details for each class and property defined by The Softwar
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#adjustableParameter" title="https://w3id.org/okn/o/sd#adjustableParameter">Adjustable parameter</a>
+            <a href="#adjustableParameter" title="https://w3id.org/okn/o/sd#adjustableParameter">adjustable parameter</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasParameter" title="https://w3id.org/okn/o/sd#hasParameter">has parameter</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -414,7 +419,8 @@ This section provides details for each class and property defined by The Softwar
             <sup class="type-op" title="object property">op</sup>, <a href="#hasDocumentation" title="https://w3id.org/okn/o/sd#hasDocumentation">has documentation</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDownloadURL" title="https://w3id.org/okn/o/sd#hasDownloadURL">has download URL</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasExample" title="https://w3id.org/okn/o/sd#hasExample">has example</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInstallationInstructions"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFunding" title="https://w3id.org/okn/o/sd#hasFunding">has funding information</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasInstallationInstructions"
                title="https://w3id.org/okn/o/sd#hasInstallationInstructions">has installation instructions</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPurpose" title="https://w3id.org/okn/o/sd#hasPurpose">has purpose</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSampleVisualization" title="https://w3id.org/okn/o/sd#hasSampleVisualization">has sample visualization</a>
@@ -462,7 +468,7 @@ This section provides details for each class and property defined by The Softwar
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#adjustableParameter" title="https://w3id.org/okn/o/sd#adjustableParameter">Adjustable parameter</a>
+            <a href="#adjustableParameter" title="https://w3id.org/okn/o/sd#adjustableParameter">adjustable parameter</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasComponentLocation" title="https://w3id.org/okn/o/sd#hasComponentLocation">has component location</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasImplementationScriptLocation"
                title="https://w3id.org/okn/o/sd#hasImplementationScriptLocation">has implementation script location</a>
@@ -760,7 +766,7 @@ This section provides details for each class and property defined by The Softwar
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#adjustableParameter" title="https://w3id.org/okn/o/sd#adjustableParameter">Adjustable parameter</a>
+         <a href="#adjustableParameter" title="https://w3id.org/okn/o/sd#adjustableParameter">adjustable parameter</a>
       </li>
       <li>
          <a href="#adjustsVariable" title="https://w3id.org/okn/o/sd#adjustsVariable">adjusts variable</a>
@@ -909,7 +915,7 @@ This section provides details for each class and property defined by The Softwar
       </li>
    </ul>
    <div class="entity" id="adjustableParameter">
-      <h3>Adjustable parameter<sup class="type-op" title="object property">op</sup>
+      <h3>adjustable parameter<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -1315,6 +1321,20 @@ This section provides details for each class and property defined by The Softwar
          <strong>IRI:</strong> https://w3id.org/okn/o/sd#hasFunding</p>
       <div class="comment">
          <span class="markdown">Property that links a software project to its funding information</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Software" title="https://w3id.org/okn/o/sd#Software">Software</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#FundingInformation" title="https://w3id.org/okn/o/sd#FundingInformation">Funding information</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
       </div>
    </div>
    <div class="entity" id="hasInput">

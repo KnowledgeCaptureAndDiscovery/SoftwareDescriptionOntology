@@ -17,7 +17,6 @@
                              <http://purl.org/dc/elements/1.1/title> "The Software Description Ontology"@en ;
                              <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> ;
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en ;
-                             <http://purl.org/vocab/vann/preferredNamespaceURI> : ;
                              rdfs:comment "An ontology for describing software and their links to inputs, outputs and variables"@en ;
                              owl:priorVersion <https://w3id.org/okn/o/sd/1.1.0> ;
                              owl:versionInfo "1.2.0" .
@@ -56,10 +55,6 @@
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceURI
-<http://purl.org/vocab/vann/preferredNamespaceURI> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
@@ -129,7 +124,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                      rdfs:domain :SoftwareConfiguration ;
                      rdfs:range :Parameter ;
                      rdfs:comment "Parameter that can be adjusted in a configuration"@en ;
-                     rdfs:label "Adjustable parameter"@en .
+                     rdfs:label "adjustable parameter"@en .
 
 
 ###  https://w3id.org/okn/o/sd#adjustsVariable
@@ -226,6 +221,8 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#hasFunding
 :hasFunding rdf:type owl:ObjectProperty ;
+            rdfs:domain :Software ;
+            rdfs:range :FundingInformation ;
             rdfs:comment "Property that links a software project to its funding information"@en ;
             rdfs:label "has funding information"@en .
 

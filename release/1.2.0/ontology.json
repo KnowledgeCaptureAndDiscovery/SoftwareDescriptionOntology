@@ -213,9 +213,6 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceURI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -466,9 +463,6 @@
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@language" : "en",
     "@value" : "sd"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespaceURI" : [ {
-    "@id" : "https://w3id.org/okn/o/sd#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -755,7 +749,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Adjustable parameter"
+    "@value" : "adjustable parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/okn/o/sd#Parameter"
@@ -1292,9 +1286,15 @@
     "@language" : "en",
     "@value" : "Property that links a software project to its funding information"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/okn/o/sd#Software"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has funding information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/okn/o/sd#FundingInformation"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasImplementationScriptLocation",

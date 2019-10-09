@@ -9,7 +9,6 @@
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/title> "The Software Description Ontology"@en .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> .
 <https://w3id.org/okn/o/sd> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en .
-<https://w3id.org/okn/o/sd> <http://purl.org/vocab/vann/preferredNamespaceURI> <https://w3id.org/okn/o/sd#> .
 <https://w3id.org/okn/o/sd> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for describing software and their links to inputs, outputs and variables"@en .
 <https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/okn/o/sd/1.1.0> .
 <https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionInfo> "1.2.0" .
@@ -45,9 +44,6 @@
 # 
 # http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceURI
-<http://purl.org/vocab/vann/preferredNamespaceURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -109,7 +105,7 @@
 <https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
 <https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#Parameter> .
 <https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameter that can be adjusted in a configuration"@en .
-<https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Adjustable parameter"@en .
+<https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#label> "adjustable parameter"@en .
 # 
 # https://w3id.org/okn/o/sd#adjustsVariable
 <https://w3id.org/okn/o/sd#adjustsVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -202,6 +198,8 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # https://w3id.org/okn/o/sd#hasFunding
 <https://w3id.org/okn/o/sd#hasFunding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasFunding> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#hasFunding> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#FundingInformation> .
 <https://w3id.org/okn/o/sd#hasFunding> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a software project to its funding information"@en .
 <https://w3id.org/okn/o/sd#hasFunding> <http://www.w3.org/2000/01/rdf-schema#label> "has funding information"@en .
 # 

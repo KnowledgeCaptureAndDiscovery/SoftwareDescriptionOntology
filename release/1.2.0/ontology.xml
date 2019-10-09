@@ -20,7 +20,6 @@
         <dc:title xml:lang="en">The Software Description Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
         <vann:preferredNamespacePrefix xml:lang="en">sd</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceURI rdf:resource="https://w3id.org/okn/o/sd#"/>
         <rdfs:comment xml:lang="en">An ontology for describing software and their links to inputs, outputs and variables</rdfs:comment>
         <owl:priorVersion rdf:resource="https://w3id.org/okn/o/sd/1.1.0"/>
         <owl:versionInfo>1.2.0</owl:versionInfo>
@@ -93,13 +92,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceURI -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceURI"/>
     
 
 
@@ -226,7 +218,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#SoftwareConfiguration"/>
         <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#Parameter"/>
         <rdfs:comment xml:lang="en">Parameter that can be adjusted in a configuration</rdfs:comment>
-        <rdfs:label xml:lang="en">Adjustable parameter</rdfs:label>
+        <rdfs:label xml:lang="en">adjustable parameter</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -377,6 +369,8 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasFunding">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#FundingInformation"/>
         <rdfs:comment xml:lang="en">Property that links a software project to its funding information</rdfs:comment>
         <rdfs:label xml:lang="en">has funding information</rdfs:label>
     </owl:ObjectProperty>
