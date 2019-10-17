@@ -543,6 +543,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                            owl:unionOf ( <http://purl.org/linked-data/cube#DataStructureDefinition>
                                          <http://qudt.org/schema/qudt/Unit>
                                          <http://www.geoscienceontology.org/geo-upper#Variable>
+                                         owl:Thing
                                          :Organization
                                          :Parameter
                                          :Person

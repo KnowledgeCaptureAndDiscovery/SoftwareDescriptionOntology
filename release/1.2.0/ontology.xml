@@ -885,6 +885,7 @@
                     <rdf:Description rdf:about="http://purl.org/linked-data/cube#DataStructureDefinition"/>
                     <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit"/>
                     <rdf:Description rdf:about="http://www.geoscienceontology.org/geo-upper#Variable"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Organization"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Parameter"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Person"/>
