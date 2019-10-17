@@ -12,6 +12,8 @@
     <owl:Ontology rdf:about="https://w3id.org/okn/o/sd">
         <owl:versionIRI rdf:resource="https://w3id.org/okn/o/sd/1.2.0"/>
         <dc:abstract xml:lang="en">An ontology for describing software and their links to inputs, outputs and variables</dc:abstract>
+        <dc:contributor>Hernan Vargas</dc:contributor>
+        <dc:contributor>Maximiliano Osorio</dc:contributor>
         <dc:created>October 8th, 2019</dc:created>
         <dc:creator xml:lang="en">Daniel Garijo</dc:creator>
         <dc:creator xml:lang="en">Varun Ratnakar</dc:creator>
@@ -972,6 +974,18 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Default accepted value of a variable presentation (or a parameter)</rdfs:comment>
         <rdfs:label xml:lang="en">has default value</rdfs:label>
     </owl:DatatypeProperty>
@@ -1063,6 +1077,16 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#hasFixedValue">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Parameter"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Value of a parameter in a software setup.</rdfs:comment>
         <rdfs:label xml:lang="en">has fixed value</rdfs:label>
     </owl:DatatypeProperty>
@@ -1136,6 +1160,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Maximum accepted value of a variable presentation (or a parameter)</rdfs:comment>
         <rdfs:label xml:lang="en">has maximum accepted value</rdfs:label>
     </owl:DatatypeProperty>
@@ -1154,6 +1186,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">Minimum accepted value of a variable presentation (or a parameter)</rdfs:comment>
         <rdfs:label xml:lang="en">has minimum accepted value</rdfs:label>
     </owl:DatatypeProperty>
@@ -1401,6 +1441,35 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#supportDetails">
         <rdfs:label xml:lang="en">support details</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#value -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#value"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Image"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#SampleResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Visualization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
     </owl:DatatypeProperty>
     
 

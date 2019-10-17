@@ -9,6 +9,8 @@
 <https://w3id.org/okn/o/sd> rdf:type owl:Ontology ;
                              owl:versionIRI <https://w3id.org/okn/o/sd/1.2.0> ;
                              <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables"@en ;
+                             <http://purl.org/dc/elements/1.1/contributor> "Hernan Vargas" ,
+                                                                           "Maximiliano Osorio" ;
                              <http://purl.org/dc/elements/1.1/created> "October 8th, 2019" ;
                              <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo"@en ,
                                                                        "Varun Ratnakar"@en ,
@@ -602,6 +604,15 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                              :VariablePresentation
                                            )
                              ] ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:unionOf ( xsd:anyURI
+                                            xsd:boolean
+                                            xsd:dateTime
+                                            xsd:float
+                                            xsd:integer
+                                            xsd:string
+                                          )
+                            ] ;
                  rdfs:comment "Default accepted value of a variable presentation (or a parameter)"@en ;
                  rdfs:label "has default value"@en .
 
@@ -662,6 +673,13 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#hasFixedValue
 :hasFixedValue rdf:type owl:DatatypeProperty ;
                rdfs:domain :Parameter ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:unionOf ( xsd:boolean
+                                          xsd:float
+                                          xsd:integer
+                                          xsd:string
+                                        )
+                          ] ;
                rdfs:comment "Value of a parameter in a software setup."@en ;
                rdfs:label "has fixed value"@en .
 
@@ -709,6 +727,11 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                                      :VariablePresentation
                                                    )
                                      ] ;
+                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                      owl:unionOf ( xsd:float
+                                                    xsd:integer
+                                                  )
+                                    ] ;
                          rdfs:comment "Maximum accepted value of a variable presentation (or a parameter)"@en ;
                          rdfs:label "has maximum accepted value"@en .
 
@@ -720,6 +743,11 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                                      :VariablePresentation
                                                    )
                                      ] ;
+                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                      owl:unionOf ( xsd:float
+                                                    xsd:integer
+                                                  )
+                                    ] ;
                          rdfs:comment "Minimum accepted value of a variable presentation (or a parameter)"@en ;
                          rdfs:label "has minimum accepted value"@en .
 
@@ -882,6 +910,25 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#supportDetails
 :supportDetails rdf:type owl:DatatypeProperty ;
                 rdfs:label "support details"@en .
+
+
+###  https://w3id.org/okn/o/sd#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf <http://www.w3.org/ns/prov#value> ;
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( :Image
+                                   :SampleResource
+                                   :Visualization
+                                 )
+                   ] ;
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:unionOf ( xsd:anyURI
+                                  xsd:boolean
+                                  xsd:float
+                                  xsd:int
+                                  xsd:string
+                                )
+                  ] .
 
 
 ###  https://w3id.org/okn/o/sd#website
