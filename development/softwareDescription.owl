@@ -186,6 +186,20 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                rdfs:label "funding source"@en .
 
 
+###  https://w3id.org/okn/o/sd#hadPrimarySource
+:hadPrimarySource rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://www.w3.org/ns/prov#hadPrimarySource> ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :Image
+                                              :Software
+                                              :Visualization
+                                            )
+                              ] ;
+                  rdfs:range owl:Thing ;
+                  rdfs:comment "Property to identify the original source of the information of the annotated resource. It could be a web page, an organization, a person, some experiment notes, etc."@en ,
+                               "had primary source"@en .
+
+
 ###  https://w3id.org/okn/o/sd#hasConfiguration
 :hasConfiguration rdf:type owl:ObjectProperty ;
                   rdfs:domain :SoftwareVersion ;

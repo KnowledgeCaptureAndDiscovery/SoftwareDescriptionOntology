@@ -58,7 +58,9 @@
 </ul>
 </li>
 </ul></details><details><summary><u>Added classes</u></summary>
-<ul><li><a href="#FundingInformation">https://w3id.org/okn/o/sd#FundingInformation</a>
+<ul><li><a href="#http://www.w3.org/2002/07/owl#Thing">http://www.w3.org/2002/07/owl#Thing</a>
+</li>
+<li><a href="#FundingInformation">https://w3id.org/okn/o/sd#FundingInformation</a>
 </li>
 </ul></details><h3 id="changeProp" class="list">Object Properties</h3>
 <details><summary><u>Modified properties</u></summary>
@@ -198,7 +200,18 @@
 <li>Added: SubProperty of http://schema.org/copyrightYear</li>
 </ul>
 </li>
+<li><a href="#hadPrimarySource">https://w3id.org/okn/o/sd#hadPrimarySource</a>
+<ul>
+<li>Added: domain Union of (https://w3id.org/okn/o/sd#Image, https://w3id.org/okn/o/sd#Software, https://w3id.org/okn/o/sd#Visualization)</li>
+<li>Added: Range http://www.w3.org/2002/07/owl#Thing</li>
+<li>Added: SubProperty of http://www.w3.org/ns/prov#hadPrimarySource</li>
+</ul>
+</li>
 <li><a href="#hasFunding">https://w3id.org/okn/o/sd#hasFunding</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range https://w3id.org/okn/o/sd#FundingInformation</li>
+</ul>
 </li>
 <li><a href="#hasSetup">https://w3id.org/okn/o/sd#hasSetup</a>
 <ul>
@@ -298,6 +311,10 @@
 <li>Deleted: rdfs:comment "Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts"@en</li>
 </ul>
 </li>
+<li><a href="#hasDefaultValue">https://w3id.org/okn/o/sd#hasDefaultValue</a>
+<ul>
+<li></ul>
+</li>
 <li><a href="#hasDownloadURL">https://w3id.org/okn/o/sd#hasDownloadURL</a>
 <ul>
 <li>Added: rdfs:label "has download URL"@en</li>
@@ -312,7 +329,7 @@
 </li>
 <li><a href="#hasFixedValue">https://w3id.org/okn/o/sd#hasFixedValue</a>
 <ul>
-<li>Added: rdfs:label "has fixed value"@en</li>
+<li><li>Added: rdfs:label "has fixed value"@en</li>
 <li>Added: rdfs:comment "Value of a parameter in a software setup."@en</li>
 </ul>
 <ul>
@@ -323,6 +340,14 @@
 <ul>
 <li>Added: rdfs:comment "Instructions requires to install this particular piece of software."@en</li>
 </ul>
+</li>
+<li><a href="#hasMaximumAcceptedValue">https://w3id.org/okn/o/sd#hasMaximumAcceptedValue</a>
+<ul>
+<li></ul>
+</li>
+<li><a href="#hasMinimumAcceptedValue">https://w3id.org/okn/o/sd#hasMinimumAcceptedValue</a>
+<ul>
+<li></ul>
 </li>
 <li><a href="#hasPurpose">https://w3id.org/okn/o/sd#hasPurpose</a>
 <ul>
@@ -391,6 +416,12 @@
 <ul>
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
 <li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#value">https://w3id.org/okn/o/sd#value</a>
+<ul>
+<li>Added: Domain Union of (https://w3id.org/okn/o/sd#Image, https://w3id.org/okn/o/sd#SampleResource, https://w3id.org/okn/o/sd#Visualization)</li>
+<li><li>Added: SubProperty of http://www.w3.org/ns/prov#value</li>
 </ul>
 </li>
 </ul></details></div>

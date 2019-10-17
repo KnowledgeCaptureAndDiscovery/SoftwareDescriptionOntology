@@ -313,6 +313,27 @@
     
 
 
+    <!-- https://w3id.org/okn/o/sd#hadPrimarySource -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hadPrimarySource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#hadPrimarySource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Image"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Software"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Visualization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Property to identify the original source of the information of the annotated resource. It could be a web page, an organization, a person, some experiment notes, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">had primary source</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/okn/o/sd#hasConfiguration -->
 
 
