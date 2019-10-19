@@ -123,9 +123,9 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#adjustableParameter
 :adjustableParameter rdf:type owl:ObjectProperty ;
-                     rdfs:domain :SoftwareConfiguration ;
+                     rdfs:domain :ConfigurationSetup ;
                      rdfs:range :Parameter ;
-                     rdfs:comment "Parameter that can be adjusted in a configuration"@en ;
+                     rdfs:comment "Parameter that can be adjusted in a configuration setup"@en ;
                      rdfs:label "adjustable parameter"@en .
 
 
@@ -305,7 +305,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#hasSetup
 :hasSetup rdf:type owl:ObjectProperty ;
           rdfs:domain :SoftwareConfiguration ;
-          rdfs:range :SoftwareConfiguration ;
+          rdfs:range :ConfigurationSetup ;
           rdfs:comment "Property used to define configurations with some fixed resources and values. The rationale of this property is to allow predefined configurations"@en ;
           rdfs:label "has setup"@en .
 
@@ -924,6 +924,9 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#supportDetails
 :supportDetails rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Software ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Property to link details, such as mailing lists in case a contact person is not provided"@en ;
                 rdfs:label "support details"@en .
 
 
@@ -1005,24 +1008,31 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 <http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
 
 
+###  https://w3id.org/okn/o/sd#ConfigurationSetup
+:ConfigurationSetup rdf:type owl:Class ;
+                    rdfs:subClassOf :SoftwareConfiguration ;
+                    rdfs:comment "Special type of configuration in which some of the inputs or parameters are associated to files or values. A configuration may be associated to multiple setups to facilitate its execution."@en ;
+                    rdfs:label "Configuration Setup"@en .
+
+
 ###  https://w3id.org/okn/o/sd#DatasetSpecification
 :DatasetSpecification rdf:type owl:Class ;
                       rdfs:subClassOf <http://purl.org/linked-data/cube#DataStructureDefinition> ;
                       rdfs:comment "Class designed to describe a type of input or output used or produced by a model. For example, Topoflow has several inputs. One of them is a text file with precipitation values. The representation of this input is an instance of a dataset specification."@en ;
-                      rdfs:label "Dataset specification"@en .
+                      rdfs:label "Dataset Specification"@en .
 
 
 ###  https://w3id.org/okn/o/sd#FundingInformation
 :FundingInformation rdf:type owl:Class ;
                     rdfs:comment "A class to represent the funding information of a software project"@en ;
-                    rdfs:label "Funding information"@en .
+                    rdfs:label "Funding Information"@en .
 
 
 ###  https://w3id.org/okn/o/sd#ICASAVariable
 :ICASAVariable rdf:type owl:Class ;
                rdfs:subClassOf :StandardVariable ;
                rdfs:comment "Variable that follows the ICASA standard for agriculture: https://dssat.net/data/standards_v2"@en ;
-               rdfs:label "ICASA variable"@en .
+               rdfs:label "ICASA Variable"@en .
 
 
 ###  https://w3id.org/okn/o/sd#Image
@@ -1055,21 +1065,21 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :SVOVariable rdf:type owl:Class ;
              rdfs:subClassOf :StandardVariable ;
              rdfs:comment "Variable that follows the Scientific Variables Ontology: http://geoscienceontology.org/"@en ;
-             rdfs:label "SVO variable"@en .
+             rdfs:label "SVO Variable"@en .
 
 
 ###  https://w3id.org/okn/o/sd#SampleExecution
 :SampleExecution rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
                  rdfs:comment "A sample execution of a given software"@en ;
-                 rdfs:label "Sample execution"@en .
+                 rdfs:label "Sample Execution"@en .
 
 
 ###  https://w3id.org/okn/o/sd#SampleResource
 :SampleResource rdf:type owl:Class ;
                 rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
                 rdfs:comment "A sample resource associated with a software"@en ;
-                rdfs:label "Sample resource"@en .
+                rdfs:label "Sample Resource"@en .
 
 
 ###  https://w3id.org/okn/o/sd#Software
@@ -1103,14 +1113,14 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :SourceCode rdf:type owl:Class ;
             rdfs:subClassOf <http://schema.org/SoftwareSourceCode> ;
             rdfs:comment "Class representing the characteristics of the code associated with a  software component"@en ;
-            rdfs:label "Source code"@en .
+            rdfs:label "Source Code"@en .
 
 
 ###  https://w3id.org/okn/o/sd#StandardVariable
 :StandardVariable rdf:type owl:Class ;
                   rdfs:subClassOf :Variable ;
                   rdfs:comment "A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology"@en ;
-                  rdfs:label "Standard variable"@en .
+                  rdfs:label "Standard Variable"@en .
 
 
 ###  https://w3id.org/okn/o/sd#Unit
