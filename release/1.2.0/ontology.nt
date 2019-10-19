@@ -104,9 +104,9 @@
 # 
 # https://w3id.org/okn/o/sd#adjustableParameter
 <https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#ConfigurationSetup> .
 <https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#Parameter> .
-<https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameter that can be adjusted in a configuration"@en .
+<https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameter that can be adjusted in a configuration setup"@en .
 <https://w3id.org/okn/o/sd#adjustableParameter> <http://www.w3.org/2000/01/rdf-schema#label> "adjustable parameter"@en .
 # 
 # https://w3id.org/okn/o/sd#adjustsVariable
@@ -283,7 +283,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://w3id.org/okn/o/sd#hasSetup
 <https://w3id.org/okn/o/sd#hasSetup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/okn/o/sd#hasSetup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
-<https://w3id.org/okn/o/sd#hasSetup> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#hasSetup> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#ConfigurationSetup> .
 <https://w3id.org/okn/o/sd#hasSetup> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to define configurations with some fixed resources and values. The rationale of this property is to allow predefined configurations"@en .
 <https://w3id.org/okn/o/sd#hasSetup> <http://www.w3.org/2000/01/rdf-schema#label> "has setup"@en .
 # 
@@ -934,6 +934,9 @@ _:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/okn/o/sd#supportDetails
 <https://w3id.org/okn/o/sd#supportDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#supportDetails> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#supportDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/sd#supportDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to link details, such as mailing lists in case a contact person is not provided"@en .
 <https://w3id.org/okn/o/sd#supportDetails> <http://www.w3.org/2000/01/rdf-schema#label> "support details"@en .
 # 
 # https://w3id.org/okn/o/sd#value
@@ -1030,22 +1033,28 @@ _:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# https://w3id.org/okn/o/sd#ConfigurationSetup
+<https://w3id.org/okn/o/sd#ConfigurationSetup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#ConfigurationSetup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#ConfigurationSetup> <http://www.w3.org/2000/01/rdf-schema#comment> "Special type of configuration in which some of the inputs or parameters are associated to files or values. A configuration may be associated to multiple setups to facilitate its execution."@en .
+<https://w3id.org/okn/o/sd#ConfigurationSetup> <http://www.w3.org/2000/01/rdf-schema#label> "Configuration Setup"@en .
+# 
 # https://w3id.org/okn/o/sd#DatasetSpecification
 <https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#DataStructureDefinition> .
 <https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Class designed to describe a type of input or output used or produced by a model. For example, Topoflow has several inputs. One of them is a text file with precipitation values. The representation of this input is an instance of a dataset specification."@en .
-<https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset specification"@en .
+<https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset Specification"@en .
 # 
 # https://w3id.org/okn/o/sd#FundingInformation
 <https://w3id.org/okn/o/sd#FundingInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#FundingInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "A class to represent the funding information of a software project"@en .
-<https://w3id.org/okn/o/sd#FundingInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Funding information"@en .
+<https://w3id.org/okn/o/sd#FundingInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Funding Information"@en .
 # 
 # https://w3id.org/okn/o/sd#ICASAVariable
 <https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#StandardVariable> .
 <https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Variable that follows the ICASA standard for agriculture: https://dssat.net/data/standards_v2"@en .
-<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#label> "ICASA variable"@en .
+<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#label> "ICASA Variable"@en .
 # 
 # https://w3id.org/okn/o/sd#Image
 <https://w3id.org/okn/o/sd#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1073,19 +1082,19 @@ _:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/okn/o/sd#SVOVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#SVOVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#StandardVariable> .
 <https://w3id.org/okn/o/sd#SVOVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Variable that follows the Scientific Variables Ontology: http://geoscienceontology.org/"@en .
-<https://w3id.org/okn/o/sd#SVOVariable> <http://www.w3.org/2000/01/rdf-schema#label> "SVO variable"@en .
+<https://w3id.org/okn/o/sd#SVOVariable> <http://www.w3.org/2000/01/rdf-schema#label> "SVO Variable"@en .
 # 
 # https://w3id.org/okn/o/sd#SampleExecution
 <https://w3id.org/okn/o/sd#SampleExecution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#SampleExecution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
 <https://w3id.org/okn/o/sd#SampleExecution> <http://www.w3.org/2000/01/rdf-schema#comment> "A sample execution of a given software"@en .
-<https://w3id.org/okn/o/sd#SampleExecution> <http://www.w3.org/2000/01/rdf-schema#label> "Sample execution"@en .
+<https://w3id.org/okn/o/sd#SampleExecution> <http://www.w3.org/2000/01/rdf-schema#label> "Sample Execution"@en .
 # 
 # https://w3id.org/okn/o/sd#SampleResource
 <https://w3id.org/okn/o/sd#SampleResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#SampleResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
 <https://w3id.org/okn/o/sd#SampleResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A sample resource associated with a software"@en .
-<https://w3id.org/okn/o/sd#SampleResource> <http://www.w3.org/2000/01/rdf-schema#label> "Sample resource"@en .
+<https://w3id.org/okn/o/sd#SampleResource> <http://www.w3.org/2000/01/rdf-schema#label> "Sample Resource"@en .
 # 
 # https://w3id.org/okn/o/sd#Software
 <https://w3id.org/okn/o/sd#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1114,13 +1123,13 @@ _:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/okn/o/sd#SourceCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#SourceCode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/SoftwareSourceCode> .
 <https://w3id.org/okn/o/sd#SourceCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing the characteristics of the code associated with a  software component"@en .
-<https://w3id.org/okn/o/sd#SourceCode> <http://www.w3.org/2000/01/rdf-schema#label> "Source code"@en .
+<https://w3id.org/okn/o/sd#SourceCode> <http://www.w3.org/2000/01/rdf-schema#label> "Source Code"@en .
 # 
 # https://w3id.org/okn/o/sd#StandardVariable
 <https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#Variable> .
 <https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology"@en .
-<https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Standard variable"@en .
+<https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Standard Variable"@en .
 # 
 # https://w3id.org/okn/o/sd#Unit
 <https://w3id.org/okn/o/sd#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

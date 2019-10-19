@@ -577,6 +577,20 @@
     "@value" : "1.2.0"
   } ]
 }, {
+  "@id" : "https://w3id.org/okn/o/sd#ConfigurationSetup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Special type of configuration in which some of the inputs or parameters are associated to files or values. A configuration may be associated to multiple setups to facilitate its execution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Configuration Setup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/okn/o/sd#SoftwareConfiguration"
+  } ]
+}, {
   "@id" : "https://w3id.org/okn/o/sd#DatasetSpecification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -585,7 +599,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Dataset specification"
+    "@value" : "Dataset Specification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
@@ -599,7 +613,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Funding information"
+    "@value" : "Funding Information"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#ICASAVariable",
@@ -610,7 +624,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "ICASA variable"
+    "@value" : "ICASA Variable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/okn/o/sd#StandardVariable"
@@ -673,7 +687,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "SVO variable"
+    "@value" : "SVO Variable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/okn/o/sd#StandardVariable"
@@ -687,7 +701,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Sample execution"
+    "@value" : "Sample Execution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Activity"
@@ -701,7 +715,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Sample resource"
+    "@value" : "Sample Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
@@ -767,7 +781,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Source code"
+    "@value" : "Source Code"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/SoftwareSourceCode"
@@ -781,7 +795,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Standard variable"
+    "@value" : "Standard Variable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/okn/o/sd#Variable"
@@ -841,10 +855,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Parameter that can be adjusted in a configuration"
+    "@value" : "Parameter that can be adjusted in a configuration setup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/okn/o/sd#SoftwareConfiguration"
+    "@id" : "https://w3id.org/okn/o/sd#ConfigurationSetup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1651,7 +1665,7 @@
     "@value" : "has setup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/okn/o/sd#SoftwareConfiguration"
+    "@id" : "https://w3id.org/okn/o/sd#ConfigurationSetup"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasShortName",
@@ -2039,9 +2053,19 @@
 }, {
   "@id" : "https://w3id.org/okn/o/sd#supportDetails",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property to link details, such as mailing lists in case a contact person is not provided"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/okn/o/sd#Software"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "support details"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#usesUnit",

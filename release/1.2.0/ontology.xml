@@ -217,9 +217,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#adjustableParameter">
-        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#SoftwareConfiguration"/>
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#ConfigurationSetup"/>
         <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#Parameter"/>
-        <rdfs:comment xml:lang="en">Parameter that can be adjusted in a configuration</rdfs:comment>
+        <rdfs:comment xml:lang="en">Parameter that can be adjusted in a configuration setup</rdfs:comment>
         <rdfs:label xml:lang="en">adjustable parameter</rdfs:label>
     </owl:ObjectProperty>
     
@@ -495,7 +495,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasSetup">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#SoftwareConfiguration"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#SoftwareConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#ConfigurationSetup"/>
         <rdfs:comment xml:lang="en">Property used to define configurations with some fixed resources and values. The rationale of this property is to allow predefined configurations</rdfs:comment>
         <rdfs:label xml:lang="en">has setup</rdfs:label>
     </owl:ObjectProperty>
@@ -1462,6 +1462,9 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#supportDetails">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Property to link details, such as mailing lists in case a contact person is not provided</rdfs:comment>
         <rdfs:label xml:lang="en">support details</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1602,13 +1605,24 @@
     
 
 
+    <!-- https://w3id.org/okn/o/sd#ConfigurationSetup -->
+
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sd#ConfigurationSetup">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#SoftwareConfiguration"/>
+        <rdfs:comment xml:lang="en">Special type of configuration in which some of the inputs or parameters are associated to files or values. A configuration may be associated to multiple setups to facilitate its execution.</rdfs:comment>
+        <rdfs:label xml:lang="en">Configuration Setup</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/sd#DatasetSpecification -->
 
 
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#DatasetSpecification">
         <rdfs:subClassOf rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
         <rdfs:comment xml:lang="en">Class designed to describe a type of input or output used or produced by a model. For example, Topoflow has several inputs. One of them is a text file with precipitation values. The representation of this input is an instance of a dataset specification.</rdfs:comment>
-        <rdfs:label xml:lang="en">Dataset specification</rdfs:label>
+        <rdfs:label xml:lang="en">Dataset Specification</rdfs:label>
     </owl:Class>
     
 
@@ -1618,7 +1632,7 @@
 
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#FundingInformation">
         <rdfs:comment xml:lang="en">A class to represent the funding information of a software project</rdfs:comment>
-        <rdfs:label xml:lang="en">Funding information</rdfs:label>
+        <rdfs:label xml:lang="en">Funding Information</rdfs:label>
     </owl:Class>
     
 
@@ -1629,7 +1643,7 @@
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#ICASAVariable">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#StandardVariable"/>
         <rdfs:comment xml:lang="en">Variable that follows the ICASA standard for agriculture: https://dssat.net/data/standards_v2</rdfs:comment>
-        <rdfs:label xml:lang="en">ICASA variable</rdfs:label>
+        <rdfs:label xml:lang="en">ICASA Variable</rdfs:label>
     </owl:Class>
     
 
@@ -1682,7 +1696,7 @@
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#SVOVariable">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#StandardVariable"/>
         <rdfs:comment xml:lang="en">Variable that follows the Scientific Variables Ontology: http://geoscienceontology.org/</rdfs:comment>
-        <rdfs:label xml:lang="en">SVO variable</rdfs:label>
+        <rdfs:label xml:lang="en">SVO Variable</rdfs:label>
     </owl:Class>
     
 
@@ -1693,7 +1707,7 @@
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#SampleExecution">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment xml:lang="en">A sample execution of a given software</rdfs:comment>
-        <rdfs:label xml:lang="en">Sample execution</rdfs:label>
+        <rdfs:label xml:lang="en">Sample Execution</rdfs:label>
     </owl:Class>
     
 
@@ -1704,7 +1718,7 @@
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#SampleResource">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment xml:lang="en">A sample resource associated with a software</rdfs:comment>
-        <rdfs:label xml:lang="en">Sample resource</rdfs:label>
+        <rdfs:label xml:lang="en">Sample Resource</rdfs:label>
     </owl:Class>
     
 
@@ -1758,7 +1772,7 @@
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#SourceCode">
         <rdfs:subClassOf rdf:resource="http://schema.org/SoftwareSourceCode"/>
         <rdfs:comment xml:lang="en">Class representing the characteristics of the code associated with a  software component</rdfs:comment>
-        <rdfs:label xml:lang="en">Source code</rdfs:label>
+        <rdfs:label xml:lang="en">Source Code</rdfs:label>
     </owl:Class>
     
 
@@ -1769,7 +1783,7 @@
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#StandardVariable">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#Variable"/>
         <rdfs:comment xml:lang="en">A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology</rdfs:comment>
-        <rdfs:label xml:lang="en">Standard variable</rdfs:label>
+        <rdfs:label xml:lang="en">Standard Variable</rdfs:label>
     </owl:Class>
     
 
