@@ -1585,7 +1585,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Preoperty that expresses what are the outputs of a model"
+    "@value" : "Property that expresses what are the outputs of a model"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/okn/o/sd#SoftwareConfiguration"

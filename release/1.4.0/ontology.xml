@@ -419,7 +419,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasOutput">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#SoftwareConfiguration"/>
         <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#DatasetSpecification"/>
-        <rdfs:comment xml:lang="en">Preoperty that expresses what are the outputs of a model</rdfs:comment>
+        <rdfs:comment xml:lang="en">Property that expresses what are the outputs of a model</rdfs:comment>
         <rdfs:label xml:lang="en">has output</rdfs:label>
     </owl:ObjectProperty>
     

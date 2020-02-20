@@ -256,7 +256,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasOutput rdf:type owl:ObjectProperty ;
            rdfs:domain :SoftwareConfiguration ;
            rdfs:range :DatasetSpecification ;
-           rdfs:comment "Preoperty that expresses what are the outputs of a model"@en ;
+           rdfs:comment "Property that expresses what are the outputs of a model"@en ;
            rdfs:label "has output"@en .
 
 
