@@ -947,6 +947,8 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#recommendedIncrement
 :recommendedIncrement rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Parameter ;
+                      rdfs:range xsd:float ;
                       rdfs:comment "Value that represents how a parameter should be incremented on each iteration of a software component execution. This value is important when preparing execution ensembles automatically, e.g., simulating crop production varying the parameter \"fertilizer amount\" in increments of 10%."@en ;
                       rdfs:label "recommended increment"@en .
 
@@ -1229,7 +1231,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#Visualization
 :Visualization rdf:type owl:Class ;
-               rdfs:comment "Class to represent any type of visualization related to a software. For exmaple, a dynamic HTML page, a video, etc."@en ;
+               rdfs:comment "Class to represent any type of visualization related to a software. For example, a dynamic HTML page, a video, etc."@en ;
                rdfs:label "Visualization"@en .
 
 

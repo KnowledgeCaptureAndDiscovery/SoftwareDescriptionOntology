@@ -1492,6 +1492,8 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#recommendedIncrement">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Value that represents how a parameter should be incremented on each iteration of a software component execution. This value is important when preparing execution ensembles automatically, e.g., simulating crop production varying the parameter &quot;fertilizer amount&quot; in increments of 10%.</rdfs:comment>
         <rdfs:label xml:lang="en">recommended increment</rdfs:label>
     </owl:DatatypeProperty>
@@ -1946,7 +1948,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#Visualization">
-        <rdfs:comment xml:lang="en">Class to represent any type of visualization related to a software. For exmaple, a dynamic HTML page, a video, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Class to represent any type of visualization related to a software. For example, a dynamic HTML page, a video, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Visualization</rdfs:label>
     </owl:Class>
 </rdf:RDF>

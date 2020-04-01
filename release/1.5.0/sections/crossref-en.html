@@ -339,6 +339,7 @@ This section provides details for each class and property defined by The Softwar
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDataType" title="https://w3id.org/okn/o/sd#hasDataType">has data type</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFixedValue" title="https://w3id.org/okn/o/sd#hasFixedValue">has fixed value</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStepSize" title="https://w3id.org/okn/o/sd#hasStepSize">has step size</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#recommendedIncrement" title="https://w3id.org/okn/o/sd#recommendedIncrement">recommended increment</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -845,7 +846,7 @@ This section provides details for each class and property defined by The Softwar
       <p>
          <strong>IRI:</strong> https://w3id.org/okn/o/sd#Visualization</p>
       <div class="comment">
-         <span class="markdown">Class to represent any type of visualization related to a software. For exmaple, a dynamic HTML page, a video, etc.</span>
+         <span class="markdown">Class to represent any type of visualization related to a software. For example, a dynamic HTML page, a video, etc.</span>
       </div>
       <dl class="description">
          <dt>is in domain of</dt>
@@ -3920,6 +3921,19 @@ This section provides details for each class and property defined by The Softwar
          <strong>IRI:</strong> https://w3id.org/okn/o/sd#recommendedIncrement</p>
       <div class="comment">
          <span class="markdown">Value that represents how a parameter should be incremented on each iteration of a software component execution. This value is important when preparing execution ensembles automatically, e.g., simulating crop production varying the parameter "fertilizer amount" in increments of 10%.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/okn/o/sd#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
       </div>
    </div>
    <div class="entity" id="https://codemeta.github.io/terms/referencePublication">

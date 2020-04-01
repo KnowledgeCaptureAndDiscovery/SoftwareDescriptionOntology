@@ -907,7 +907,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Class to represent any type of visualization related to a software. For exmaple, a dynamic HTML page, a video, etc."
+    "@value" : "Class to represent any type of visualization related to a software. For example, a dynamic HTML page, a video, etc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2132,9 +2132,15 @@
     "@language" : "en",
     "@value" : "Value that represents how a parameter should be incremented on each iteration of a software component execution. This value is important when preparing execution ensembles automatically, e.g., simulating crop production varying the parameter \"fertilizer amount\" in increments of 10%."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/okn/o/sd#Parameter"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "recommended increment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#referencePublication",
