@@ -317,7 +317,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Index> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#NumericalIndex> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
@@ -368,7 +368,7 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://w3id.org/okn/o/sd#usefulForCalculatingIndex
 <https://w3id.org/okn/o/sd#usefulForCalculatingIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/okn/o/sd#usefulForCalculatingIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
-<https://w3id.org/okn/o/sd#usefulForCalculatingIndex> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#Index> .
+<https://w3id.org/okn/o/sd#usefulForCalculatingIndex> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#NumericalIndex> .
 <https://w3id.org/okn/o/sd#usefulForCalculatingIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that indicates that a software component (or any of its outputs) can be used to calculate a particular index. The rationale for this property is that indices are usually calculated by applying post-processing steps to the outputs of a software component."@en .
 <https://w3id.org/okn/o/sd#usefulForCalculatingIndex> <http://www.w3.org/2000/01/rdf-schema#label> "useful for calculating index" .
 # 
@@ -535,7 +535,7 @@ _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2002/07/owl#Thing> .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Index> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#NumericalIndex> .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Organization> .
@@ -1148,11 +1148,11 @@ _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/okn/o/sd#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "An image (e.g. tiff file) is a type of dataset specification used to define things like soil, crops, etc."@en .
 <https://w3id.org/okn/o/sd#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
 # 
-# https://w3id.org/okn/o/sd#Index
-<https://w3id.org/okn/o/sd#Index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/okn/o/sd#Index> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#Variable> .
-<https://w3id.org/okn/o/sd#Index> <http://www.w3.org/2000/01/rdf-schema#comment> "A number (such as a ratio) derived from a series of observations and used as an indicator or measure (https://www.merriam-webster.com/dictionary/index)"@en .
-<https://w3id.org/okn/o/sd#Index> <http://www.w3.org/2000/01/rdf-schema#label> "Index"@en .
+# https://w3id.org/okn/o/sd#NumericalIndex
+<https://w3id.org/okn/o/sd#NumericalIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#NumericalIndex> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#Variable> .
+<https://w3id.org/okn/o/sd#NumericalIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "A number (such as a ratio) derived from a series of observations and used as an indicator or measure (https://www.merriam-webster.com/dictionary/index)"@en .
+<https://w3id.org/okn/o/sd#NumericalIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Numerical Index"@en .
 # 
 # https://w3id.org/okn/o/sd#Organization
 <https://w3id.org/okn/o/sd#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

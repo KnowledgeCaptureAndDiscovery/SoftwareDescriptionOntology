@@ -548,7 +548,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Index"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#NumericalIndex"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#VariablePresentation"/>
                 </owl:unionOf>
             </owl:Class>
@@ -628,7 +628,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#usefulForCalculatingIndex">
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
-        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#Index"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#NumericalIndex"/>
         <rdfs:comment xml:lang="en">Property that indicates that a software component (or any of its outputs) can be used to calculate a particular index. The rationale for this property is that indices are usually calculated by applying post-processing steps to the outputs of a software component.</rdfs:comment>
         <rdfs:label>useful for calculating index</rdfs:label>
     </owl:ObjectProperty>
@@ -918,7 +918,7 @@
                     <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit"/>
                     <rdf:Description rdf:about="http://www.geoscienceontology.org/geo-upper#Variable"/>
                     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Index"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#NumericalIndex"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Organization"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Parameter"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Person"/>
@@ -1761,13 +1761,13 @@
     
 
 
-    <!-- https://w3id.org/okn/o/sd#Index -->
+    <!-- https://w3id.org/okn/o/sd#NumericalIndex -->
 
 
-    <owl:Class rdf:about="https://w3id.org/okn/o/sd#Index">
+    <owl:Class rdf:about="https://w3id.org/okn/o/sd#NumericalIndex">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#Variable"/>
         <rdfs:comment xml:lang="en">A number (such as a ratio) derived from a series of observations and used as an indicator or measure (https://www.merriam-webster.com/dictionary/index)</rdfs:comment>
-        <rdfs:label xml:lang="en">Index</rdfs:label>
+        <rdfs:label xml:lang="en">Numerical Index</rdfs:label>
     </owl:Class>
     
 

@@ -340,7 +340,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasStandardVariable rdf:type owl:ObjectProperty ,
                               owl:FunctionalProperty ;
                      rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( :Index
+                                   owl:unionOf ( :NumericalIndex
                                                  :VariablePresentation
                                                )
                                  ] ;
@@ -392,7 +392,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#usefulForCalculatingIndex
 :usefulForCalculatingIndex rdf:type owl:ObjectProperty ;
                            rdfs:domain :Software ;
-                           rdfs:range :Index ;
+                           rdfs:range :NumericalIndex ;
                            rdfs:comment "Property that indicates that a software component (or any of its outputs) can be used to calculate a particular index. The rationale for this property is that indices are usually calculated by applying post-processing steps to the outputs of a software component."@en ;
                            rdfs:label "useful for calculating index" .
 
@@ -565,7 +565,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                          <http://qudt.org/schema/qudt/Unit>
                                          <http://www.geoscienceontology.org/geo-upper#Variable>
                                          owl:Thing
-                                         :Index
+                                         :NumericalIndex
                                          :Organization
                                          :Parameter
                                          :Person
@@ -1114,11 +1114,11 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
        rdfs:label "Image"@en .
 
 
-###  https://w3id.org/okn/o/sd#Index
-:Index rdf:type owl:Class ;
+###  https://w3id.org/okn/o/sd#NumericalIndex
+:NumericalIndex rdf:type owl:Class ;
        rdfs:subClassOf :Variable ;
        rdfs:comment "A number (such as a ratio) derived from a series of observations and used as an indicator or measure (https://www.merriam-webster.com/dictionary/index)"@en ;
-       rdfs:label "Index"@en .
+       rdfs:label "Numerical Index"@en .
 
 
 ###  https://w3id.org/okn/o/sd#Organization

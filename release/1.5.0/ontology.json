@@ -35,7 +35,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/okn/o/sd#Index"
+      "@id" : "https://w3id.org/okn/o/sd#NumericalIndex"
     }, {
       "@id" : "https://w3id.org/okn/o/sd#VariablePresentation"
     } ]
@@ -73,7 +73,7 @@
     }, {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "@id" : "https://w3id.org/okn/o/sd#Index"
+      "@id" : "https://w3id.org/okn/o/sd#NumericalIndex"
     }, {
       "@id" : "https://w3id.org/okn/o/sd#Organization"
     }, {
@@ -679,7 +679,7 @@
     "@id" : "https://w3id.org/okn/o/sd#DatasetSpecification"
   } ]
 }, {
-  "@id" : "https://w3id.org/okn/o/sd#Index",
+  "@id" : "https://w3id.org/okn/o/sd#NumericalIndex",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -687,7 +687,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Index"
+    "@value" : "Numerical Index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/okn/o/sd#Variable"
@@ -2257,7 +2257,7 @@
     "@value" : "useful for calculating index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/okn/o/sd#Index"
+    "@id" : "https://w3id.org/okn/o/sd#NumericalIndex"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#usesUnit",
