@@ -72,49 +72,9 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://schema.org/author
-<http://schema.org/author> rdf:type owl:ObjectProperty ;
-                           rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/contributor
-<http://schema.org/contributor> rdf:type owl:ObjectProperty ;
-                                rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/copyrightHolder
-<http://schema.org/copyrightHolder> rdf:type owl:ObjectProperty ;
-                                    rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/copyrightYear
-<http://schema.org/copyrightYear> rdf:type owl:ObjectProperty ;
-                                  rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/publisher
-<http://schema.org/publisher> rdf:type owl:ObjectProperty ;
-                              rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/screenshot
-<http://schema.org/screenshot> rdf:type owl:ObjectProperty ;
-                               rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://www.w3.org/ns/prov#hadPrimarySource
-<http://www.w3.org/ns/prov#hadPrimarySource> rdf:type owl:ObjectProperty ;
-                                             rdfs:isDefinedBy <http://www.w3.org/ns/prov#> .
-
-
 ###  http://www.w3.org/ns/prov#used
 <http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty ;
                                  rdfs:isDefinedBy <http://www.w3.org/ns/prov#> .
-
-
-###  http://www.w3.org/ns/prov#wasDerivedFrom
-<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty ;
-                                           rdfs:isDefinedBy <http://www.w3.org/ns/prov#> .
 
 
 ###  http://www.w3.org/ns/prov#wasGeneratedBy
@@ -141,7 +101,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#author
 :author rdf:type owl:ObjectProperty ;
-        rdfs:subPropertyOf <http://schema.org/author> ;
         rdfs:domain :Software ;
         rdfs:range [ rdf:type owl:Class ;
                      owl:unionOf ( :Organization
@@ -161,7 +120,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#contributor
 :contributor rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf <http://schema.org/contributor> ;
              rdfs:domain :Software ;
              rdfs:range :Person ;
              rdfs:label "contributor"@en .
@@ -169,13 +127,11 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#copyrightHolder
 :copyrightHolder rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf <http://schema.org/copyrightHolder> ;
                  rdfs:label "copyright holder"@en .
 
 
 ###  https://w3id.org/okn/o/sd#copyrightYear
 :copyrightYear rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf <http://schema.org/copyrightYear> ;
                rdfs:label "copyright year"@en .
 
 
@@ -189,7 +145,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#hadPrimarySource
 :hadPrimarySource rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf <http://www.w3.org/ns/prov#hadPrimarySource> ;
                   rdfs:domain [ rdf:type owl:Class ;
                                 owl:unionOf ( :Image
                                               :Software
@@ -389,7 +344,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#publisher
 :publisher rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf <http://schema.org/publisher> ;
            rdfs:domain :Software ;
            rdfs:range [ rdf:type owl:Class ;
                         owl:unionOf ( :Organization
@@ -401,7 +355,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#screenshot
 :screenshot rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf <http://schema.org/screenshot> ;
             rdfs:domain :Software ;
             rdfs:range :Image .
 
@@ -429,7 +382,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#wasDerivedFromSoftware
 :wasDerivedFromSoftware rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
                         rdfs:domain :Visualization ;
                         rdfs:range :Software ;
                         rdfs:label "was derived from software"@en .
@@ -438,88 +390,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 #################################################################
 #    Data properties
 #################################################################
-
-###  http://schema.org/citation
-<http://schema.org/citation> rdf:type owl:DatatypeProperty ;
-                             rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/codeRepository
-<http://schema.org/codeRepository> rdf:type owl:DatatypeProperty ;
-                                   rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/dateCreated
-<http://schema.org/dateCreated> rdf:type owl:DatatypeProperty ;
-                                rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/datePublished
-<http://schema.org/datePublished> rdf:type owl:DatatypeProperty ;
-                                  rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/description
-<http://schema.org/description> rdf:type owl:DatatypeProperty ;
-                                rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/email
-<http://schema.org/email> rdf:type owl:DatatypeProperty ;
-                          rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/identifier
-<http://schema.org/identifier> rdf:type owl:DatatypeProperty ;
-                               rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/keywords
-<http://schema.org/keywords> rdf:type owl:DatatypeProperty ;
-                             rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/license
-<http://schema.org/license> rdf:type owl:DatatypeProperty ;
-                            rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/memoryRequirements
-<http://schema.org/memoryRequirements> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain :Software ;
-                                       rdfs:range xsd:string ;
-                                       rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/name
-<http://schema.org/name> rdf:type owl:DatatypeProperty ;
-                         rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/operatingSystems
-<http://schema.org/operatingSystems> rdf:type owl:DatatypeProperty ;
-                                     rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/processorRequirements
-<http://schema.org/processorRequirements> rdf:type owl:DatatypeProperty ;
-                                          rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/programmingLanguage
-<http://schema.org/programmingLanguage> rdf:type owl:DatatypeProperty ;
-                                        rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/softwareRequirements
-<http://schema.org/softwareRequirements> rdf:type owl:DatatypeProperty ;
-                                         rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://www.w3.org/ns/prov#value
-<http://www.w3.org/ns/prov#value> rdf:type owl:DatatypeProperty ;
-                                  rdfs:isDefinedBy <http://www.w3.org/ns/prov#> .
-
 
 ###  https://codemeta.github.io/terms/funding
 <https://codemeta.github.io/terms/funding> rdf:type owl:DatatypeProperty ;
@@ -533,7 +403,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#citation
 :citation rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf <http://schema.org/citation> ;
           rdfs:domain :Software ;
           rdfs:range xsd:string ;
           rdfs:comment "How to cite this software"@en ;
@@ -542,7 +411,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#codeRepository
 :codeRepository rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf <http://schema.org/codeRepository> ;
                 rdfs:domain :SourceCode ;
                 rdfs:range xsd:anyURI ;
                 rdfs:comment "URL to the code repository of a software component"@en ;
@@ -551,7 +419,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#dataCatalogIdentifier
 :dataCatalogIdentifier rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf <http://schema.org/identifier> ;
                        rdfs:domain :SampleResource ;
                        rdfs:range xsd:string ;
                        rdfs:comment "An identifier for resources with metadata entries in a data catalog"@en ;
@@ -560,7 +427,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#dateCreated
 :dateCreated rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf <http://schema.org/dateCreated> ;
              rdfs:domain :Software ;
              rdfs:range xsd:dateTime ;
              rdfs:label "date created"@en .
@@ -568,7 +434,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#datePublished
 :datePublished rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf <http://schema.org/datePublished> ;
                rdfs:domain :Software ;
                rdfs:range xsd:dateTime ;
                rdfs:label "date published"@en .
@@ -576,7 +441,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#description
 :description rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf <http://schema.org/description> ;
              rdfs:domain [ rdf:type owl:Class ;
                            owl:unionOf ( <http://purl.org/linked-data/cube#DataStructureDefinition>
                                          <http://qudt.org/schema/qudt/Unit>
@@ -600,7 +464,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#email
 :email rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf <http://schema.org/email> ;
        rdfs:domain :Person ;
        rdfs:range xsd:string ;
        rdfs:label "email"@en .
@@ -867,7 +730,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#hasVersionId
 :hasVersionId rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf <http://schema.org/identifier> ;
               rdfs:domain :SoftwareVersion ;
               rdfs:range xsd:string ;
               rdfs:comment "Identifier of the version of this software"@en ;
@@ -876,7 +738,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#identifier
 :identifier rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf <http://schema.org/identifier> ;
             rdfs:domain [ rdf:type owl:Class ;
                           owl:unionOf ( :Organization
                                         :Person
@@ -890,7 +751,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#keywords
 :keywords rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf <http://schema.org/keywords> ;
           rdfs:domain :Software ;
           rdfs:range xsd:string ;
           rdfs:comment "Keywords associated with a software component"@en ;
@@ -899,7 +759,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#license
 :license rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf <http://schema.org/license> ;
          rdfs:domain [ rdf:type owl:Class ;
                        owl:unionOf ( :Software
                                      :SourceCode
@@ -912,7 +771,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#memoryRequirements
 :memoryRequirements rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf <http://schema.org/memoryRequirements> ;
                     rdfs:domain :Software ;
                     rdfs:range xsd:string ;
                     rdfs:label "memory requirements"@en .
@@ -920,7 +778,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#name
 :name rdf:type owl:DatatypeProperty ;
-      rdfs:subPropertyOf <http://schema.org/name> ;
       rdfs:range xsd:string ;
       rdfs:comment "Name of the resource"@en ;
       rdfs:label "name"@en .
@@ -928,7 +785,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#operatingSystems
 :operatingSystems rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf <http://schema.org/operatingSystems> ;
                   rdfs:domain :Software ;
                   rdfs:range xsd:string ;
                   rdfs:label "operating systems"@en .
@@ -948,7 +804,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#processorRequirements
 :processorRequirements rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf <http://schema.org/processorRequirements> ;
                        rdfs:domain :Software ;
                        rdfs:range xsd:string ;
                        rdfs:label "processor requirements"@en .
@@ -956,7 +811,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#programmingLanguage
 :programmingLanguage rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf <http://schema.org/programmingLanguage> ;
                      rdfs:domain :SourceCode ;
                      rdfs:range xsd:string ;
                      rdfs:label "programming language"@en .
@@ -990,7 +844,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#softwareRequirements
 :softwareRequirements rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf <http://schema.org/softwareRequirements> ;
                       rdfs:domain :Software ;
                       rdfs:range xsd:string ;
                       rdfs:label "software requirements"@en .
@@ -1018,7 +871,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#value
 :value rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf <http://www.w3.org/ns/prov#value> ;
        rdfs:domain [ rdf:type owl:Class ;
                      owl:unionOf ( :Image
                                    :SampleResource
@@ -1065,35 +917,9 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                    rdfs:isDefinedBy <http://qudt.org/schema/qudt/> .
 
 
-###  http://schema.org/Organization
-<http://schema.org/Organization> rdf:type owl:Class ;
-                                 rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/Person
-<http://schema.org/Person> rdf:type owl:Class ;
-                           rdfs:isDefinedBy <http://schema.org/> .
-
-
-###  http://schema.org/SoftwareApplication
-<http://schema.org/SoftwareApplication> rdf:type owl:Class .
-
-
-###  http://schema.org/SoftwareSourceCode
-<http://schema.org/SoftwareSourceCode> rdf:type owl:Class .
-
-
 ###  http://www.geoscienceontology.org/geo-upper#Variable
 <http://www.geoscienceontology.org/geo-upper#Variable> rdf:type owl:Class ;
                                                        rdfs:isDefinedBy <http://www.geoscienceontology.org/geo-upper> .
-
-
-###  http://www.w3.org/ns/prov#Activity
-<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
-
-
-###  http://www.w3.org/ns/prov#Entity
-<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
 
 
 ###  https://w3id.org/okn/o/sd#ConfigurationSetup
@@ -1147,7 +973,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#Organization
 :Organization rdf:type owl:Class ;
-              rdfs:subClassOf <http://schema.org/Organization> ;
               rdfs:comment "An organized ody of people with a particular purpose"@en ;
               rdfs:label "Organization"@en .
 
@@ -1160,7 +985,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#Person
 :Person rdf:type owl:Class ;
-        rdfs:subClassOf <http://schema.org/Person> ;
         rdfs:label "Person"@en .
 
 
@@ -1173,21 +997,18 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#SampleExecution
 :SampleExecution rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
                  rdfs:comment "A sample execution of a given software"@en ;
                  rdfs:label "Sample Execution"@en .
 
 
 ###  https://w3id.org/okn/o/sd#SampleResource
 :SampleResource rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
                 rdfs:comment "A sample resource associated with a software"@en ;
                 rdfs:label "Sample Resource"@en .
 
 
 ###  https://w3id.org/okn/o/sd#Software
 :Software rdf:type owl:Class ;
-          rdfs:subClassOf <http://schema.org/SoftwareApplication> ;
           rdfs:label "Software"@en .
 
 
@@ -1214,7 +1035,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#SourceCode
 :SourceCode rdf:type owl:Class ;
-            rdfs:subClassOf <http://schema.org/SoftwareSourceCode> ;
             rdfs:comment "Class representing the characteristics of the code associated with a  software component"@en ;
             rdfs:label "Source Code"@en .
 

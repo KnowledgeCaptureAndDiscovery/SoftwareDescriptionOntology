@@ -1,0 +1,50 @@
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Modified classes</u></summary>
+<ul><li><a href="#http://www.geoscienceontology.org/geo-upper#Variable">http://www.geoscienceontology.org/geo-upper#Variable</a>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://www.geoscienceontology.org/geo-upper#Variable&gt; &lt;https://w3id.org/okn/o/sd#SVOVariable&gt; )</li>
+</ul>
+</li>
+<li><a href="#StandardVariable">https://w3id.org/okn/o/sd#StandardVariable</a>
+<ul>
+<li>Added: rdfs:comment "A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology. For example, a standard variable may be a SVO variable (http://www.geoscienceontology.org/geo-upper#Variable)"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology"@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added classes</u></summary>
+<ul><li><a href="#DataTransformation">https://w3id.org/okn/o/sd#DataTransformation</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+</ul>
+</li>
+<li><a href="#DataTransformationSetup">https://w3id.org/okn/o/sd#DataTransformationSetup</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/okn/o/sd#DataTransformation</li>
+<li>Added: SubClass of https://w3id.org/okn/o/sd#ConfigurationSetup</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted classes</u></summary>
+<ul><li><a href="#ICASAVariable">https://w3id.org/okn/o/sd#ICASAVariable</a>
+</li>
+<li><a href="#SVOVariable">https://w3id.org/okn/o/sd#SVOVariable</a>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Added properties</u></summary>
+<ul><li><a href="#hasDataTransformation">https://w3id.org/okn/o/sd#hasDataTransformation</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#DatasetSpecification</li>
+<li>Added: Range https://w3id.org/okn/o/sd#DataTransformation</li>
+</ul>
+</li>
+<li><a href="#hasDataTransformationSetup">https://w3id.org/okn/o/sd#hasDataTransformationSetup</a>
+<ul>
+<li>Added: SubProperty of https://w3id.org/okn/o/sd#hasDataTransformation</li>
+<li>Added: domain https://w3id.org/okn/o/sd#DatasetSpecification</li>
+<li>Added: Range https://w3id.org/okn/o/sd#DataTransformationSetup</li>
+</ul>
+</li>
+</ul></details></div>
