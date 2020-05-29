@@ -7,11 +7,11 @@
 @base <https://w3id.org/okn/o/sd> .
 
 <https://w3id.org/okn/o/sd> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://w3id.org/okn/o/sd/1.5.0> ;
+                             owl:versionIRI <https://w3id.org/okn/o/sd/1.6.0> ;
                              <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables"@en ;
                              <http://purl.org/dc/elements/1.1/contributor> "Hernan Vargas" ,
                                                                            "Maximiliano Osorio" ;
-                             <http://purl.org/dc/elements/1.1/created> "October 27th, 2019" ;
+                             <http://purl.org/dc/elements/1.1/created> "May 28th, 2020" ;
                              <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo"@en ,
                                                                        "Varun Ratnakar"@en ,
                                                                        "Yolanda Gil"@en ,
@@ -21,8 +21,8 @@
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en ;
                              <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/okn/o/sd> ;
                              rdfs:comment "An ontology for describing software and their links to inputs, outputs and variables"@en ;
-                             owl:priorVersion <https://w3id.org/okn/o/sd/1.4.0> ;
-                             owl:versionInfo "1.5.0" .
+                             owl:priorVersion <https://w3id.org/okn/o/sd/1.5.0> ;
+                             owl:versionInfo "1.6.0" .
 
 #################################################################
 #    Annotation properties
@@ -218,6 +218,23 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                            )
                              ] ;
                   rdfs:label "has contact person"@en .
+
+
+###  https://w3id.org/okn/o/sd#hasDataTransformation
+:hasDataTransformation rdf:type owl:ObjectProperty ;
+                       rdfs:domain :DatasetSpecification ;
+                       rdfs:range :DataTransformation ;
+                       rdfs:comment "Property that associates an input/output with their corresponding data transformation."@en ;
+                       rdfs:label "has data transformation"@en .
+
+
+###  https://w3id.org/okn/o/sd#hasDataTransformationSetup
+:hasDataTransformationSetup rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :hasDataTransformation ;
+                            rdfs:domain :DatasetSpecification ;
+                            rdfs:range :DataTransformationSetup ;
+                            rdfs:comment "Property to link an input/output dataset to the specific data transformation (with URLs"@en ;
+                            rdfs:label "has data transformation setup"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasFileStructure
@@ -1068,7 +1085,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  http://www.geoscienceontology.org/geo-upper#Variable
 <http://www.geoscienceontology.org/geo-upper#Variable> rdf:type owl:Class ;
-                                                       owl:equivalentClass :SVOVariable ;
                                                        rdfs:isDefinedBy <http://www.geoscienceontology.org/geo-upper> .
 
 
@@ -1087,6 +1103,21 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                     rdfs:label "Configuration Setup"@en .
 
 
+###  https://w3id.org/okn/o/sd#DataTransformation
+:DataTransformation rdf:type owl:Class ;
+                    rdfs:subClassOf :SoftwareConfiguration ;
+                    rdfs:comment "Class that represents a software for performing data transformation."@en ;
+                    rdfs:label "Data Transformation"@en .
+
+
+###  https://w3id.org/okn/o/sd#DataTransformationSetup
+:DataTransformationSetup rdf:type owl:Class ;
+                         rdfs:subClassOf :ConfigurationSetup ,
+                                         :DataTransformation ;
+                         rdfs:comment "Special type of data transformation where the inputs and parameters have some pre-selected values. For example, they may point to a particular dataset URL to be used in the transformation"@en ;
+                         rdfs:label "Data Transformation Setup"@en .
+
+
 ###  https://w3id.org/okn/o/sd#DatasetSpecification
 :DatasetSpecification rdf:type owl:Class ;
                       rdfs:subClassOf <http://purl.org/linked-data/cube#DataStructureDefinition> ;
@@ -1100,13 +1131,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                     rdfs:label "Funding Information"@en .
 
 
-###  https://w3id.org/okn/o/sd#ICASAVariable
-:ICASAVariable rdf:type owl:Class ;
-               rdfs:subClassOf :StandardVariable ;
-               rdfs:comment "Variable that follows the ICASA standard for agriculture: https://dssat.net/data/standards_v2"@en ;
-               rdfs:label "ICASA Variable"@en .
-
-
 ###  https://w3id.org/okn/o/sd#Image
 :Image rdf:type owl:Class ;
        rdfs:subClassOf :DatasetSpecification ;
@@ -1116,9 +1140,9 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#NumericalIndex
 :NumericalIndex rdf:type owl:Class ;
-       rdfs:subClassOf :Variable ;
-       rdfs:comment "A number (such as a ratio) derived from a series of observations and used as an indicator or measure (https://www.merriam-webster.com/dictionary/index)"@en ;
-       rdfs:label "Numerical Index"@en .
+                rdfs:subClassOf :Variable ;
+                rdfs:comment "A number (such as a ratio) derived from a series of observations and used as an indicator or measure (https://www.merriam-webster.com/dictionary/index)"@en ;
+                rdfs:label "Numerical Index"@en .
 
 
 ###  https://w3id.org/okn/o/sd#Organization
@@ -1138,13 +1162,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :Person rdf:type owl:Class ;
         rdfs:subClassOf <http://schema.org/Person> ;
         rdfs:label "Person"@en .
-
-
-###  https://w3id.org/okn/o/sd#SVOVariable
-:SVOVariable rdf:type owl:Class ;
-             rdfs:subClassOf :StandardVariable ;
-             rdfs:comment "Variable that follows the Scientific Variables Ontology: http://geoscienceontology.org/"@en ;
-             rdfs:label "SVO Variable"@en .
 
 
 ###  https://w3id.org/okn/o/sd#SampleCollection
@@ -1205,7 +1222,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#StandardVariable
 :StandardVariable rdf:type owl:Class ;
                   rdfs:subClassOf :Variable ;
-                  rdfs:comment "A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology"@en ;
+                  rdfs:comment "A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology. For example, a standard variable may be a SVO variable (http://www.geoscienceontology.org/geo-upper#Variable)"@en ;
                   rdfs:label "Standard Variable"@en .
 
 
@@ -1235,4 +1252,4 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                rdfs:label "Visualization"@en .
 
 
-###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

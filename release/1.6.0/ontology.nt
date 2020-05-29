@@ -1,9 +1,9 @@
 <https://w3id.org/okn/o/sd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/okn/o/sd/1.5.0> .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/okn/o/sd/1.6.0> .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables"@en .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/contributor> "Hernan Vargas" .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/contributor> "Maximiliano Osorio" .
-<https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/created> "October 27th, 2019" .
+<https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/created> "May 28th, 2020" .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo"@en .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/creator> "Varun Ratnakar"@en .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/creator> "Yolanda Gil"@en .
@@ -13,8 +13,8 @@
 <https://w3id.org/okn/o/sd> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en .
 <https://w3id.org/okn/o/sd> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/okn/o/sd> .
 <https://w3id.org/okn/o/sd> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for describing software and their links to inputs, outputs and variables"@en .
-<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/okn/o/sd/1.4.0> .
-<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionInfo> "1.5.0" .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/okn/o/sd/1.5.0> .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionInfo> "1.6.0" .
 # 
 # 
 # #################################################################
@@ -203,6 +203,21 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Person> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#hasContactPerson> <http://www.w3.org/2000/01/rdf-schema#label> "has contact person"@en .
+# 
+# https://w3id.org/okn/o/sd#hasDataTransformation
+<https://w3id.org/okn/o/sd#hasDataTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasDataTransformation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hasDataTransformation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#DataTransformation> .
+<https://w3id.org/okn/o/sd#hasDataTransformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that associates an input/output with their corresponding data transformation."@en .
+<https://w3id.org/okn/o/sd#hasDataTransformation> <http://www.w3.org/2000/01/rdf-schema#label> "has data transformation"@en .
+# 
+# https://w3id.org/okn/o/sd#hasDataTransformationSetup
+<https://w3id.org/okn/o/sd#hasDataTransformationSetup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/okn/o/sd#hasDataTransformationSetup> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/okn/o/sd#hasDataTransformation> .
+<https://w3id.org/okn/o/sd#hasDataTransformationSetup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+<https://w3id.org/okn/o/sd#hasDataTransformationSetup> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/okn/o/sd#DataTransformationSetup> .
+<https://w3id.org/okn/o/sd#hasDataTransformationSetup> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to link an input/output dataset to the specific data transformation (with URLs"@en .
+<https://w3id.org/okn/o/sd#hasDataTransformationSetup> <http://www.w3.org/2000/01/rdf-schema#label> "has data transformation setup"@en .
 # 
 # https://w3id.org/okn/o/sd#hasFileStructure
 <https://w3id.org/okn/o/sd#hasFileStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1110,7 +1125,6 @@ _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 # 
 # http://www.geoscienceontology.org/geo-upper#Variable
 <http://www.geoscienceontology.org/geo-upper#Variable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.geoscienceontology.org/geo-upper#Variable> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/okn/o/sd#SVOVariable> .
 <http://www.geoscienceontology.org/geo-upper#Variable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.geoscienceontology.org/geo-upper> .
 # 
 # http://www.w3.org/ns/prov#Activity
@@ -1125,6 +1139,19 @@ _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/okn/o/sd#ConfigurationSetup> <http://www.w3.org/2000/01/rdf-schema#comment> "Special type of configuration in which some of the inputs or parameters are associated to files or values. A configuration may be associated to multiple setups to facilitate its execution."@en .
 <https://w3id.org/okn/o/sd#ConfigurationSetup> <http://www.w3.org/2000/01/rdf-schema#label> "Configuration Setup"@en .
 # 
+# https://w3id.org/okn/o/sd#DataTransformation
+<https://w3id.org/okn/o/sd#DataTransformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#DataTransformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+<https://w3id.org/okn/o/sd#DataTransformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents a software for performing data transformation."@en .
+<https://w3id.org/okn/o/sd#DataTransformation> <http://www.w3.org/2000/01/rdf-schema#label> "Data Transformation"@en .
+# 
+# https://w3id.org/okn/o/sd#DataTransformationSetup
+<https://w3id.org/okn/o/sd#DataTransformationSetup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/okn/o/sd#DataTransformationSetup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#ConfigurationSetup> .
+<https://w3id.org/okn/o/sd#DataTransformationSetup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#DataTransformation> .
+<https://w3id.org/okn/o/sd#DataTransformationSetup> <http://www.w3.org/2000/01/rdf-schema#comment> "Special type of data transformation where the inputs and parameters have some pre-selected values. For example, they may point to a particular dataset URL to be used in the transformation"@en .
+<https://w3id.org/okn/o/sd#DataTransformationSetup> <http://www.w3.org/2000/01/rdf-schema#label> "Data Transformation Setup"@en .
+# 
 # https://w3id.org/okn/o/sd#DatasetSpecification
 <https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#DatasetSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#DataStructureDefinition> .
@@ -1135,12 +1162,6 @@ _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/okn/o/sd#FundingInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#FundingInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "A class to represent the funding information of a software project"@en .
 <https://w3id.org/okn/o/sd#FundingInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Funding Information"@en .
-# 
-# https://w3id.org/okn/o/sd#ICASAVariable
-<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#StandardVariable> .
-<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Variable that follows the ICASA standard for agriculture: https://dssat.net/data/standards_v2"@en .
-<https://w3id.org/okn/o/sd#ICASAVariable> <http://www.w3.org/2000/01/rdf-schema#label> "ICASA Variable"@en .
 # 
 # https://w3id.org/okn/o/sd#Image
 <https://w3id.org/okn/o/sd#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1169,12 +1190,6 @@ _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/okn/o/sd#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Person> .
 <https://w3id.org/okn/o/sd#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-# 
-# https://w3id.org/okn/o/sd#SVOVariable
-<https://w3id.org/okn/o/sd#SVOVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/okn/o/sd#SVOVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#StandardVariable> .
-<https://w3id.org/okn/o/sd#SVOVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "Variable that follows the Scientific Variables Ontology: http://geoscienceontology.org/"@en .
-<https://w3id.org/okn/o/sd#SVOVariable> <http://www.w3.org/2000/01/rdf-schema#label> "SVO Variable"@en .
 # 
 # https://w3id.org/okn/o/sd#SampleCollection
 <https://w3id.org/okn/o/sd#SampleCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1226,7 +1241,7 @@ _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 # https://w3id.org/okn/o/sd#StandardVariable
 <https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/okn/o/sd#Variable> .
-<https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology"@en .
+<https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology. For example, a standard variable may be a SVO variable (http://www.geoscienceontology.org/geo-upper#Variable)"@en .
 <https://w3id.org/okn/o/sd#StandardVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Standard Variable"@en .
 # 
 # https://w3id.org/okn/o/sd#Unit
@@ -1251,4 +1266,4 @@ _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/okn/o/sd#Visualization> <http://www.w3.org/2000/01/rdf-schema#comment> "Class to represent any type of visualization related to a software. For example, a dynamic HTML page, a video, etc."@en .
 <https://w3id.org/okn/o/sd#Visualization> <http://www.w3.org/2000/01/rdf-schema#label> "Visualization"@en .
 # 
-# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

@@ -10,11 +10,11 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/okn/o/sd">
-        <owl:versionIRI rdf:resource="https://w3id.org/okn/o/sd/1.5.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/okn/o/sd/1.6.0"/>
         <dc:abstract xml:lang="en">An ontology for describing software and their links to inputs, outputs and variables</dc:abstract>
         <dc:contributor>Hernan Vargas</dc:contributor>
         <dc:contributor>Maximiliano Osorio</dc:contributor>
-        <dc:created>October 27th, 2019</dc:created>
+        <dc:created>May 28th, 2020</dc:created>
         <dc:creator xml:lang="en">Daniel Garijo</dc:creator>
         <dc:creator xml:lang="en">Varun Ratnakar</dc:creator>
         <dc:creator xml:lang="en">Yolanda Gil</dc:creator>
@@ -24,8 +24,8 @@
         <vann:preferredNamespacePrefix xml:lang="en">sd</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/okn/o/sd"/>
         <rdfs:comment xml:lang="en">An ontology for describing software and their links to inputs, outputs and variables</rdfs:comment>
-        <owl:priorVersion rdf:resource="https://w3id.org/okn/o/sd/1.4.0"/>
-        <owl:versionInfo>1.5.0</owl:versionInfo>
+        <owl:priorVersion rdf:resource="https://w3id.org/okn/o/sd/1.5.0"/>
+        <owl:versionInfo>1.6.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -361,6 +361,31 @@
             </owl:Class>
         </rdfs:range>
         <rdfs:label xml:lang="en">has contact person</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#hasDataTransformation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasDataTransformation">
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#DatasetSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#DataTransformation"/>
+        <rdfs:comment xml:lang="en">Property that associates an input/output with their corresponding data transformation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has data transformation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#hasDataTransformationSetup -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#hasDataTransformationSetup">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/okn/o/sd#hasDataTransformation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#DatasetSpecification"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#DataTransformationSetup"/>
+        <rdfs:comment xml:lang="en">Property to link an input/output dataset to the specific data transformation (with URLs</rdfs:comment>
+        <rdfs:label xml:lang="en">has data transformation setup</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1687,7 +1712,6 @@
 
 
     <owl:Class rdf:about="http://www.geoscienceontology.org/geo-upper#Variable">
-        <owl:equivalentClass rdf:resource="https://w3id.org/okn/o/sd#SVOVariable"/>
         <rdfs:isDefinedBy rdf:resource="http://www.geoscienceontology.org/geo-upper"/>
     </owl:Class>
     
@@ -1718,6 +1742,29 @@
     
 
 
+    <!-- https://w3id.org/okn/o/sd#DataTransformation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sd#DataTransformation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#SoftwareConfiguration"/>
+        <rdfs:comment xml:lang="en">Class that represents a software for performing data transformation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#DataTransformationSetup -->
+
+
+    <owl:Class rdf:about="https://w3id.org/okn/o/sd#DataTransformationSetup">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#ConfigurationSetup"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#DataTransformation"/>
+        <rdfs:comment xml:lang="en">Special type of data transformation where the inputs and parameters have some pre-selected values. For example, they may point to a particular dataset URL to be used in the transformation</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Transformation Setup</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/okn/o/sd#DatasetSpecification -->
 
 
@@ -1735,17 +1782,6 @@
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#FundingInformation">
         <rdfs:comment xml:lang="en">A class to represent the funding information of a software project</rdfs:comment>
         <rdfs:label xml:lang="en">Funding Information</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/sd#ICASAVariable -->
-
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/sd#ICASAVariable">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#StandardVariable"/>
-        <rdfs:comment xml:lang="en">Variable that follows the ICASA standard for agriculture: https://dssat.net/data/standards_v2</rdfs:comment>
-        <rdfs:label xml:lang="en">ICASA Variable</rdfs:label>
     </owl:Class>
     
 
@@ -1799,17 +1835,6 @@
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#Person">
         <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
         <rdfs:label xml:lang="en">Person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/okn/o/sd#SVOVariable -->
-
-
-    <owl:Class rdf:about="https://w3id.org/okn/o/sd#SVOVariable">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#StandardVariable"/>
-        <rdfs:comment xml:lang="en">Variable that follows the Scientific Variables Ontology: http://geoscienceontology.org/</rdfs:comment>
-        <rdfs:label xml:lang="en">SVO Variable</rdfs:label>
     </owl:Class>
     
 
@@ -1906,7 +1931,7 @@
 
     <owl:Class rdf:about="https://w3id.org/okn/o/sd#StandardVariable">
         <rdfs:subClassOf rdf:resource="https://w3id.org/okn/o/sd#Variable"/>
-        <rdfs:comment xml:lang="en">A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology</rdfs:comment>
+        <rdfs:comment xml:lang="en">A standard variable, necessary to refer to all the variable using the same nomenclature in a domain ontology. For example, a standard variable may be a SVO variable (http://www.geoscienceontology.org/geo-upper#Variable)</rdfs:comment>
         <rdfs:label xml:lang="en">Standard Variable</rdfs:label>
     </owl:Class>
     
@@ -1955,6 +1980,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 
