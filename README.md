@@ -3,4 +3,4 @@ Repository to store the software description ontology, an evolution from the Ont
 
 The latest version of the ontology can be found at: https://w3id.org/okn/o/sd#
 
-A version of the ontology without mappings can be accessed at https://knowledgecaptureanddiscovery.github.io/SoftwareDescriptionOntology/release/1.6.0/sd-noMappings.ttl
+A version of the ontology without mappings can be accessed at https://w3id.org/okn/o/sd/1.6.0-nm#
