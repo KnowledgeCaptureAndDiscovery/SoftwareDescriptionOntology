@@ -9,7 +9,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid105",
+  "@id" : "_:genid103",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -75,10 +75,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
-    }, {
-      "@id" : "http://qudt.org/schema/qudt/Unit"
-    }, {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
       "@id" : "https://w3id.org/okn/o/sd#NumericalIndex"
@@ -103,6 +99,16 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/okn/o/sd#SoftwareConfiguration"
+    }, {
+      "@id" : "https://w3id.org/okn/o/sd#VariablePresentation"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
@@ -113,17 +119,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid40",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/okn/o/sd#SoftwareConfiguration"
-    }, {
-      "@id" : "https://w3id.org/okn/o/sd#VariablePresentation"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -133,7 +129,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -151,7 +147,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid53",
+  "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -163,7 +159,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -181,7 +177,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -191,13 +187,25 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid67",
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/okn/o/sd#Parameter"
     }, {
       "@id" : "https://w3id.org/okn/o/sd#VariablePresentation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#integer"
     } ]
   } ]
 }, {
@@ -213,19 +221,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid70",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#float"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -235,7 +231,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -247,7 +243,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -259,7 +255,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -269,7 +265,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -279,7 +275,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid91",
+  "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -289,7 +285,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid94",
+  "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -301,7 +297,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid98",
+  "@id" : "_:genid96",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -1340,7 +1336,7 @@
     "@value" : "Constraint or rule associated to a  variable or software configuration. For example: \"This model accepts only monthly data\", or \"all inputs of this model configuration must share the same location\". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid40"
+    "@id" : "_:genid38"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1424,14 +1420,14 @@
     "@value" : "Default accepted value of a variable presentation (or a parameter)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid43"
+    "@id" : "_:genid41"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has default value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid46"
+    "@id" : "_:genid44"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasDimensionality",
@@ -1560,7 +1556,7 @@
     "@value" : "Execution instructions on how to run the image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid53"
+    "@id" : "_:genid51"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1632,7 +1628,7 @@
     "@value" : "has fixed value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid57"
+    "@id" : "_:genid55"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasFormat",
@@ -1642,7 +1638,7 @@
     "@value" : "Format followed by a file. For example, txt, nc, etc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid64"
+    "@id" : "_:genid62"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1744,14 +1740,14 @@
     "@value" : "Maximum accepted value of a variable presentation (or a parameter)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid67"
+    "@id" : "_:genid65"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has maximum accepted value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid70"
+    "@id" : "_:genid68"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasMinimumAcceptedValue",
@@ -1761,14 +1757,14 @@
     "@value" : "Minimum accepted value of a variable presentation (or a parameter)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid74"
+    "@id" : "_:genid72"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has minimum accepted value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid77"
+    "@id" : "_:genid75"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasOutput",
@@ -2087,7 +2083,7 @@
     "@value" : "Identifier of the resource being described"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid81"
+    "@id" : "_:genid79"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2147,7 +2143,7 @@
     "@value" : "License of a software component or its source code"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid85"
+    "@id" : "_:genid83"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2259,7 +2255,7 @@
     "@value" : "Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid88"
+    "@id" : "_:genid86"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2445,7 +2441,7 @@
     "@value" : "Tag used to annotate a version or a software configuration. This annotation is useful to show which version is the latest, or which version is deprecated. Supported tags are: \"latest\", \"deprecated\""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid91"
+    "@id" : "_:genid89"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2485,7 +2481,7 @@
     "@value" : "uses unit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://qudt.org/schema/qudt/Unit"
+    "@id" : "https://w3id.org/okn/o/sd#Unit"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#value",
@@ -2495,14 +2491,14 @@
     "@value" : "Value associated to the described entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid94"
+    "@id" : "_:genid92"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid98"
+    "@id" : "_:genid96"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#value"
@@ -2531,7 +2527,7 @@
     "@value" : "Website of the software"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid105"
+    "@id" : "_:genid103"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",

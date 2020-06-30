@@ -417,7 +417,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                       :VariablePresentation
                                     )
                       ] ;
-          rdfs:range <http://qudt.org/schema/qudt/Unit> ;
+          rdfs:range :Unit ;
           rdfs:comment "Property used to link a variable presentation or time interval to the unit they are represented in"@en ;
           rdfs:label "uses unit"@en .
 
@@ -595,9 +595,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :description rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf <http://schema.org/description> ;
              rdfs:domain [ rdf:type owl:Class ;
-                           owl:unionOf ( <http://purl.org/linked-data/cube#DataStructureDefinition>
-                                         <http://qudt.org/schema/qudt/Unit>
-                                         owl:Thing
+                           owl:unionOf ( owl:Thing
                                          :NumericalIndex
                                          :Organization
                                          :Parameter

@@ -663,7 +663,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/okn/o/sd#Unit"/>
         <rdfs:comment xml:lang="en">Property used to link a variable presentation or time interval to the unit they are represented in</rdfs:comment>
         <rdfs:label xml:lang="en">uses unit</rdfs:label>
     </owl:ObjectProperty>
@@ -967,8 +967,6 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/linked-data/cube#DataStructureDefinition"/>
-                    <rdf:Description rdf:about="http://qudt.org/schema/qudt/Unit"/>
                     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#NumericalIndex"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Organization"/>
