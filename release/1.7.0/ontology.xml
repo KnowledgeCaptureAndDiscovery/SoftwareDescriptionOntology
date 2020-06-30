@@ -151,15 +151,6 @@
     
 
 
-    <!-- http://schema.org/copyrightYear -->
-
-
-    <owl:ObjectProperty rdf:about="http://schema.org/copyrightYear">
-        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://schema.org/publisher -->
 
 
@@ -287,17 +278,15 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#copyrightHolder">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/copyrightHolder"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Organization"/>
+                    <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:label xml:lang="en">copyright holder</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/okn/o/sd#copyrightYear -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#copyrightYear">
-        <rdfs:subPropertyOf rdf:resource="http://schema.org/copyrightYear"/>
-        <rdfs:label xml:lang="en">copyright year</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -722,6 +711,15 @@
     
 
 
+    <!-- http://schema.org/copyrightYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/copyrightYear">
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://schema.org/dateCreated -->
 
 
@@ -908,6 +906,17 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">URL to the code repository of a software component</rdfs:comment>
         <rdfs:label xml:lang="en">code repository</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/okn/o/sd#copyrightYear -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#copyrightYear">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/copyrightYear"/>
+        <rdfs:comment xml:lang="en">Year in which the software component was copyrighted</rdfs:comment>
+        <rdfs:label xml:lang="en">copyright year</rdfs:label>
     </owl:DatatypeProperty>
     
 

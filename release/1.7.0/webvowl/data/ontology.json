@@ -8,21 +8,21 @@
     },
     "iri" : "https://w3id.org/okn/o/sd",
     "version" : "1.7.0",
-    "author" : [ "Yolanda Gil", "Deborah Khider", "Daniel Garijo", "Varun Ratnakar" ],
+    "author" : [ "Yolanda Gil", "Deborah Khider", "Varun Ratnakar", "Daniel Garijo" ],
     "comments" : {
       "en" : "An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies"
     },
     "other" : {
-      "priorVersion" : [ {
-        "identifier" : "priorVersion",
-        "language" : "undefined",
-        "value" : "https://w3id.org/okn/o/sd/1.6.0",
-        "type" : "iri"
-      } ],
       "license" : [ {
         "identifier" : "license",
         "language" : "undefined",
         "value" : "http://creativecommons.org/licenses/by/2.0/",
+        "type" : "iri"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/okn/o/sd/1.6.0",
         "type" : "iri"
       } ],
       "creator" : [ {
@@ -33,12 +33,12 @@
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Daniel Garijo",
+        "value" : "Varun Ratnakar",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Varun Ratnakar",
+        "value" : "Daniel Garijo",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -69,6 +69,12 @@
         "value" : "sd",
         "type" : "label"
       } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.7.0",
+        "type" : "label"
+      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
@@ -81,12 +87,6 @@
         "value" : "An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "1.7.0",
-        "type" : "label"
-      } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
@@ -97,59 +97,56 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "39",
+    "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
     "id" : "53",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "60",
     "type" : "rdfs:Literal"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "89",
+    "type" : "owl:Thing"
   }, {
     "id" : "90",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "91",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "92",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "93",
     "type" : "rdfs:Literal"
   }, {
     "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "70",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
-    "id" : "40",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "77",
+    "id" : "10",
     "type" : "owl:Class"
-  }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "145",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "5",
     "type" : "owl:Class"
@@ -157,343 +154,358 @@
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "144",
     "type" : "owl:Class"
   }, {
-    "id" : "75",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "58",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "181",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "17",
+    "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "104",
+    "id" : "73",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "182",
-    "type" : "rdfs:Datatype"
+    "id" : "20",
+    "type" : "owl:Class"
   }, {
-    "id" : "2",
-    "type" : "rdfs:Datatype"
+    "id" : "23",
+    "type" : "owl:Class"
   }, {
-    "id" : "163",
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "185",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "186",
+    "id" : "101",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
   }, {
     "id" : "187",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "189",
     "type" : "owl:unionOf"
   }, {
-    "id" : "113",
+    "id" : "191",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "193",
+    "id" : "34",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "35",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "194",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "195",
+    "id" : "192",
     "type" : "owl:unionOf"
-  }, {
-    "id" : "196",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "197",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "125",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "179",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "115",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "7",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "157",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "215",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "143",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "216",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "29",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "217",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "84",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "81",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "175",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "190",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "165",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "154",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "87",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "226",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "155",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "229",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "167",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "230",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "231",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "147",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "232",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "233",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "234",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "237",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "129",
-    "type" : "owl:Class"
-  }, {
-    "id" : "131",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "83",
-    "type" : "owl:Class"
-  }, {
-    "id" : "135",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "109",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "102",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "123",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "133",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "248",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "247",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "107",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "171",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "254",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "214",
+    "id" : "198",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "199",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "159",
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "200",
     "type" : "owl:unionOf"
   }, {
-    "id" : "228",
+    "id" : "184",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "152",
+    "id" : "201",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "160",
+    "id" : "202",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "141",
-    "type" : "rdfs:Literal"
+    "id" : "205",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "138",
-    "type" : "owl:Thing"
+    "id" : "112",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "259",
-    "type" : "rdfs:Literal"
+    "id" : "123",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "148",
-    "type" : "rdfs:Literal"
+    "id" : "48",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "241",
-    "type" : "rdfs:Literal"
+    "id" : "19",
+    "type" : "owl:Class"
   }, {
-    "id" : "245",
-    "type" : "rdfs:Literal"
+    "id" : "8",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "243",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "256",
+    "id" : "7",
     "type" : "owl:unionOf"
   }, {
-    "id" : "260",
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "223",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "180",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "153",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "236",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "239",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "240",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "149",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "253",
     "type" : "owl:unionOf"
   }, {
     "id" : "204",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "127",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "89",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "206",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "100",
+    "id" : "176",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "264",
+    "id" : "254",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "33",
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "158",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "136",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "116",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "135",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "261",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "265",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "209",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "125",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "86",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "114",
     "type" : "owl:Class"
   }, {
     "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "95",
-    "type" : "owl:unionOf"
+    "id" : "67",
+    "type" : "rdfs:Literal"
   }, {
-    "id" : "19",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "137",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "220",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "212",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "118",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "222",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "201",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "192",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "210",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "98",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "79",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "72",
-    "type" : "owl:Class"
-  }, {
-    "id" : "68",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "66",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "173",
+    "id" : "41",
     "type" : "rdfs:Literal"
   }, {
     "id" : "37",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "42",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "176",
+    "id" : "36",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "243",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "178",
     "type" : "rdfs:Literal"
   } ],
   "classAttribute" : [ {
@@ -511,9 +523,9 @@
     "label" : {
       "IRI-based" : "Unit"
     },
-    "subClasses" : [ "40" ],
+    "subClasses" : [ "39" ],
     "attributes" : [ "external" ],
-    "id" : "39"
+    "id" : "38"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#SampleResource",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -522,12 +534,12 @@
       "IRI-based" : "SampleResource",
       "en" : "Sample Resource"
     },
-    "subClasses" : [ "45" ],
+    "subClasses" : [ "46" ],
     "comment" : {
       "en" : "A sample resource associated with a software"
     },
-    "id" : "13",
-    "superClasses" : [ "14" ]
+    "id" : "17",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "https://w3id.org/okn/o/sd#Person",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -539,8 +551,8 @@
     "comment" : {
       "en" : "A human being (individual)"
     },
-    "id" : "23",
-    "superClasses" : [ "24" ]
+    "id" : "49",
+    "superClasses" : [ "50" ]
   }, {
     "iri" : "https://w3id.org/okn/o/sd#Variable",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -549,42 +561,70 @@
       "IRI-based" : "Variable",
       "en" : "Variable"
     },
-    "subClasses" : [ "54", "55", "31" ],
+    "subClasses" : [ "54", "55", "29" ],
     "comment" : {
       "en" : "A symbol that represents a quanity in a dataset or dataset specification"
     },
     "id" : "53"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "59",
+    "id" : "60",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "89",
+    "label" : {
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "90",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "91",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "92",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "93",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -619,7 +659,7 @@
     },
     "subClasses" : [ "1" ],
     "attributes" : [ "external" ],
-    "id" : "70"
+    "id" : "57"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#Unit",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -631,8 +671,8 @@
     "comment" : {
       "en" : "Class designed to distinguish the different types of units that are available in variables from datasets or parameters"
     },
-    "id" : "40",
-    "superClasses" : [ "39" ]
+    "id" : "39",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "https://w3id.org/okn/o/sd#SoftwareImage",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -644,8 +684,8 @@
     "comment" : {
       "en" : "An image that virtualizes the functionality of a given software. For example, a Docker container."
     },
-    "id" : "77",
-    "superClasses" : [ "26" ]
+    "id" : "10",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "http://schema.org/Organization",
     "baseIri" : "http://schema.org",
@@ -661,9 +701,9 @@
     "label" : {
       "IRI-based" : "Organization"
     },
-    "subClasses" : [ "72" ],
+    "subClasses" : [ "4" ],
     "attributes" : [ "external" ],
-    "id" : "73"
+    "id" : "5"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#Software",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -672,9 +712,9 @@
       "IRI-based" : "Software",
       "en" : "Software"
     },
-    "subClasses" : [ "77", "19", "49" ],
-    "id" : "26",
-    "superClasses" : [ "27" ]
+    "subClasses" : [ "10", "13", "15" ],
+    "id" : "11",
+    "superClasses" : [ "160" ]
   }, {
     "iri" : "https://w3id.org/okn/o/sd#Visualization",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -686,7 +726,7 @@
     "comment" : {
       "en" : "Class to represent any type of visualization related to a software. For example, a dynamic HTML page, a video, etc."
     },
-    "id" : "145"
+    "id" : "144"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#StandardVariable",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -701,11 +741,11 @@
     "id" : "54",
     "superClasses" : [ "53" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "47",
+    "id" : "73",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/ns/prov#Activity",
@@ -714,9 +754,9 @@
     "label" : {
       "IRI-based" : "Activity"
     },
-    "subClasses" : [ "4" ],
+    "subClasses" : [ "19" ],
     "attributes" : [ "external" ],
-    "id" : "5"
+    "id" : "20"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#ConfigurationSetup",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -725,12 +765,12 @@
       "IRI-based" : "ConfigurationSetup",
       "en" : "Configuration Setup"
     },
-    "subClasses" : [ "10" ],
+    "subClasses" : [ "22" ],
     "comment" : {
       "en" : "Special type of configuration in which some of the inputs or parameters are associated to files or values. A configuration may be associated to multiple setups to facilitate its execution."
     },
-    "id" : "11",
-    "superClasses" : [ "19" ]
+    "id" : "23",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Entity",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -738,65 +778,15 @@
     "label" : {
       "IRI-based" : "Entity"
     },
-    "subClasses" : [ "13" ],
+    "subClasses" : [ "17" ],
     "attributes" : [ "external" ],
-    "id" : "14"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "75",
-    "label" : {
-      "IRI-based" : "anyURI"
-    }
+    "id" : "25"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "58",
+    "id" : "59",
     "label" : {
       "IRI-based" : "string"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "31", "83" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "181"
-  }, {
-    "iri" : "http://schema.org/SoftwareSourceCode",
-    "baseIri" : "http://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SoftwareSourceCode"
-    },
-    "subClasses" : [ "16" ],
-    "attributes" : [ "external" ],
-    "id" : "17"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "104",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "182",
-    "label" : {
-      "IRI-based" : "anyURI"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#int",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
-    "label" : {
-      "IRI-based" : "int"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "163",
-    "label" : {
-      "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -808,88 +798,140 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "186",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://schema.org/SoftwareSourceCode",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareSourceCode"
+    },
+    "subClasses" : [ "31" ],
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "187",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "29", "80" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "191",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "instances" : 0,
-    "union" : [ "31", "19" ],
+    "union" : [ "29", "13" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "187"
+    "id" : "192"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "113",
+    "id" : "198",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "193",
+    "id" : "199",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "35",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "194",
+    "id" : "110",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "instances" : 0,
-    "union" : [ "4", "145", "55", "16", "26", "72", "13", "83", "70", "39", "23", "53" ],
+    "union" : [ "19", "144", "55", "31", "11", "4", "17", "80", "57", "38", "49", "53" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "195"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "196",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "197",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "125",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "200"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "179",
+    "id" : "184",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "201",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "202",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "205",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "115",
+    "id" : "112",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
-    "instances" : 0,
-    "union" : [ "26", "72", "23" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "7"
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "https://w3id.org/okn/o/sd#SampleExecution",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -901,15 +943,8 @@
     "comment" : {
       "en" : "A sample execution of a given software"
     },
-    "id" : "4",
-    "superClasses" : [ "5" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "157",
-    "label" : {
-      "IRI-based" : "anyURI"
-    }
+    "id" : "19",
+    "superClasses" : [ "20" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -918,6 +953,11 @@
       "IRI-based" : "string"
     }
   }, {
+    "instances" : 0,
+    "union" : [ "11", "4", "49" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "7"
+  }, {
     "iri" : "https://w3id.org/okn/o/sd#DatasetSpecification",
     "baseIri" : "https://w3id.org/okn/o/sd",
     "instances" : 0,
@@ -925,12 +965,12 @@
       "IRI-based" : "DatasetSpecification",
       "en" : "Dataset Specification"
     },
-    "subClasses" : [ "21" ],
+    "subClasses" : [ "114" ],
     "comment" : {
       "en" : "Class designed to describe a type of input or output used or produced by a model. For example, Topoflow has several inputs. One of them is a text file with precipitation values. The representation of this input is an instance of a dataset specification."
     },
     "id" : "1",
-    "superClasses" : [ "70" ]
+    "superClasses" : [ "57" ]
   }, {
     "iri" : "https://w3id.org/okn/o/sd#SoftwareVersion",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -942,80 +982,80 @@
     "comment" : {
       "en" : "A software version is a specificf type of software that represents a particular set of functionalities. New functionalities and error fixes may occur between software versions"
     },
-    "id" : "49",
-    "superClasses" : [ "26" ]
+    "id" : "15",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "215",
+    "id" : "142",
     "label" : {
       "IRI-based" : "anyURI"
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "143",
-    "label" : {
-      "IRI-based" : "anyURI"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "216",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "29",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "31", "83" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "217"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "84",
+    "id" : "81",
     "label" : {
       "IRI-based" : "float"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "81",
+    "id" : "221",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "222",
+    "label" : {
+      "IRI-based" : "anyURI"
     }
   }, {
     "instances" : 0,
-    "union" : [ "31", "83" ],
+    "union" : [ "29", "80" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "175"
+    "id" : "223"
+  }, {
+    "instances" : 0,
+    "union" : [ "29", "80" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "180"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "190",
+    "id" : "78",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "165",
+    "id" : "27",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "195",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "229",
+    "label" : {
+      "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "https://w3id.org/okn/o/sd#DataTransformationSetup",
@@ -1028,89 +1068,89 @@
     "comment" : {
       "en" : "Special type of data transformation where the inputs and parameters have some pre-selected values. For example, they may point to a particular dataset URL to be used in the transformation"
     },
-    "id" : "10",
-    "superClasses" : [ "33", "11" ]
-  }, {
-    "instances" : 0,
-    "union" : [ "145", "1" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "154"
+    "id" : "22",
+    "superClasses" : [ "163", "23" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "87",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "226",
-    "label" : {
-      "IRI-based" : "anyURI"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "155",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "229",
-    "label" : {
-      "IRI-based" : "anyURI"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "167",
+    "id" : "84",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "230",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "4", "77", "19" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "231"
-  }, {
-    "instances" : 0,
-    "union" : [ "145", "21", "13" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "147"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "232",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "233",
     "label" : {
-      "IRI-based" : "anyURI"
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "string"
     }
   }, {
     "instances" : 0,
-    "union" : [ "26", "72", "23" ],
+    "union" : [ "144", "1" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "234"
+    "id" : "153"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "171",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "instances" : 0,
-    "union" : [ "19", "49" ],
+    "union" : [ "19", "10", "13" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "237"
+    "id" : "236"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "237",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "238",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "13", "15" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "239"
+  }, {
+    "instances" : 0,
+    "union" : [ "11", "4", "49" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "240"
+  }, {
+    "instances" : 0,
+    "union" : [ "144", "114", "17" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://schema.org/Person",
     "baseIri" : "http://schema.org",
@@ -1126,9 +1166,9 @@
     "label" : {
       "IRI-based" : "Person"
     },
-    "subClasses" : [ "23" ],
+    "subClasses" : [ "49" ],
     "attributes" : [ "external" ],
-    "id" : "24"
+    "id" : "50"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#SampleCollection",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -1140,8 +1180,8 @@
     "comment" : {
       "en" : "A collection of resources that are used as sample for running a sfoware component multiple times"
     },
-    "id" : "45",
-    "superClasses" : [ "13" ]
+    "id" : "46",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://w3id.org/okn/o/sd#FundingInformation",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -1153,11 +1193,11 @@
     "comment" : {
       "en" : "A class to represent the funding information of a software project"
     },
-    "id" : "129"
+    "id" : "127"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "131",
+    "id" : "133",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1172,67 +1212,67 @@
     "comment" : {
       "en" : "A parameter of the model."
     },
-    "id" : "83"
+    "id" : "80"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "135",
+    "id" : "121",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "109",
-    "label" : {
-      "IRI-based" : "float"
-    }
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "102",
+    "id" : "99",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "123",
+    "id" : "104",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "133",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "80" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "253"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "204",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "176",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "248",
+    "id" : "254",
     "label" : {
       "IRI-based" : "int"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "1", "83" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "247"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "107",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "171",
-    "label" : {
-      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://schema.org/SoftwareApplication",
@@ -1241,59 +1281,73 @@
     "label" : {
       "IRI-based" : "SoftwareApplication"
     },
-    "subClasses" : [ "26" ],
+    "subClasses" : [ "11" ],
     "attributes" : [ "external" ],
-    "id" : "27"
+    "id" : "160"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "254",
+    "id" : "220",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "214",
+    "id" : "151",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "199",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "26", "16" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "159"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "228",
+    "id" : "262",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "152",
+    "id" : "235",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "160",
+    "id" : "156",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "11", "31" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "158"
+  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "141",
+    "id" : "251",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "249",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "139",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1301,90 +1355,74 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "138",
+    "id" : "136",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "259",
+    "id" : "228",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "148",
+    "id" : "247",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "241",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "116",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "245",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "243",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "instances" : 0,
-    "union" : [ "72", "23" ],
+    "union" : [ "144", "114", "11" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "256"
+    "id" : "135"
   }, {
     "instances" : 0,
-    "union" : [ "1", "83" ],
+    "union" : [ "4", "49" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "260"
+    "id" : "261"
   }, {
     "instances" : 0,
-    "union" : [ "55", "31" ],
+    "union" : [ "1", "80" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "204"
+    "id" : "265"
   }, {
     "instances" : 0,
-    "union" : [ "72", "23" ],
+    "union" : [ "55", "29" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "127"
+    "id" : "209"
   }, {
     "instances" : 0,
-    "union" : [ "31", "83" ],
+    "union" : [ "4", "49" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "89"
+    "id" : "125"
+  }, {
+    "instances" : 0,
+    "union" : [ "29", "80" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "86"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "206",
+    "id" : "212",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "100",
+    "id" : "97",
     "label" : {
       "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "264",
-    "label" : {
-      "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "https://w3id.org/okn/o/sd#DataTransformation",
@@ -1394,12 +1432,12 @@
       "IRI-based" : "DataTransformation",
       "en" : "Data Transformation"
     },
-    "subClasses" : [ "10" ],
+    "subClasses" : [ "22" ],
     "comment" : {
       "en" : "Class that represents a software for performing data transformation."
     },
-    "id" : "33",
-    "superClasses" : [ "19" ]
+    "id" : "163",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "https://w3id.org/okn/o/sd#VariablePresentation",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -1411,13 +1449,13 @@
     "comment" : {
       "en" : "Concept used to represent an instantiation of a variable in an input/output dataset. For example, a model A may use an input file with temperature expressed in Farenheit (variablePresentation1), while a model B may produce an output with temperature in Celsius (variablePresentation2). Both variable presentations refer to the concept of temperature."
     },
-    "id" : "31",
+    "id" : "29",
     "superClasses" : [ "53" ]
   }, {
     "instances" : 0,
-    "union" : [ "72", "23" ],
+    "union" : [ "4", "49" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "95"
+    "id" : "92"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#SoftwareConfiguration",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -1426,69 +1464,69 @@
       "IRI-based" : "SoftwareConfiguration",
       "en" : "Software Configuration"
     },
-    "subClasses" : [ "33", "11" ],
+    "subClasses" : [ "163", "23" ],
     "comment" : {
       "en" : "A software configuration represents a particular way of invoking a function of a software component. A software configuration exposes the precise inputs and outputs that are used for that function. Multiple software configurations may be associated to a software component. A software configuration facilitates the encapsulation of software, and it can be used to represent components of scientific workflows."
     },
-    "id" : "19",
-    "superClasses" : [ "26" ]
+    "id" : "13",
+    "superClasses" : [ "11" ]
   }, {
     "instances" : 0,
-    "union" : [ "145", "21", "26" ],
+    "union" : [ "4", "49" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "137"
+    "id" : "146"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "220",
+    "id" : "216",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "212",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "118",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "222",
+    "id" : "95",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "201",
+    "id" : "226",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "192",
+    "id" : "218",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "210",
+    "id" : "76",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "98",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "197",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1504,7 +1542,7 @@
     "comment" : {
       "en" : "An image (e.g. tiff file) is a type of dataset specification used to define certain inputs of models like soil, crops, etc."
     },
-    "id" : "21",
+    "id" : "114",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "https://w3id.org/okn/o/sd#SourceCode",
@@ -1517,11 +1555,11 @@
     "comment" : {
       "en" : "Class representing the characteristics of the code associated with a  software component"
     },
-    "id" : "16",
-    "superClasses" : [ "17" ]
+    "id" : "31",
+    "superClasses" : [ "32" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "79",
+    "id" : "67",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1537,25 +1575,18 @@
     "comment" : {
       "en" : "An organized ody of people with a particular purpose"
     },
-    "id" : "72",
-    "superClasses" : [ "73" ]
+    "id" : "4",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "68",
+    "id" : "41",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "66",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "173",
+    "id" : "37",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1563,20 +1594,27 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "37",
+    "id" : "36",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "243",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "42",
+    "id" : "181",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "176",
+    "id" : "178",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1598,46 +1636,46 @@
     "id" : "12",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "15",
+    "id" : "14",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "18",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "20",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
+    "id" : "21",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "25",
+    "id" : "24",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "28",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "30",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "32",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "34",
+    "id" : "33",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "36",
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "41",
+    "id" : "44",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "43",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "46",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "48",
+    "id" : "47",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "51",
@@ -1649,94 +1687,85 @@
     "id" : "56",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "57",
+    "id" : "58",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "60",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "61",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "64",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "67",
+    "id" : "68",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "69",
+    "id" : "70",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "71",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "74",
+    "id" : "72",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "76",
+    "id" : "74",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "78",
+    "id" : "75",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "80",
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "85",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "86",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "88",
+    "id" : "91",
     "type" : "owl:objectProperty"
   }, {
     "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "97",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "99",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "101",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "103",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "106",
+    "id" : "109",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "108",
+    "id" : "111",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "110",
+    "id" : "113",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "112",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "114",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "116",
+    "id" : "115",
     "type" : "owl:objectProperty"
   }, {
     "id" : "117",
@@ -1745,20 +1774,20 @@
     "id" : "119",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "121",
-    "type" : "owl:objectProperty"
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "122",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "126",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "44",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "130",
     "type" : "owl:datatypeProperty"
@@ -1767,147 +1796,147 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "136",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "38",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "140",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "142",
+    "id" : "141",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "144",
+    "id" : "143",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "146",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "149",
+    "id" : "145",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "151",
+    "id" : "148",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "153",
+    "id" : "150",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "156",
+    "id" : "152",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "158",
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "161",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "162",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "164",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "120",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "166",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "168",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "169",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "170",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "172",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "177",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "178",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "180",
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
     "type" : "owl:objectProperty"
   }, {
     "id" : "183",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "184",
+    "id" : "186",
     "type" : "owl:objectProperty"
   }, {
     "id" : "188",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "111",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "189",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "191",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "128",
+    "id" : "190",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "198",
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "193",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "200",
+    "id" : "194",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "202",
+    "id" : "196",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "203",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "139",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "205",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "96",
-    "type" : "owl:objectProperty"
+    "id" : "206",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "207",
+    "id" : "137",
     "type" : "owl:objectProperty"
   }, {
     "id" : "208",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "209",
+    "id" : "210",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "211",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "213",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "215",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "218",
-    "type" : "owl:objectProperty"
+    "id" : "217",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "219",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "221",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "223",
+    "id" : "224",
     "type" : "owl:objectProperty"
   }, {
     "id" : "225",
@@ -1916,20 +1945,17 @@
     "id" : "227",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "235",
+    "id" : "230",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "236",
+    "id" : "232",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "238",
+    "id" : "234",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "239",
+    "id" : "241",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "240",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "242",
     "type" : "owl:datatypeProperty"
@@ -1937,56 +1963,56 @@
     "id" : "244",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "245",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "246",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "249",
-    "type" : "owl:objectProperty"
+    "id" : "248",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "250",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "251",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "253",
+    "id" : "252",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "255",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "257",
-    "type" : "owl:datatypeProperty"
+    "id" : "256",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "258",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "259",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "260",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "261",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "262",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "263",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "265",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "266",
+    "id" : "264",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "224",
-    "type" : "owl:objectProperty"
+    "id" : "266",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "267",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "268",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "269",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "231",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "270",
     "type" : "owl:objectProperty"
@@ -2000,13 +2026,7 @@
     "id" : "273",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "150",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "274",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "252",
     "type" : "owl:objectProperty"
   }, {
     "id" : "275",
@@ -2018,7 +2038,25 @@
     "id" : "277",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "257",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "278",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "279",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "280",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "281",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "282",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -2060,55 +2098,55 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "9"
   }, {
-    "range" : "14",
+    "range" : "11",
     "domain" : "13",
     "attributes" : [ "object", "anonymous" ],
     "id" : "12"
   }, {
-    "range" : "17",
-    "domain" : "16",
+    "range" : "11",
+    "domain" : "15",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "15"
+    "id" : "14"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasSampleResult",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "13",
+    "range" : "17",
     "label" : {
       "IRI-based" : "hasSampleResult",
       "en" : "has sample result"
     },
-    "domain" : "19",
+    "domain" : "13",
     "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
-    "range" : "1",
-    "domain" : "21",
+    "range" : "23",
+    "domain" : "22",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "20"
+    "id" : "21"
   }, {
-    "range" : "24",
-    "domain" : "23",
+    "range" : "25",
+    "domain" : "17",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "22"
-  }, {
-    "range" : "27",
-    "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "25"
+    "id" : "24"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasPurpose",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "29",
+    "range" : "27",
     "label" : {
       "IRI-based" : "hasPurpose",
       "en" : "has purpose"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Objective or main functionality that can be achieved by running this software"
     },
     "attributes" : [ "datatype" ],
-    "id" : "28"
+    "id" : "26"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#partOfDataset",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -2117,31 +2155,31 @@
       "IRI-based" : "partOfDataset",
       "en" : "part of dataset"
     },
-    "domain" : "31",
+    "domain" : "29",
     "comment" : {
       "en" : "Associates a presentation with a dataset where the presentation occurs"
     },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "28"
   }, {
-    "range" : "33",
-    "domain" : "10",
+    "range" : "32",
+    "domain" : "31",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "32"
+    "id" : "30"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasAssumption",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "35",
+    "range" : "34",
     "label" : {
       "IRI-based" : "hasAssumption",
       "en" : "has assumption"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Assumptions of a software, e.g. the solver being used for a particular model, the source of the data (e.g., all data must have a given resolution), etc."
     },
     "attributes" : [ "datatype" ],
-    "id" : "34"
+    "id" : "33"
   }, {
     "iri" : "http://schema.org/copyrightYear",
     "baseIri" : "http://schema.org",
@@ -2157,14 +2195,13 @@
     "label" : {
       "IRI-based" : "copyrightYear"
     },
-    "domain" : "37",
-    "subproperty" : [ "38" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "36"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "35"
   }, {
     "iri" : "http://schema.org/programmingLanguage",
     "baseIri" : "http://schema.org",
-    "range" : "42",
+    "range" : "41",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2176,48 +2213,48 @@
     "label" : {
       "IRI-based" : "programmingLanguage"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "41"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "40"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "37",
+    "range" : "36",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "37",
-    "subproperty" : [ "44" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "43"
+    "domain" : "36",
+    "subproperty" : [ "43" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasExample",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "47",
+    "range" : "45",
     "label" : {
       "IRI-based" : "hasExample",
       "en" : "has example"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "An example explaining a scenario where the software component was used in plain language."
     },
     "attributes" : [ "datatype" ],
-    "id" : "46"
+    "id" : "44"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasVersionId",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "50",
+    "range" : "48",
     "label" : {
       "IRI-based" : "hasVersionId",
       "en" : "has version id"
     },
-    "domain" : "49",
+    "domain" : "15",
     "comment" : {
       "en" : "Identifier of the version of this software"
     },
     "attributes" : [ "datatype" ],
-    "id" : "48"
+    "id" : "47"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasOutput",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -2226,83 +2263,45 @@
       "IRI-based" : "hasOutput",
       "en" : "has output"
     },
-    "domain" : "19",
+    "domain" : "13",
     "comment" : {
       "en" : "Property that expresses what are the outputs of a model"
     },
     "attributes" : [ "object" ],
     "id" : "51"
   }, {
-    "range" : "26",
-    "domain" : "19",
+    "range" : "53",
+    "domain" : "29",
     "attributes" : [ "object", "anonymous" ],
     "id" : "52"
   }, {
-    "range" : "26",
-    "domain" : "49",
+    "range" : "57",
+    "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "56"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasDownloadInstructions",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "58",
+    "range" : "59",
     "label" : {
       "IRI-based" : "hasDownloadInstructions",
       "en" : "has download instructions"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Instructions needed to download a software component. The difference with `hasDownloadURL` is that this property captures the human readable instructions required to download software. For example, sometimes an authentication is needed, users need to fill in a form, etc."
     },
     "attributes" : [ "datatype" ],
-    "id" : "57"
+    "id" : "58"
   }, {
-    "range" : "39",
-    "domain" : "40",
+    "range" : "38",
+    "domain" : "39",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "60"
-  }, {
-    "range" : "13",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "61"
-  }, {
-    "range" : "53",
-    "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "62"
-  }, {
-    "range" : "53",
-    "domain" : "55",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "63"
-  }, {
-    "range" : "53",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "64"
-  }, {
-    "iri" : "http://schema.org/description",
-    "baseIri" : "http://schema.org",
-    "range" : "66",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://schema.org/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "description"
-    },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
     "id" : "65"
   }, {
     "iri" : "http://schema.org/codeRepository",
     "baseIri" : "http://schema.org",
-    "range" : "68",
+    "range" : "67",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2314,42 +2313,60 @@
     "label" : {
       "IRI-based" : "codeRepository"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "67"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "66"
   }, {
-    "range" : "70",
-    "domain" : "1",
+    "iri" : "http://schema.org/description",
+    "baseIri" : "http://schema.org",
+    "range" : "69",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "68"
+  }, {
+    "range" : "17",
+    "domain" : "46",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "69"
+    "id" : "70"
   }, {
-    "range" : "73",
-    "domain" : "72",
+    "range" : "53",
+    "domain" : "54",
     "attributes" : [ "object", "anonymous" ],
     "id" : "71"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasDownloadURL",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "75",
+    "range" : "73",
     "label" : {
       "IRI-based" : "hasDownloadURL",
       "en" : "has download URL"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Download URL where to obtain the source/executable of the software"
     },
     "attributes" : [ "datatype" ],
-    "id" : "74"
+    "id" : "72"
   }, {
-    "range" : "26",
-    "domain" : "77",
+    "range" : "53",
+    "domain" : "55",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "76"
+    "id" : "74"
   }, {
     "iri" : "http://schema.org/keywords",
     "baseIri" : "http://schema.org",
-    "range" : "79",
+    "range" : "76",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2361,95 +2378,95 @@
     "label" : {
       "IRI-based" : "keywords"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "78"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "75"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasShortName",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "81",
+    "range" : "78",
     "label" : {
       "IRI-based" : "hasShortName",
       "en" : "has short name"
     },
-    "domain" : "31",
+    "domain" : "29",
     "comment" : {
       "en" : "A short name (e.g., temperature) capturing the high-level concept of the variable"
     },
     "attributes" : [ "datatype" ],
-    "id" : "80"
+    "id" : "77"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasStepSize",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "84",
+    "range" : "81",
     "label" : {
       "IRI-based" : "hasStepSize",
       "en" : "has step size"
     },
-    "domain" : "83",
+    "domain" : "80",
     "comment" : {
       "en" : "Property that determines what are the increments (step size) that are commonly used to vary a parameter. This is commonly used for automatically setting up software tests. For example, if I want to set up a model and try 30 reasonable values on a parameter, I may use the default value and the step size to create the appropriate increments. If the step size is 0.1 and the default value is 0, then I will will be able to create setups: 0, 0.1, 0.2...2.9,3"
     },
     "attributes" : [ "datatype" ],
-    "id" : "82"
+    "id" : "79"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasSoftwareImage",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "77",
+    "range" : "10",
     "label" : {
       "IRI-based" : "hasSoftwareImage",
       "en" : "has software image"
     },
-    "domain" : "19",
+    "domain" : "13",
     "comment" : {
       "en" : "Function to link a function with its corresponding container"
     },
     "attributes" : [ "functional", "object" ],
-    "id" : "85"
+    "id" : "82"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasFAQ",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "87",
+    "range" : "84",
     "label" : {
       "IRI-based" : "hasFAQ",
       "en" : "has FAQ"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Frequently asked questions about a software"
     },
     "attributes" : [ "datatype" ],
-    "id" : "86"
+    "id" : "83"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#usesUnit",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "39",
+    "range" : "38",
     "label" : {
       "IRI-based" : "usesUnit",
       "en" : "uses unit"
     },
-    "domain" : "89",
+    "domain" : "86",
     "comment" : {
       "en" : "Property used to link a variable presentation or time interval to the unit they are represented in"
     },
     "attributes" : [ "functional", "object" ],
-    "id" : "88"
+    "id" : "85"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#author",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "95",
+    "range" : "92",
     "label" : {
       "IRI-based" : "author",
       "en" : "author"
     },
-    "superproperty" : [ "96" ],
-    "domain" : "26",
+    "superproperty" : [ "93" ],
+    "domain" : "11",
     "attributes" : [ "object" ],
-    "id" : "94"
+    "id" : "91"
   }, {
     "iri" : "http://www.w3.org/ns/prov#value",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "98",
+    "range" : "95",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2461,91 +2478,91 @@
     "label" : {
       "IRI-based" : "value"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "97"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "94"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#citation",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "100",
+    "range" : "97",
     "label" : {
       "IRI-based" : "citation",
       "en" : "citation"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "How to cite this software"
     },
     "attributes" : [ "datatype" ],
-    "id" : "99"
+    "id" : "96"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#readme",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "102",
+    "range" : "99",
     "label" : {
       "IRI-based" : "readme",
       "en" : "readme"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "URl to the readme file of a software component"
     },
     "attributes" : [ "datatype" ],
-    "id" : "101"
+    "id" : "98"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasDataType",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "104",
+    "range" : "101",
     "label" : {
       "IRI-based" : "hasDataType",
       "en" : "has data type"
     },
-    "domain" : "83",
+    "domain" : "80",
     "comment" : {
       "en" : "Property that indicates the data type of a parameter"
     },
     "attributes" : [ "datatype" ],
-    "id" : "103"
+    "id" : "100"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasVersion",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "49",
+    "range" : "15",
     "label" : {
       "IRI-based" : "hasVersion",
       "en" : "has software version"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "object" ],
-    "id" : "105"
+    "id" : "102"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#programmingLanguage",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "107",
+    "range" : "104",
     "label" : {
       "IRI-based" : "programmingLanguage",
       "en" : "programming language"
     },
-    "domain" : "16",
+    "domain" : "31",
     "attributes" : [ "datatype" ],
-    "id" : "106"
+    "id" : "103"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#recommendedIncrement",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "109",
+    "range" : "106",
     "label" : {
       "IRI-based" : "recommendedIncrement",
       "en" : "recommended increment"
     },
-    "domain" : "83",
+    "domain" : "80",
     "comment" : {
       "en" : "Value that represents how a parameter should be incremented on each iteration of a software component execution. This value is important when preparing execution ensembles automatically, e.g., simulating crop production varying the parameter \"fertilizer amount\" in increments of 10%."
     },
     "attributes" : [ "datatype" ],
-    "id" : "108"
+    "id" : "105"
   }, {
     "iri" : "http://schema.org/screenshot",
     "baseIri" : "http://schema.org",
-    "range" : "37",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2557,49 +2574,49 @@
     "label" : {
       "IRI-based" : "screenshot"
     },
-    "domain" : "37",
-    "subproperty" : [ "111" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "110"
+    "domain" : "36",
+    "subproperty" : [ "108" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "107"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasAcceptedValues",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "113",
+    "range" : "110",
     "label" : {
       "IRI-based" : "hasAcceptedValues",
       "en" : "has accepted values"
     },
-    "domain" : "83",
+    "domain" : "80",
     "comment" : {
       "en" : "Property that constraints which values are accepted for a parameter. For example, the name of a crop can only be \"Maize\" or \"Sorghum\""
     },
     "attributes" : [ "datatype" ],
-    "id" : "112"
+    "id" : "109"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#dateCreated",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "115",
+    "range" : "112",
     "label" : {
       "IRI-based" : "dateCreated",
       "en" : "date created"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "114"
+    "id" : "111"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#logo",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "21",
+    "range" : "114",
     "label" : {
       "IRI-based" : "logo"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "object" ],
-    "id" : "116"
+    "id" : "113"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasFileStructure",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "118",
+    "range" : "116",
     "label" : {
       "IRI-based" : "hasFileStructure",
       "en" : "has file structure"
@@ -2609,11 +2626,11 @@
       "en" : "Relates a dataset specification to the data structure definition"
     },
     "attributes" : [ "functional", "object" ],
-    "id" : "117"
+    "id" : "115"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasDerivedFrom",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "37",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2625,145 +2642,147 @@
     "label" : {
       "IRI-based" : "wasDerivedFrom"
     },
-    "domain" : "37",
-    "subproperty" : [ "120" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "119"
+    "domain" : "36",
+    "subproperty" : [ "118" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "117"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#adjustableParameter",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "83",
+    "range" : "80",
     "label" : {
       "IRI-based" : "adjustableParameter",
       "en" : "adjustable parameter"
     },
-    "domain" : "11",
+    "domain" : "23",
     "comment" : {
       "en" : "Parameter that can be adjusted in a configuration setup"
     },
     "attributes" : [ "object" ],
-    "id" : "121"
+    "id" : "119"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#shortDescription",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "123",
+    "range" : "121",
     "label" : {
       "IRI-based" : "shortDescription",
       "undefined" : "short description"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "A summarized description of the resource"
     },
     "attributes" : [ "datatype" ],
-    "id" : "122"
+    "id" : "120"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#dataCatalogIdentifier",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "125",
+    "range" : "123",
     "label" : {
       "IRI-based" : "dataCatalogIdentifier",
       "en" : "data catalog identifier"
     },
-    "domain" : "13",
+    "domain" : "17",
     "comment" : {
       "en" : "An identifier for resources with metadata entries in a data catalog"
     },
     "attributes" : [ "datatype" ],
-    "id" : "124"
+    "id" : "122"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#publisher",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "127",
+    "range" : "125",
     "label" : {
       "IRI-based" : "publisher",
       "en" : "publisher"
     },
-    "superproperty" : [ "128" ],
-    "domain" : "26",
+    "superproperty" : [ "126" ],
+    "domain" : "11",
     "attributes" : [ "object" ],
-    "id" : "126"
+    "id" : "124"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#fundingSource",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "72",
+    "range" : "4",
     "label" : {
       "IRI-based" : "fundingSource",
       "en" : "funding source"
     },
-    "superproperty" : [ "43" ],
-    "domain" : "129",
+    "superproperty" : [ "42" ],
+    "domain" : "127",
     "attributes" : [ "object" ],
-    "id" : "44"
+    "id" : "43"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#supportDetails",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "131",
+    "range" : "129",
     "label" : {
       "IRI-based" : "supportDetails",
       "en" : "support details"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Property to link details, such as mailing lists in case a contact person is not provided"
     },
     "attributes" : [ "datatype" ],
-    "id" : "130"
+    "id" : "128"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#referencePublication",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "133",
+    "range" : "131",
     "label" : {
       "IRI-based" : "referencePublication",
       "en" : "reference publication"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Main publication to cite for this software component"
     },
     "attributes" : [ "datatype" ],
-    "id" : "132"
+    "id" : "130"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#softwareRequirements",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "135",
+    "range" : "133",
     "label" : {
       "IRI-based" : "softwareRequirements",
       "en" : "software requirements"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "134"
+    "id" : "132"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hadPrimarySource",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "138",
+    "range" : "136",
     "label" : {
       "IRI-based" : "hadPrimarySource"
     },
-    "superproperty" : [ "139" ],
-    "domain" : "137",
+    "superproperty" : [ "137" ],
+    "domain" : "135",
     "comment" : {
       "en" : "had primary source"
     },
     "attributes" : [ "object" ],
-    "id" : "136"
+    "id" : "134"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#copyrightYear",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "37",
+    "range" : "139",
     "label" : {
       "IRI-based" : "copyrightYear",
       "en" : "copyright year"
     },
-    "superproperty" : [ "36" ],
-    "domain" : "37",
-    "attributes" : [ "object" ],
-    "id" : "38"
+    "domain" : "36",
+    "comment" : {
+      "en" : "Year in which the software component was copyrighted"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "138"
   }, {
     "iri" : "http://schema.org/name",
     "baseIri" : "http://schema.org",
-    "range" : "141",
+    "range" : "88",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2775,120 +2794,120 @@
     "label" : {
       "IRI-based" : "name"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
     "id" : "140"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasSupportScriptLocation",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "143",
+    "range" : "142",
     "label" : {
       "IRI-based" : "hasSupportScriptLocation",
       "en" : "has support script location"
     },
-    "domain" : "19",
+    "domain" : "13",
     "comment" : {
       "en" : "Property that links to the location of scripts that may be used from the main runnable script."
     },
     "attributes" : [ "datatype" ],
-    "id" : "142"
+    "id" : "141"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasSampleVisualization",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "145",
+    "range" : "144",
     "label" : {
       "IRI-based" : "hasSampleVisualization",
       "en" : "has sample visualization"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "A typical sample visualization of the softwware outputs"
     },
     "attributes" : [ "object" ],
-    "id" : "144"
-  }, {
-    "iri" : "https://w3id.org/okn/o/sd#value",
-    "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "148",
-    "label" : {
-      "IRI-based" : "value",
-      "en" : "value"
-    },
-    "domain" : "147",
-    "comment" : {
-      "en" : "Value associated to the described entity"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "146"
+    "id" : "143"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#copyrightHolder",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "37",
+    "range" : "89",
     "label" : {
       "IRI-based" : "copyrightHolder",
       "en" : "copyright holder"
     },
-    "superproperty" : [ "150" ],
-    "domain" : "37",
+    "superproperty" : [ "147" ],
+    "domain" : "146",
     "attributes" : [ "object" ],
-    "id" : "149"
+    "id" : "145"
+  }, {
+    "iri" : "https://w3id.org/okn/o/sd#value",
+    "baseIri" : "https://w3id.org/okn/o/sd",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "value",
+      "en" : "value"
+    },
+    "domain" : "149",
+    "comment" : {
+      "en" : "Value associated to the described entity"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "148"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#memoryRequirements",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "152",
+    "range" : "151",
     "label" : {
       "IRI-based" : "memoryRequirements",
       "en" : "memory requirements"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "151"
+    "id" : "150"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasFormat",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "155",
+    "range" : "154",
     "label" : {
       "IRI-based" : "hasFormat",
       "en" : "has format"
     },
-    "domain" : "154",
+    "domain" : "153",
     "comment" : {
       "en" : "Format followed by a file. For example, txt, nc, etc."
     },
     "attributes" : [ "datatype" ],
-    "id" : "153"
+    "id" : "152"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#issueTracker",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "157",
+    "range" : "156",
     "label" : {
       "IRI-based" : "issueTracker",
       "en" : "issue tracker"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Pointer to the issue tracker of a software component"
     },
     "attributes" : [ "datatype" ],
-    "id" : "156"
+    "id" : "155"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#license",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "160",
+    "range" : "159",
     "label" : {
       "IRI-based" : "license",
       "en" : "license"
     },
-    "domain" : "159",
+    "domain" : "158",
     "comment" : {
       "en" : "License of a software component or its source code"
     },
     "attributes" : [ "datatype" ],
-    "id" : "158"
+    "id" : "157"
   }, {
     "iri" : "http://schema.org/citation",
     "baseIri" : "http://schema.org",
-    "range" : "90",
+    "range" : "61",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2900,88 +2919,108 @@
     "label" : {
       "IRI-based" : "citation"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
     "id" : "161"
+  }, {
+    "range" : "163",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasComponentLocation",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "163",
+    "range" : "165",
     "label" : {
       "IRI-based" : "hasComponentLocation",
       "en" : "has component location"
     },
-    "domain" : "19",
+    "domain" : "13",
     "comment" : {
       "en" : "Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts, including specification files"
     },
     "attributes" : [ "datatype" ],
-    "id" : "162"
+    "id" : "164"
+  }, {
+    "range" : "13",
+    "domain" : "163",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasInstallationInstructions",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "165",
+    "range" : "168",
     "label" : {
       "IRI-based" : "hasInstallationInstructions",
       "en" : "has installation instructions"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Instructions required to install this particular piece of software. Installation instructions usually are available in a human-readable manner."
     },
     "attributes" : [ "datatype" ],
-    "id" : "164"
+    "id" : "167"
+  }, {
+    "range" : "13",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#wasDerivedFromSoftware",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "26",
+    "range" : "11",
     "label" : {
       "IRI-based" : "wasDerivedFromSoftware",
       "en" : "was derived from software"
     },
-    "superproperty" : [ "119" ],
-    "domain" : "145",
+    "superproperty" : [ "117" ],
+    "domain" : "144",
     "attributes" : [ "object" ],
-    "id" : "120"
+    "id" : "118"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasExecutableInstructions",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "167",
+    "range" : "171",
     "label" : {
       "IRI-based" : "hasExecutableInstructions",
       "en" : "has executable instructions"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Instructions that indicate how a software component should be executed. The difference with `hasExecutionCommand` is that the execution instructions aim to be human-readable, and have explanations between the different commands and instructions"
     },
     "attributes" : [ "datatype" ],
-    "id" : "166"
+    "id" : "170"
   }, {
-    "range" : "19",
-    "domain" : "33",
+    "range" : "1",
+    "domain" : "114",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "168"
+    "id" : "172"
   }, {
-    "range" : "19",
+    "range" : "50",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "160",
     "domain" : "11",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "169"
+    "id" : "174"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#processorRequirements",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "171",
+    "range" : "176",
     "label" : {
       "IRI-based" : "processorRequirements",
       "en" : "processor requirements"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "170"
+    "id" : "175"
   }, {
     "iri" : "https://codemeta.github.io/terms/referencePublication",
     "baseIri" : "https://codemeta.github.io/terms",
-    "range" : "173",
+    "range" : "178",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2993,59 +3032,59 @@
     "label" : {
       "IRI-based" : "referencePublication"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "172"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "177"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasMaximumAcceptedValue",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "176",
+    "range" : "181",
     "label" : {
       "IRI-based" : "hasMaximumAcceptedValue",
       "en" : "has maximum accepted value"
     },
-    "domain" : "175",
+    "domain" : "180",
     "comment" : {
       "en" : "Maximum accepted value of a variable presentation (or a parameter)"
     },
     "attributes" : [ "datatype" ],
-    "id" : "174"
+    "id" : "179"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasPart",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "13",
+    "range" : "17",
     "label" : {
       "IRI-based" : "hasPart",
       "en" : "has part"
     },
-    "domain" : "45",
+    "domain" : "46",
     "comment" : {
       "en" : "Property designed to reference the elements included in a sample collection."
     },
     "attributes" : [ "object" ],
-    "id" : "177"
+    "id" : "182"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#datePublished",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "179",
+    "range" : "184",
     "label" : {
       "IRI-based" : "datePublished",
       "en" : "date published"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "178"
+    "id" : "183"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasSourceCode",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "16",
+    "range" : "31",
     "label" : {
       "IRI-based" : "hasSourceCode",
       "en" : "has source code"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "functional", "object" ],
-    "id" : "180"
+    "id" : "186"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#adjustsVariable",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -3054,12 +3093,12 @@
       "IRI-based" : "adjustsVariable",
       "en" : "adjusts variable"
     },
-    "domain" : "83",
+    "domain" : "80",
     "comment" : {
       "en" : "Property that links parameter with the variable they adjust. This property can be used when parameters quantify variables without directly representing them. For example, a \"fertilizer percentage adjustment\" parameter can quantify a \"fertilizer price\" variable"
     },
     "attributes" : [ "functional", "object" ],
-    "id" : "183"
+    "id" : "188"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasInput",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -3068,55 +3107,55 @@
       "IRI-based" : "hasInput",
       "en" : "has input"
     },
-    "domain" : "19",
+    "domain" : "13",
     "comment" : {
       "en" : "Property that links a model configuration to the input types expected by it."
     },
     "attributes" : [ "object" ],
-    "id" : "184"
+    "id" : "190"
+  }, {
+    "iri" : "https://w3id.org/okn/o/sd#screenshot",
+    "baseIri" : "https://w3id.org/okn/o/sd",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "screenshot"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "108"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasDocumentation",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "182",
+    "range" : "185",
     "label" : {
       "IRI-based" : "hasDocumentation",
       "en" : "has documentation"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Pointer to the documentation of the model"
     },
     "attributes" : [ "datatype" ],
-    "id" : "188"
-  }, {
-    "iri" : "https://w3id.org/okn/o/sd#screenshot",
-    "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "screenshot"
-    },
-    "superproperty" : [ "110" ],
-    "domain" : "26",
-    "attributes" : [ "object" ],
-    "id" : "111"
+    "id" : "193"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasLongName",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "190",
+    "range" : "195",
     "label" : {
       "IRI-based" : "hasLongName",
       "en" : "has long name"
     },
-    "domain" : "31",
+    "domain" : "29",
     "comment" : {
       "en" : "Properties that relate the variable representation to its long name. The long name is useful for context (e.g., precipitation is less ambiguous than P) but not as precise as the standard name."
     },
     "attributes" : [ "datatype" ],
-    "id" : "189"
+    "id" : "194"
   }, {
     "iri" : "https://codemeta.github.io/terms/issueTracker",
     "baseIri" : "https://codemeta.github.io/terms",
-    "range" : "192",
+    "range" : "197",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3128,13 +3167,13 @@
     "label" : {
       "IRI-based" : "issueTracker"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "191"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "196"
   }, {
     "iri" : "http://schema.org/publisher",
     "baseIri" : "http://schema.org",
-    "range" : "37",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3146,14 +3185,14 @@
     "label" : {
       "IRI-based" : "publisher"
     },
-    "domain" : "37",
-    "subproperty" : [ "126" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "128"
+    "domain" : "36",
+    "subproperty" : [ "124" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "126"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#pathLocation",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "199",
+    "range" : "204",
     "label" : {
       "IRI-based" : "pathLocation",
       "en" : "path location"
@@ -3163,53 +3202,25 @@
       "en" : "Property that indicates the relative path of an input or output with respect to the folder structure of the executable. \n\nFor example, let's assume we have an input that has to exist in the folder `/datasets` or the executable will not work. This property ensures that this knowledge is captured for a given software component execution.\n\nIn this case the property would capture this as follows:\n\n```\n:input_prep a sd:DatasetSpecification .\n:input_prep rdfs:label \"precipitation file\" .\n:input_precip sd:pathLocation \"/datasets/\".\n```"
     },
     "attributes" : [ "datatype" ],
-    "id" : "198"
+    "id" : "203"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasDefaultValue",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "201",
+    "range" : "207",
     "label" : {
       "IRI-based" : "hasDefaultValue",
       "en" : "has default value"
     },
-    "domain" : "181",
+    "domain" : "189",
     "comment" : {
       "en" : "Default accepted value of a variable presentation (or a parameter)"
     },
     "attributes" : [ "datatype" ],
-    "id" : "200"
-  }, {
-    "iri" : "https://w3id.org/okn/o/sd#fundingGrant",
-    "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "193",
-    "label" : {
-      "IRI-based" : "fundingGrant",
-      "en" : "funding grant"
-    },
-    "domain" : "129",
-    "comment" : {
-      "en" : "Grant number used for funding"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "202"
-  }, {
-    "iri" : "https://w3id.org/okn/o/sd#hasStandardVariable",
-    "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "54",
-    "label" : {
-      "IRI-based" : "hasStandardVariable",
-      "en" : "has standard variable"
-    },
-    "domain" : "204",
-    "comment" : {
-      "en" : "the standard name of a variable"
-    },
-    "attributes" : [ "functional", "object" ],
-    "id" : "203"
+    "id" : "206"
   }, {
     "iri" : "http://www.w3.org/ns/prov#hadPrimarySource",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "37",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3221,14 +3232,42 @@
     "label" : {
       "IRI-based" : "hadPrimarySource"
     },
-    "domain" : "37",
-    "subproperty" : [ "136" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "139"
+    "domain" : "36",
+    "subproperty" : [ "134" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "137"
+  }, {
+    "iri" : "https://w3id.org/okn/o/sd#hasStandardVariable",
+    "baseIri" : "https://w3id.org/okn/o/sd",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasStandardVariable",
+      "en" : "has standard variable"
+    },
+    "domain" : "209",
+    "comment" : {
+      "en" : "the standard name of a variable"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "208"
+  }, {
+    "iri" : "https://w3id.org/okn/o/sd#fundingGrant",
+    "baseIri" : "https://w3id.org/okn/o/sd",
+    "range" : "198",
+    "label" : {
+      "IRI-based" : "fundingGrant",
+      "en" : "funding grant"
+    },
+    "domain" : "127",
+    "comment" : {
+      "en" : "Grant number used for funding"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "210"
   }, {
     "iri" : "http://schema.org/memoryRequirements",
     "baseIri" : "http://schema.org",
-    "range" : "206",
+    "range" : "212",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3240,13 +3279,13 @@
     "label" : {
       "IRI-based" : "memoryRequirements"
     },
-    "domain" : "26",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "205"
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "211"
   }, {
     "iri" : "http://schema.org/author",
     "baseIri" : "http://schema.org",
-    "range" : "37",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3258,42 +3297,42 @@
     "label" : {
       "IRI-based" : "author"
     },
-    "domain" : "37",
-    "subproperty" : [ "94" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "96"
-  }, {
-    "iri" : "https://w3id.org/okn/o/sd#hasParameter",
-    "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "83",
-    "label" : {
-      "IRI-based" : "hasParameter",
-      "en" : "has parameter"
-    },
-    "domain" : "19",
-    "comment" : {
-      "en" : "Property that indicates the parameters of a model configuration"
-    },
-    "attributes" : [ "object" ],
-    "id" : "207"
+    "domain" : "36",
+    "subproperty" : [ "91" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasSetup",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "11",
+    "range" : "23",
     "label" : {
       "IRI-based" : "hasSetup",
       "en" : "has setup"
     },
-    "domain" : "19",
+    "domain" : "13",
     "comment" : {
       "en" : "Property used to define configurations with some fixed resources and values. The rationale of this property is to allow predefined configurations"
     },
     "attributes" : [ "object" ],
-    "id" : "208"
+    "id" : "213"
+  }, {
+    "iri" : "https://w3id.org/okn/o/sd#hasParameter",
+    "baseIri" : "https://w3id.org/okn/o/sd",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "has parameter"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Property that indicates the parameters of a model configuration"
+    },
+    "attributes" : [ "object" ],
+    "id" : "214"
   }, {
     "iri" : "http://schema.org/email",
     "baseIri" : "http://schema.org",
-    "range" : "210",
+    "range" : "216",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3305,13 +3344,13 @@
     "label" : {
       "IRI-based" : "email"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "209"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "215"
   }, {
     "iri" : "https://codemeta.github.io/terms/readme",
     "baseIri" : "https://codemeta.github.io/terms",
-    "range" : "212",
+    "range" : "218",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3323,55 +3362,55 @@
     "label" : {
       "IRI-based" : "readme"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "211"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "217"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#name",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "214",
+    "range" : "220",
     "label" : {
       "IRI-based" : "name",
       "en" : "name"
     },
-    "domain" : "37",
+    "domain" : "36",
     "comment" : {
       "en" : "Name of the resource"
     },
     "attributes" : [ "datatype" ],
-    "id" : "213"
+    "id" : "219"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasFunding",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "129",
+    "range" : "127",
     "label" : {
       "IRI-based" : "hasFunding",
       "en" : "has funding information"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Property that links a software project to its funding information"
     },
     "attributes" : [ "object" ],
-    "id" : "218"
+    "id" : "224"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasFixedValue",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "220",
+    "range" : "226",
     "label" : {
       "IRI-based" : "hasFixedValue",
       "en" : "has fixed value"
     },
-    "domain" : "83",
+    "domain" : "80",
     "comment" : {
       "en" : "Value of a parameter in a software setup."
     },
     "attributes" : [ "datatype" ],
-    "id" : "219"
+    "id" : "225"
   }, {
     "iri" : "http://schema.org/operatingSystems",
     "baseIri" : "http://schema.org",
-    "range" : "222",
+    "range" : "228",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3383,95 +3422,95 @@
     "label" : {
       "IRI-based" : "operatingSystems"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "221"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "227"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#contributor",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "23",
+    "range" : "49",
     "label" : {
       "IRI-based" : "contributor",
       "en" : "contributor"
     },
-    "superproperty" : [ "224" ],
-    "domain" : "26",
+    "superproperty" : [ "231" ],
+    "domain" : "11",
     "attributes" : [ "object" ],
-    "id" : "223"
+    "id" : "230"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasConstraint",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "186",
+    "range" : "187",
     "label" : {
       "IRI-based" : "hasConstraint",
       "en" : "has constraint"
     },
-    "domain" : "187",
+    "domain" : "192",
     "comment" : {
       "en" : "Constraint or rule associated to a  variable or software configuration. For example: \"This model accepts only monthly data\", or \"all inputs of this model configuration must share the same location\". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property"
     },
     "attributes" : [ "datatype" ],
-    "id" : "225"
+    "id" : "232"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#keywords",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "228",
+    "range" : "235",
     "label" : {
       "IRI-based" : "keywords",
       "en" : "keywords"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Keywords associated with a software component"
     },
     "attributes" : [ "datatype" ],
-    "id" : "227"
+    "id" : "234"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasConfiguration",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "19",
+    "range" : "13",
     "label" : {
       "IRI-based" : "hasConfiguration",
       "en" : "has configuration"
     },
-    "domain" : "49",
+    "domain" : "15",
     "comment" : {
       "en" : "Property that links a model to one of its configurations. A model may have multiple configurations, each of which is unique in terms of the inputs and outputs it uses."
     },
     "attributes" : [ "object" ],
-    "id" : "235"
+    "id" : "241"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#website",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "233",
+    "range" : "243",
     "label" : {
       "IRI-based" : "website",
       "en" : "website"
     },
-    "domain" : "234",
+    "domain" : "240",
     "comment" : {
       "en" : "Website of the software"
     },
     "attributes" : [ "datatype" ],
-    "id" : "236"
+    "id" : "242"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasUsageNotes",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "216",
+    "range" : "221",
     "label" : {
       "IRI-based" : "hasUsageNotes",
       "en" : "has usage notes"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Property that describes the usage considerations of a particular software. These notes capture the rationale of for that software configuration, along with an explanation for sample inputs, things to consider when running the model with data, etc."
     },
     "attributes" : [ "datatype" ],
-    "id" : "238"
+    "id" : "244"
   }, {
     "iri" : "http://www.w3.org/ns/prov#used",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "37",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3483,13 +3522,13 @@
     "label" : {
       "IRI-based" : "used"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "object" ],
-    "id" : "239"
+    "domain" : "36",
+    "attributes" : [ "object", "external" ],
+    "id" : "245"
   }, {
     "iri" : "http://schema.org/identifier",
     "baseIri" : "http://schema.org",
-    "range" : "241",
+    "range" : "247",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3501,13 +3540,13 @@
     "label" : {
       "IRI-based" : "identifier"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "240"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "246"
   }, {
     "iri" : "http://schema.org/datePublished",
     "baseIri" : "http://schema.org",
-    "range" : "243",
+    "range" : "249",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3519,13 +3558,13 @@
     "label" : {
       "IRI-based" : "datePublished"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "242"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "248"
   }, {
     "iri" : "http://schema.org/processorRequirements",
     "baseIri" : "http://schema.org",
-    "range" : "245",
+    "range" : "251",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3537,23 +3576,23 @@
     "label" : {
       "IRI-based" : "processorRequirements"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "244"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "250"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#position",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "248",
+    "range" : "254",
     "label" : {
       "IRI-based" : "position",
       "en" : "position"
     },
-    "domain" : "247",
+    "domain" : "253",
     "comment" : {
       "en" : "Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution"
     },
     "attributes" : [ "datatype" ],
-    "id" : "246"
+    "id" : "252"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#usefulForCalculatingIndex",
     "baseIri" : "https://w3id.org/okn/o/sd",
@@ -3562,84 +3601,84 @@
       "IRI-based" : "usefulForCalculatingIndex",
       "undefined" : "useful for calculating index"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Property that indicates that a software component (or any of its outputs) can be used to calculate a particular index. The rationale for this property is that indices are usually calculated by applying post-processing steps to the outputs of a software component."
     },
     "attributes" : [ "object" ],
-    "id" : "249"
-  }, {
-    "iri" : "https://w3id.org/okn/o/sd#description",
-    "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "194",
-    "label" : {
-      "IRI-based" : "description",
-      "en" : "description"
-    },
-    "domain" : "195",
-    "comment" : {
-      "en" : "A description of a resource"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "250"
+    "id" : "255"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasDataTransformation",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "33",
+    "range" : "163",
     "label" : {
       "IRI-based" : "hasDataTransformation",
       "en" : "has data transformation"
     },
     "domain" : "1",
-    "subproperty" : [ "252" ],
+    "subproperty" : [ "257" ],
     "comment" : {
       "en" : "Property that associates an input/output with their corresponding data transformation."
     },
     "attributes" : [ "object" ],
-    "id" : "251"
+    "id" : "256"
+  }, {
+    "iri" : "https://w3id.org/okn/o/sd#description",
+    "baseIri" : "https://w3id.org/okn/o/sd",
+    "range" : "202",
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "description"
+    },
+    "domain" : "200",
+    "comment" : {
+      "en" : "A description of a resource"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "258"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasExecutableNotebook",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "229",
+    "range" : "237",
     "label" : {
       "IRI-based" : "hasExecutableNotebook",
       "en" : "has executable notebook"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Property that links a software component with an executable notebook (e.g., Jupyter notebook) that illustrates how to use it in an executable manner."
     },
     "attributes" : [ "datatype" ],
-    "id" : "253"
+    "id" : "259"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasContactPerson",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "256",
+    "range" : "261",
     "label" : {
       "IRI-based" : "hasContactPerson",
       "en" : "has contact person"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "object" ],
-    "id" : "255"
+    "id" : "260"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#tag",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "232",
+    "range" : "238",
     "label" : {
       "IRI-based" : "tag",
       "en" : "tag"
     },
-    "domain" : "237",
+    "domain" : "239",
     "comment" : {
       "en" : "Tag used to annotate a version or a software configuration. This annotation is useful to show which version is the latest, or which version is deprecated. Supported tags are: \"latest\", \"deprecated\""
     },
     "attributes" : [ "datatype" ],
-    "id" : "257"
+    "id" : "263"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "37",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3651,78 +3690,63 @@
     "label" : {
       "IRI-based" : "wasGeneratedBy"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "object" ],
-    "id" : "258"
+    "domain" : "36",
+    "attributes" : [ "object", "external" ],
+    "id" : "264"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasExecutionCommand",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "230",
+    "range" : "233",
     "label" : {
       "IRI-based" : "hasExecutionCommand",
       "en" : "has execution command"
     },
-    "domain" : "231",
+    "domain" : "236",
     "comment" : {
       "en" : "Execution instructions on how to run the image"
     },
     "attributes" : [ "datatype" ],
-    "id" : "261"
+    "id" : "266"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasBuildFile",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "185",
+    "range" : "191",
     "label" : {
       "IRI-based" : "hasBuildFile",
       "en" : "has build file"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "A file (e.g., Dockerfile) with executable instructions indicating how a Software Image or a Software component is built"
     },
     "attributes" : [ "datatype" ],
-    "id" : "262"
+    "id" : "267"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasSampleExecution",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "4",
+    "range" : "19",
     "label" : {
       "IRI-based" : "hasSampleExecution",
       "en" : "has sample execution"
     },
-    "domain" : "19",
+    "domain" : "13",
     "attributes" : [ "object" ],
-    "id" : "263"
+    "id" : "268"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#operatingSystems",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "254",
+    "range" : "262",
     "label" : {
       "IRI-based" : "operatingSystems",
       "en" : "operating systems"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "265"
-  }, {
-    "iri" : "https://w3id.org/okn/o/sd#hasPresentation",
-    "inverse" : "30",
-    "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "31",
-    "label" : {
-      "IRI-based" : "hasPresentation",
-      "en" : "has presentation"
-    },
-    "domain" : "260",
-    "comment" : {
-      "en" : "Property that links an instance of a dataset (or a dataset specification) to the presentation of a variable contained (or expected to be contained) on it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "266"
+    "id" : "269"
   }, {
     "iri" : "http://schema.org/contributor",
     "baseIri" : "http://schema.org",
-    "range" : "37",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3734,14 +3758,29 @@
     "label" : {
       "IRI-based" : "contributor"
     },
-    "domain" : "37",
-    "subproperty" : [ "223" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "224"
+    "domain" : "36",
+    "subproperty" : [ "230" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "231"
+  }, {
+    "iri" : "https://w3id.org/okn/o/sd#hasPresentation",
+    "inverse" : "28",
+    "baseIri" : "https://w3id.org/okn/o/sd",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasPresentation",
+      "en" : "has presentation"
+    },
+    "domain" : "265",
+    "comment" : {
+      "en" : "Property that links an instance of a dataset (or a dataset specification) to the presentation of a variable contained (or expected to be contained) on it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "270"
   }, {
     "iri" : "http://schema.org/license",
     "baseIri" : "http://schema.org",
-    "range" : "259",
+    "range" : "90",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3753,13 +3792,13 @@
     "label" : {
       "IRI-based" : "license"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "267"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "271"
   }, {
     "iri" : "http://schema.org/dateCreated",
     "baseIri" : "http://schema.org",
-    "range" : "91",
+    "range" : "60",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3771,13 +3810,13 @@
     "label" : {
       "IRI-based" : "dateCreated"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "268"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "272"
   }, {
     "iri" : "http://schema.org/softwareRequirements",
     "baseIri" : "http://schema.org",
-    "range" : "92",
+    "range" : "62",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3789,13 +3828,13 @@
     "label" : {
       "IRI-based" : "softwareRequirements"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "269"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "273"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasFixedResource",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "13",
+    "range" : "17",
     "label" : {
       "IRI-based" : "hasFixedResource",
       "en" : "has fixed resource"
@@ -3805,50 +3844,50 @@
       "en" : "Property that links a parameter or an input to a fixed value. For example, in a given configuration a parameter with the planting date for a model could be fixed to avoid the user changing it for that region."
     },
     "attributes" : [ "object" ],
-    "id" : "270"
+    "id" : "274"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#doi",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "197",
+    "range" : "201",
     "label" : {
       "IRI-based" : "doi",
       "en" : "doi"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Digital Object Identifier associated with a software component"
     },
     "attributes" : [ "datatype" ],
-    "id" : "271"
+    "id" : "275"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasTypicalDataSource",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "215",
+    "range" : "222",
     "label" : {
       "IRI-based" : "hasTypicalDataSource",
       "en" : "has typical data source"
     },
-    "domain" : "26",
+    "domain" : "11",
     "attributes" : [ "datatype" ],
-    "id" : "272"
+    "id" : "276"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasImplementationScriptLocation",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "226",
+    "range" : "229",
     "label" : {
       "IRI-based" : "hasImplementationScriptLocation",
       "en" : "has implementation script location"
     },
-    "domain" : "19",
+    "domain" : "13",
     "comment" : {
       "en" : "Property that points to the main runnable script for the current function"
     },
     "attributes" : [ "datatype" ],
-    "id" : "273"
+    "id" : "277"
   }, {
     "iri" : "http://schema.org/copyrightHolder",
     "baseIri" : "http://schema.org",
-    "range" : "37",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3860,68 +3899,68 @@
     "label" : {
       "IRI-based" : "copyrightHolder"
     },
-    "domain" : "37",
-    "subproperty" : [ "149" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "150"
-  }, {
-    "iri" : "https://w3id.org/okn/o/sd#codeRepository",
-    "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "264",
-    "label" : {
-      "IRI-based" : "codeRepository",
-      "en" : "code repository"
-    },
-    "domain" : "16",
-    "comment" : {
-      "en" : "URL to the code repository of a software component"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "274"
+    "domain" : "36",
+    "subproperty" : [ "145" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "147"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasDataTransformationSetup",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "10",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasDataTransformationSetup",
       "en" : "has data transformation setup"
     },
-    "superproperty" : [ "251" ],
+    "superproperty" : [ "256" ],
     "domain" : "1",
     "comment" : {
       "en" : "Property to link an input/output dataset to the specific data transformation (with URLs"
     },
     "attributes" : [ "object" ],
-    "id" : "252"
+    "id" : "257"
+  }, {
+    "iri" : "https://w3id.org/okn/o/sd#codeRepository",
+    "baseIri" : "https://w3id.org/okn/o/sd",
+    "range" : "205",
+    "label" : {
+      "IRI-based" : "codeRepository",
+      "en" : "code repository"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "URL to the code repository of a software component"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "278"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#email",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "196",
+    "range" : "199",
     "label" : {
       "IRI-based" : "email",
       "en" : "email"
     },
-    "domain" : "23",
+    "domain" : "49",
     "attributes" : [ "datatype" ],
-    "id" : "275"
+    "id" : "279"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#hasMinimumAcceptedValue",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "93",
+    "range" : "63",
     "label" : {
       "IRI-based" : "hasMinimumAcceptedValue",
       "en" : "has minimum accepted value"
     },
-    "domain" : "217",
+    "domain" : "223",
     "comment" : {
       "en" : "Minimum accepted value of a variable presentation (or a parameter)"
     },
     "attributes" : [ "datatype" ],
-    "id" : "276"
+    "id" : "280"
   }, {
     "iri" : "https://codemeta.github.io/terms/funding",
     "baseIri" : "https://codemeta.github.io/terms",
-    "range" : "59",
+    "range" : "64",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3933,22 +3972,22 @@
     "label" : {
       "IRI-based" : "funding"
     },
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "277"
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "281"
   }, {
     "iri" : "https://w3id.org/okn/o/sd#compatibleVisualizationSoftware",
     "baseIri" : "https://w3id.org/okn/o/sd",
-    "range" : "26",
+    "range" : "11",
     "label" : {
       "IRI-based" : "compatibleVisualizationSoftware",
       "undefined" : "compatible visualization software"
     },
-    "domain" : "26",
+    "domain" : "11",
     "comment" : {
       "en" : "Property that links a software component to other useful software that canbe used to visualize its outputs"
     },
     "attributes" : [ "object" ],
-    "id" : "278"
+    "id" : "282"
   } ]
 }

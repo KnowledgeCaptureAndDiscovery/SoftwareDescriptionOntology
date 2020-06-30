@@ -87,11 +87,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                     rdfs:isDefinedBy <http://schema.org/> .
 
 
-###  http://schema.org/copyrightYear
-<http://schema.org/copyrightYear> rdf:type owl:ObjectProperty ;
-                                  rdfs:isDefinedBy <http://schema.org/> .
-
-
 ###  http://schema.org/publisher
 <http://schema.org/publisher> rdf:type owl:ObjectProperty ;
                               rdfs:isDefinedBy <http://schema.org/> .
@@ -170,13 +165,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#copyrightHolder
 :copyrightHolder rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf <http://schema.org/copyrightHolder> ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( :Organization
+                                             :Person
+                                           )
+                             ] ;
                  rdfs:label "copyright holder"@en .
-
-
-###  https://w3id.org/okn/o/sd#copyrightYear
-:copyrightYear rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf <http://schema.org/copyrightYear> ;
-               rdfs:label "copyright year"@en .
 
 
 ###  https://w3id.org/okn/o/sd#fundingSource
@@ -449,6 +443,11 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                    rdfs:isDefinedBy <http://schema.org/> .
 
 
+###  http://schema.org/copyrightYear
+<http://schema.org/copyrightYear> rdf:type owl:DatatypeProperty ;
+                                  rdfs:isDefinedBy <http://schema.org/> .
+
+
 ###  http://schema.org/dateCreated
 <http://schema.org/dateCreated> rdf:type owl:DatatypeProperty ;
                                 rdfs:isDefinedBy <http://schema.org/> .
@@ -557,6 +556,13 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                 rdfs:range xsd:anyURI ;
                 rdfs:comment "URL to the code repository of a software component"@en ;
                 rdfs:label "code repository"@en .
+
+
+###  https://w3id.org/okn/o/sd#copyrightYear
+:copyrightYear rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <http://schema.org/copyrightYear> ;
+               rdfs:comment "Year in which the software component was copyrighted"@en ;
+               rdfs:label "copyright year"@en .
 
 
 ###  https://w3id.org/okn/o/sd#dataCatalogIdentifier
