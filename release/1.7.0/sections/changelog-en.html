@@ -1,0 +1,121 @@
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Modified classes</u></summary>
+<ul><li><a href="#Image">https://w3id.org/okn/o/sd#Image</a>
+<ul>
+<li>Added: rdfs:comment "An image (e.g. tiff file) is a type of dataset specification used to define certain inputs of models like soil, crops, etc."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "An image (e.g. tiff file) is a type of dataset specification used to define things like soil, crops, etc."@en</li>
+</ul>
+</li>
+<li><a href="#Person">https://w3id.org/okn/o/sd#Person</a>
+<ul>
+<li>Added: rdfs:comment "A human being (individual)"@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted classes</u></summary>
+<ul><li><a href="#http://www.geoscienceontology.org/geo-upper#Variable">http://www.geoscienceontology.org/geo-upper#Variable</a>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Modified properties</u></summary>
+<ul><li><a href="#adjustsVariable">https://w3id.org/okn/o/sd#adjustsVariable</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#Variable</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.geoscienceontology.org/geo-upper#Variable</li>
+</ul>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Modified data properties</u></summary>
+<ul><li><a href="#description">https://w3id.org/okn/o/sd#description</a>
+<ul>
+<li>Added: Domain Union of (http://purl.org/linked-data/cube#DataStructureDefinition, http://qudt.org/schema/qudt/Unit, http://www.w3.org/2002/07/owl#Thing, https://w3id.org/okn/o/sd#NumericalIndex, https://w3id.org/okn/o/sd#Organization, https://w3id.org/okn/o/sd#Parameter, https://w3id.org/okn/o/sd#Person, https://w3id.org/okn/o/sd#SampleExecution, https://w3id.org/okn/o/sd#SampleResource, https://w3id.org/okn/o/sd#Software, https://w3id.org/okn/o/sd#SourceCode, https://w3id.org/okn/o/sd#Variable, https://w3id.org/okn/o/sd#Visualization)</li>
+</ul>
+<ul>
+<li>Deleted: Domain Union of (http://purl.org/linked-data/cube#DataStructureDefinition, http://qudt.org/schema/qudt/Unit, http://www.geoscienceontology.org/geo-upper#Variable, http://www.w3.org/2002/07/owl#Thing, https://w3id.org/okn/o/sd#NumericalIndex, https://w3id.org/okn/o/sd#Organization, https://w3id.org/okn/o/sd#Parameter, https://w3id.org/okn/o/sd#Person, https://w3id.org/okn/o/sd#SampleExecution, https://w3id.org/okn/o/sd#SampleResource, https://w3id.org/okn/o/sd#Software, https://w3id.org/okn/o/sd#SourceCode, https://w3id.org/okn/o/sd#Visualization)</li>
+</ul>
+</li>
+<li><a href="#hasExample">https://w3id.org/okn/o/sd#hasExample</a>
+<ul>
+<li>Added: rdfs:comment "An example explaining a scenario where the software component was used in plain language."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "An example explaining a scenario where the model was used in plain language."@en</li>
+</ul>
+</li>
+<li><a href="#hasInstallationInstructions">https://w3id.org/okn/o/sd#hasInstallationInstructions</a>
+<ul>
+<li>Added: rdfs:comment "Instructions required to install this particular piece of software. Installation instructions usually are available in a human-readable manner."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Instructions requires to install this particular piece of software."@en</li>
+</ul>
+</li>
+<li><a href="#referencePublication">https://w3id.org/okn/o/sd#referencePublication</a>
+<ul>
+<li>Added: rdfs:comment "Main publication to cite for this software component"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Main publication to cite in this software"@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#https://codemeta.github.io/terms/issueTracker">https://codemeta.github.io/terms/issueTracker</a>
+</li>
+<li><a href="#https://codemeta.github.io/terms/readme">https://codemeta.github.io/terms/readme</a>
+</li>
+<li><a href="#doi">https://w3id.org/okn/o/sd#doi</a>
+<ul>
+<li>Added: SubProperty of https://w3id.org/okn/o/sd#identifier</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#hasBuildFile">https://w3id.org/okn/o/sd#hasBuildFile</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#hasDownloadInstructions">https://w3id.org/okn/o/sd#hasDownloadInstructions</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#hasExecutableInstructions">https://w3id.org/okn/o/sd#hasExecutableInstructions</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#hasExecutableNotebook">https://w3id.org/okn/o/sd#hasExecutableNotebook</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+</ul>
+</li>
+<li><a href="#issueTracker">https://w3id.org/okn/o/sd#issueTracker</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: SubProperty of https://codemeta.github.io/terms/issueTracker</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+</ul>
+</li>
+<li><a href="#pathLocation">https://w3id.org/okn/o/sd#pathLocation</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#DatasetSpecification</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#readme">https://w3id.org/okn/o/sd#readme</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Software</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: SubProperty of https://codemeta.github.io/terms/readme</li>
+</ul>
+</li>
+</ul></details></div>
