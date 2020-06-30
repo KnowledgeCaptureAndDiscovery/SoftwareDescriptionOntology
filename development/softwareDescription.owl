@@ -1235,7 +1235,7 @@ In this case the property would capture this as follows:
 ###  https://w3id.org/okn/o/sd#Organization
 :Organization rdf:type owl:Class ;
               rdfs:subClassOf <http://schema.org/Organization> ;
-              rdfs:comment "An organized ody of people with a particular purpose"@en ;
+              rdfs:comment "An organized body of people with a particular purpose"@en ;
               rdfs:label "Organization"@en .
 
 
