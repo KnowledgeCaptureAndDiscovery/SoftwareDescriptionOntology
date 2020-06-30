@@ -146,7 +146,8 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # https://w3id.org/okn/o/sd#copyrightHolder
 <https://w3id.org/okn/o/sd#copyrightHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/okn/o/sd#copyrightHolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/copyrightHolder> .
-<https://w3id.org/okn/o/sd#copyrightHolder> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+<https://w3id.org/okn/o/sd#copyrightHolder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#copyrightHolder> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .

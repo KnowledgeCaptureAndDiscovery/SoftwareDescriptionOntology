@@ -278,14 +278,15 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/okn/o/sd#copyrightHolder">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/copyrightHolder"/>
-        <rdfs:domain>
+        <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
+        <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Organization"/>
                     <rdf:Description rdf:about="https://w3id.org/okn/o/sd#Person"/>
                 </owl:unionOf>
             </owl:Class>
-        </rdfs:domain>
+        </rdfs:range>
         <rdfs:label xml:lang="en">copyright holder</rdfs:label>
     </owl:ObjectProperty>
     

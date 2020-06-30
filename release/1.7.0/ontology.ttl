@@ -165,11 +165,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#copyrightHolder
 :copyrightHolder rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf <http://schema.org/copyrightHolder> ;
-                 rdfs:domain [ rdf:type owl:Class ;
-                               owl:unionOf ( :Organization
-                                             :Person
-                                           )
-                             ] ;
+                 rdfs:domain :Software ;
+                 rdfs:range [ rdf:type owl:Class ;
+                              owl:unionOf ( :Organization
+                                            :Person
+                                          )
+                            ] ;
                  rdfs:label "copyright holder"@en .
 
 
