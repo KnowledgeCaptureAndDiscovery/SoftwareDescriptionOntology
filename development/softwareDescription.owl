@@ -7,8 +7,8 @@
 @base <https://w3id.org/okn/o/sd> .
 
 <https://w3id.org/okn/o/sd> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://w3id.org/okn/o/sd/1.6.0> ;
-                             <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables"@en ;
+                             owl:versionIRI <https://w3id.org/okn/o/sd/1.7.0> ;
+                             <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies"@en ;
                              <http://purl.org/dc/elements/1.1/contributor> "Hernan Vargas" ,
                                                                            "Maximiliano Osorio" ;
                              <http://purl.org/dc/elements/1.1/created> "May 28th, 2020" ;
@@ -20,9 +20,9 @@
                              <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> ;
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en ;
                              <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/okn/o/sd> ;
-                             rdfs:comment "An ontology for describing software and their links to inputs, outputs and variables"@en ;
-                             owl:priorVersion <https://w3id.org/okn/o/sd/1.5.0> ;
-                             owl:versionInfo "1.6.0" .
+                             rdfs:comment "An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies"@en ;
+                             owl:priorVersion <https://w3id.org/okn/o/sd/1.6.0> ;
+                             owl:versionInfo "1.7.0" .
 
 #################################################################
 #    Annotation properties
@@ -134,7 +134,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :adjustsVariable rdf:type owl:ObjectProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Parameter ;
-                 rdfs:range <http://www.geoscienceontology.org/geo-upper#Variable> ;
+                 rdfs:range :Variable ;
                  rdfs:comment "Property that links parameter with the variable they adjust. This property can be used when parameters quantify variables without directly representing them. For example, a \"fertilizer percentage adjustment\" parameter can quantify a \"fertilizer price\" variable"@en ;
                  rdfs:label "adjusts variable"@en .
 
@@ -526,6 +526,16 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                            rdfs:isDefinedBy <https://codemeta.github.io/terms/> .
 
 
+###  https://codemeta.github.io/terms/issueTracker
+<https://codemeta.github.io/terms/issueTracker> rdf:type owl:DatatypeProperty ;
+                                                rdfs:isDefinedBy <https://codemeta.github.io/terms/> .
+
+
+###  https://codemeta.github.io/terms/readme
+<https://codemeta.github.io/terms/readme> rdf:type owl:DatatypeProperty ;
+                                          rdfs:isDefinedBy <https://codemeta.github.io/terms/> .
+
+
 ###  https://codemeta.github.io/terms/referencePublication
 <https://codemeta.github.io/terms/referencePublication> rdf:type owl:DatatypeProperty ;
                                                         rdfs:isDefinedBy <https://codemeta.github.io/terms/> .
@@ -580,7 +590,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
              rdfs:domain [ rdf:type owl:Class ;
                            owl:unionOf ( <http://purl.org/linked-data/cube#DataStructureDefinition>
                                          <http://qudt.org/schema/qudt/Unit>
-                                         <http://www.geoscienceontology.org/geo-upper#Variable>
                                          owl:Thing
                                          :NumericalIndex
                                          :Organization
@@ -590,12 +599,22 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                          :SampleResource
                                          :Software
                                          :SourceCode
+                                         :Variable
                                          :Visualization
                                        )
                          ] ;
              rdfs:range xsd:string ;
              rdfs:comment "A description of a resource"@en ;
              rdfs:label "description"@en .
+
+
+###  https://w3id.org/okn/o/sd#doi
+:doi rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf :identifier ;
+     rdfs:domain :Software ;
+     rdfs:range xsd:string ;
+     rdfs:comment "Digital Object Identifier associated with a software component"@en ;
+     rdfs:label "doi"@en .
 
 
 ###  https://w3id.org/okn/o/sd#email
@@ -629,6 +648,14 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                rdfs:range xsd:string ;
                rdfs:comment "Assumptions of a software, e.g. the solver being used for a particular model, the source of the data (e.g., all data must have a given resolution), etc."@en ;
                rdfs:label "has assumption"@en .
+
+
+###  https://w3id.org/okn/o/sd#hasBuildFile
+:hasBuildFile rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Software ;
+              rdfs:range xsd:anyURI ;
+              rdfs:comment "A file (e.g., Dockerfile) with executable instructions indicating how a Software Image or a Software component is built"@en ;
+              rdfs:label "has build file"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasComponentLocation
@@ -695,6 +722,14 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "has documentation"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasDownloadInstructions
+:hasDownloadInstructions rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Software ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Instructions needed to download a software component. The difference with `hasDownloadURL` is that this property captures the human readable instructions required to download software. For example, sometimes an authentication is needed, users need to fill in a form, etc."@en ;
+                         rdfs:label "has download instructions"@en .
+
+
 ###  https://w3id.org/okn/o/sd#hasDownloadURL
 :hasDownloadURL rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Software ;
@@ -707,8 +742,24 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasExample rdf:type owl:DatatypeProperty ;
             rdfs:domain :Software ;
             rdfs:range xsd:string ;
-            rdfs:comment "An example explaining a scenario where the model was used in plain language."@en ;
+            rdfs:comment "An example explaining a scenario where the software component was used in plain language."@en ;
             rdfs:label "has example"@en .
+
+
+###  https://w3id.org/okn/o/sd#hasExecutableInstructions
+:hasExecutableInstructions rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :Software ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "Instructions that indicate how a software component should be executed. The difference with `hasExecutionCommand` is that the execution instructions aim to be human-readable, and have explanations between the different commands and instructions"@en ;
+                           rdfs:label "has executable instructions"@en .
+
+
+###  https://w3id.org/okn/o/sd#hasExecutableNotebook
+:hasExecutableNotebook rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Software ;
+                       rdfs:range xsd:anyURI ;
+                       rdfs:comment "Property that links a software component with an executable notebook (e.g., Jupyter notebook) that illustrates how to use it in an executable manner."@en ;
+                       rdfs:label "has executable notebook"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasExecutionCommand
@@ -772,7 +823,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasInstallationInstructions rdf:type owl:DatatypeProperty ;
                              rdfs:domain :Software ;
                              rdfs:range xsd:string ;
-                             rdfs:comment "Instructions requires to install this particular piece of software."@en ;
+                             rdfs:comment "Instructions required to install this particular piece of software. Installation instructions usually are available in a human-readable manner."@en ;
                              rdfs:label "has installation instructions"@en .
 
 
@@ -888,6 +939,15 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
             rdfs:label "identifier"@en .
 
 
+###  https://w3id.org/okn/o/sd#issueTracker
+:issueTracker rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <https://codemeta.github.io/terms/issueTracker> ;
+              rdfs:domain :Software ;
+              rdfs:range xsd:anyURI ;
+              rdfs:comment "Pointer to the issue tracker of a software component"@en ;
+              rdfs:label "issue tracker"@en .
+
+
 ###  https://w3id.org/okn/o/sd#keywords
 :keywords rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf <http://schema.org/keywords> ;
@@ -934,6 +994,24 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "operating systems"@en .
 
 
+###  https://w3id.org/okn/o/sd#pathLocation
+:pathLocation rdf:type owl:DatatypeProperty ;
+              rdfs:domain :DatasetSpecification ;
+              rdfs:range xsd:string ;
+              rdfs:comment """Property that indicates the relative path of an input or output with respect to the folder structure of the executable. 
+
+For example, let's assume we have an input that has to exist in the folder `/datasets` or the executable will not work. This property ensures that this knowledge is captured for a given software component execution.
+
+In this case the property would capture this as follows:
+
+```
+:input_prep a sd:DatasetSpecification .
+:input_prep rdfs:label \"precipitation file\" .
+:input_precip sd:pathLocation \"/datasets/\".
+```"""@en ;
+              rdfs:label "path location"@en .
+
+
 ###  https://w3id.org/okn/o/sd#position
 :position rdf:type owl:DatatypeProperty ;
           rdfs:domain [ rdf:type owl:Class ;
@@ -962,6 +1040,15 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                      rdfs:label "programming language"@en .
 
 
+###  https://w3id.org/okn/o/sd#readme
+:readme rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf <https://codemeta.github.io/terms/readme> ;
+        rdfs:domain :Software ;
+        rdfs:range xsd:anyURI ;
+        rdfs:comment "URl to the readme file of a software component"@en ;
+        rdfs:label "readme"@en .
+
+
 ###  https://w3id.org/okn/o/sd#recommendedIncrement
 :recommendedIncrement rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Parameter ;
@@ -975,7 +1062,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                       rdfs:subPropertyOf <https://codemeta.github.io/terms/referencePublication> ;
                       rdfs:domain :Software ;
                       rdfs:range xsd:string ;
-                      rdfs:comment "Main publication to cite in this software"@en ;
+                      rdfs:comment "Main publication to cite for this software component"@en ;
                       rdfs:label "reference publication"@en .
 
 
@@ -1083,11 +1170,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 <http://schema.org/SoftwareSourceCode> rdf:type owl:Class .
 
 
-###  http://www.geoscienceontology.org/geo-upper#Variable
-<http://www.geoscienceontology.org/geo-upper#Variable> rdf:type owl:Class ;
-                                                       rdfs:isDefinedBy <http://www.geoscienceontology.org/geo-upper> .
-
-
 ###  http://www.w3.org/ns/prov#Activity
 <http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
 
@@ -1134,7 +1216,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#Image
 :Image rdf:type owl:Class ;
        rdfs:subClassOf :DatasetSpecification ;
-       rdfs:comment "An image (e.g. tiff file) is a type of dataset specification used to define things like soil, crops, etc."@en ;
+       rdfs:comment "An image (e.g. tiff file) is a type of dataset specification used to define certain inputs of models like soil, crops, etc."@en ;
        rdfs:label "Image"@en .
 
 
@@ -1161,6 +1243,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#Person
 :Person rdf:type owl:Class ;
         rdfs:subClassOf <http://schema.org/Person> ;
+        rdfs:comment "A human being (individual)"@en ;
         rdfs:label "Person"@en .
 
 
