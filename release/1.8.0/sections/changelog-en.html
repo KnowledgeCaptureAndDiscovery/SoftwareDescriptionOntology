@@ -1,0 +1,186 @@
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Modified classes</u></summary>
+<ul><li><a href="#Organization">https://w3id.org/okn/o/sd#Organization</a>
+<ul>
+<li>Added: rdfs:comment "An organized body of people with a particular purpose"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "An organized ody of people with a particular purpose"@en</li>
+</ul>
+</li>
+<li><a href="#Software">https://w3id.org/okn/o/sd#Software</a>
+<ul>
+<li>Added: rdfs:comment "The set of instructions that indicate a machine how to work. In this ontology software is a general concept which acts as a superclass for software versions, docker images, data transformations, etc."@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added classes</u></summary>
+<ul><li><a href="#CatalogIdentifier">https://w3id.org/okn/o/sd#CatalogIdentifier</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/okn/o/sd#Parameter</li>
+</ul>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Modified properties</u></summary>
+<ul><li><a href="#author">https://w3id.org/okn/o/sd#author</a>
+<ul>
+<li>Added: rdfs:comment "The creator of a software component"@en</li>
+</ul>
+</li>
+<li><a href="#contributor">https://w3id.org/okn/o/sd#contributor</a>
+<ul>
+<li>Added: rdfs:comment "Contributor to a software component"@en</li>
+</ul>
+</li>
+<li><a href="#copyrightHolder">https://w3id.org/okn/o/sd#copyrightHolder</a>
+<ul>
+<li>Added: rdfs:comment "Copyright holder for a software component"@en</li>
+</ul>
+</li>
+<li><a href="#fundingSource">https://w3id.org/okn/o/sd#fundingSource</a>
+<ul>
+<li>Added: rdfs:comment "Link to the organization funding a software component"@en</li>
+</ul>
+</li>
+<li><a href="#hadPrimarySource">https://w3id.org/okn/o/sd#hadPrimarySource</a>
+<ul>
+<li>Added: rdfs:label "had primary source"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "had primary source"@en</li>
+</ul>
+</li>
+<li><a href="#hasContactPerson">https://w3id.org/okn/o/sd#hasContactPerson</a>
+<ul>
+<li>Added: rdfs:comment "Contact person responsible for a software component"@en</li>
+</ul>
+</li>
+<li><a href="#hasSampleExecution">https://w3id.org/okn/o/sd#hasSampleExecution</a>
+<ul>
+<li>Added: rdfs:comment "Property pointing to a sample execution of a software configuration"@en</li>
+</ul>
+</li>
+<li><a href="#hasSampleResult">https://w3id.org/okn/o/sd#hasSampleResult</a>
+<ul>
+<li>Added: rdfs:comment "Property designed to link a software configuration to a sample resource resulting from its execution"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#hasSampleVisualization">https://w3id.org/okn/o/sd#hasSampleVisualization</a>
+<ul>
+<li>Added: rdfs:comment "A typical sample visualization of the software outputs"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "A typical sample visualization of the softwware outputs"@en</li>
+</ul>
+</li>
+<li><a href="#hasSourceCode">https://w3id.org/okn/o/sd#hasSourceCode</a>
+<ul>
+<li>Added: rdfs:comment "Property designed to link a software with its software source code (which may reside in a code repository such as GitHub)"@en</li>
+</ul>
+</li>
+<li><a href="#hasVersion">https://w3id.org/okn/o/sd#hasVersion</a>
+<ul>
+<li>Added: rdfs:comment "Property designed to link a software component with its corresponding versions"@en</li>
+</ul>
+</li>
+<li><a href="#logo">https://w3id.org/okn/o/sd#logo</a>
+<ul>
+<li>Added: rdfs:comment "Property that links to the image used as logo for a software component"@en</li>
+<li>Added: rdfs:label "logo"@en</li>
+</ul>
+</li>
+<li><a href="#publisher">https://w3id.org/okn/o/sd#publisher</a>
+<ul>
+<li>Added: rdfs:comment "Publisher organization or person responsible for a software component"@en</li>
+</ul>
+</li>
+<li><a href="#screenshot">https://w3id.org/okn/o/sd#screenshot</a>
+<ul>
+<li>Added: rdfs:label "screenshot"@en</li>
+<li>Added: rdfs:comment "Image illustrating a snapshot of the target software"@en</li>
+</ul>
+</li>
+<li><a href="#wasDerivedFromSoftware">https://w3id.org/okn/o/sd#wasDerivedFromSoftware</a>
+<ul>
+<li>Added: rdfs:comment "Property that identifies the software used to create a visualization"@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added properties</u></summary>
+<ul><li><a href="#isTransformedFrom">https://w3id.org/okn/o/sd#isTransformedFrom</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#DatasetSpecification</li>
+<li>Added: Range https://w3id.org/okn/o/sd#DatasetSpecification</li>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#wasDerivedFromSetup">https://w3id.org/okn/o/sd#wasDerivedFromSetup</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#ConfigurationSetup</li>
+<li>Added: domain https://w3id.org/okn/o/sd#ConfigurationSetup</li>
+<li>Added: SubProperty of http://www.w3.org/ns/prov#wasDerivedFrom</li>
+</ul>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Modified data properties</u></summary>
+<ul><li><a href="#dateCreated">https://w3id.org/okn/o/sd#dateCreated</a>
+<ul>
+<li>Added: rdfs:comment "Date when a software component was created"@en</li>
+</ul>
+</li>
+<li><a href="#datePublished">https://w3id.org/okn/o/sd#datePublished</a>
+<ul>
+<li>Added: rdfs:comment "Date when a software component was published"@en</li>
+</ul>
+</li>
+<li><a href="#email">https://w3id.org/okn/o/sd#email</a>
+<ul>
+<li>Added: rdfs:comment "Email of a person"@en</li>
+</ul>
+</li>
+<li><a href="#hasTypicalDataSource">https://w3id.org/okn/o/sd#hasTypicalDataSource</a>
+<ul>
+<li>Added: rdfs:comment "Typical data sources that are used by a software component"@en</li>
+</ul>
+</li>
+<li><a href="#memoryRequirements">https://w3id.org/okn/o/sd#memoryRequirements</a>
+<ul>
+<li>Added: rdfs:comment "Memory requirements of a software"@en</li>
+</ul>
+</li>
+<li><a href="#operatingSystems">https://w3id.org/okn/o/sd#operatingSystems</a>
+<ul>
+<li>Added: rdfs:comment "Operating systems under which a software component can operate"@en</li>
+</ul>
+</li>
+<li><a href="#processorRequirements">https://w3id.org/okn/o/sd#processorRequirements</a>
+<ul>
+<li>Added: rdfs:comment "Processor requirements of a software component"@en</li>
+</ul>
+</li>
+<li><a href="#programmingLanguage">https://w3id.org/okn/o/sd#programmingLanguage</a>
+<ul>
+<li>Added: rdfs:comment "Language used to code a software component"@en</li>
+</ul>
+</li>
+<li><a href="#softwareRequirements">https://w3id.org/okn/o/sd#softwareRequirements</a>
+<ul>
+<li>Added: rdfs:comment "Software requirements needed to install a software component"@en</li>
+</ul>
+</li>
+<li><a href="#tag">https://w3id.org/okn/o/sd#tag</a>
+<ul>
+<li>Added: Domain Union of (https://w3id.org/okn/o/sd#ConfigurationSetup, https://w3id.org/okn/o/sd#SoftwareConfiguration, https://w3id.org/okn/o/sd#SoftwareVersion)</li>
+</ul>
+<ul>
+<li>Deleted: Domain Union of (https://w3id.org/okn/o/sd#SoftwareConfiguration, https://w3id.org/okn/o/sd#SoftwareVersion)</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#status">https://w3id.org/okn/o/sd#status</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain https://w3id.org/okn/o/sd#ConfigurationSetup</li>
+</ul>
+</li>
+</ul></details></div>

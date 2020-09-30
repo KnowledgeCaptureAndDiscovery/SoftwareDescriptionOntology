@@ -13,9 +13,9 @@
                                                                            "Maximiliano Osorio" ;
                              <http://purl.org/dc/elements/1.1/created> "September 29th, 2020"@en ;
                              <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo"@en ,
-                                                                       "Deborah Khider" ,
                                                                        "Varun Ratnakar"@en ,
-                                                                       "Yolanda Gil"@en ;
+                                                                       "Yolanda Gil"@en ,
+                                                                       "Deborah Khider" ;
                              <http://purl.org/dc/elements/1.1/title> "The Software Description Ontology"@en ;
                              <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/2.0/> ;
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en ;
@@ -144,7 +144,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                    :Person
                                  )
                    ] ;
-        rdfs:comment "The creator of a software component"@en;
+        rdfs:comment "The creator of a software component"@en ;
         rdfs:label "author"@en .
 
 
@@ -161,20 +161,20 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
              rdfs:subPropertyOf <http://schema.org/contributor> ;
              rdfs:domain :Software ;
              rdfs:range :Person ;
-             rdfs:comment "Contributor to a software component"@en;
+             rdfs:comment "Contributor to a software component"@en ;
              rdfs:label "contributor"@en .
 
 
 ###  https://w3id.org/okn/o/sd#copyrightHolder
 :copyrightHolder rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf <http://schema.org/copyrightHolder> ;
-                 rdfs:comment "Copyright holder for a software component"@en;
                  rdfs:domain :Software ;
                  rdfs:range [ rdf:type owl:Class ;
                               owl:unionOf ( :Organization
                                             :Person
                                           )
                             ] ;
+                 rdfs:comment "Copyright holder for a software component"@en ;
                  rdfs:label "copyright holder"@en .
 
 
@@ -183,7 +183,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain :FundingInformation ;
                rdfs:range :Organization ;
-               rdfs:comment "Link to the organization funding a software component"@en;
+               rdfs:comment "Link to the organization funding a software component"@en ;
                rdfs:label "funding source"@en .
 
 
@@ -217,7 +217,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                              :Person
                                            )
                              ] ;
-                  rdfs:comment "Contact person responsible for a software component"@en;
+                  rdfs:comment "Contact person responsible for a software component"@en ;
                   rdfs:label "has contact person"@en .
 
 
@@ -310,8 +310,8 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#hasSampleExecution
 :hasSampleExecution rdf:type owl:ObjectProperty ;
                     rdfs:domain :SoftwareConfiguration ;
-                    rdfs:comment "Property pointing to a sample execution of a software configuration"@en;
                     rdfs:range :SampleExecution ;
+                    rdfs:comment "Property pointing to a sample execution of a software configuration"@en ;
                     rdfs:label "has sample execution"@en .
 
 
@@ -319,7 +319,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasSampleResult rdf:type owl:ObjectProperty ;
                  rdfs:domain :SoftwareConfiguration ;
                  rdfs:range :SampleResource ;
-                 rdfs:comment "Property designed to link a software configuration to a sample resource resulting from its execution";
+                 rdfs:comment "Property designed to link a software configuration to a sample resource resulting from its execution" ;
                  rdfs:label "has sample result"@en .
 
 
@@ -353,7 +353,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                         owl:FunctionalProperty ;
                rdfs:domain :Software ;
                rdfs:range :SourceCode ;
-               rdfs:comment "Property designed to link a software with its software source code (which may reside in a code repository such as GitHub)"@en;
+               rdfs:comment "Property designed to link a software with its software source code (which may reside in a code repository such as GitHub)"@en ;
                rdfs:label "has source code"@en .
 
 
@@ -374,7 +374,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasVersion rdf:type owl:ObjectProperty ;
             rdfs:domain :Software ;
             rdfs:range :SoftwareVersion ;
-            rdfs:comment "Property designed to link a software component with its corresponding versions"@en;
+            rdfs:comment "Property designed to link a software component with its corresponding versions"@en ;
             rdfs:label "has software version"@en .
 
 
@@ -389,10 +389,10 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#logo
 :logo rdf:type owl:ObjectProperty ;
-      rdfs:label "logo"@en;
-      rdfs:comment "Property that links to the image used as logo for a software component"@en;
       rdfs:domain :Software ;
-      rdfs:range :Image .
+      rdfs:range :Image ;
+      rdfs:comment "Property that links to the image used as logo for a software component"@en ;
+      rdfs:label "logo"@en .
 
 
 ###  https://w3id.org/okn/o/sd#partOfDataset
@@ -412,17 +412,17 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                                       :Person
                                     )
                       ] ;
-           rdfs:comment "Publisher organization or person responsible for a software component"@en;
+           rdfs:comment "Publisher organization or person responsible for a software component"@en ;
            rdfs:label "publisher"@en .
 
 
 ###  https://w3id.org/okn/o/sd#screenshot
 :screenshot rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://schema.org/screenshot> ;
-            rdfs:label "screenshot"@en;
-            rdfs:comment "Image illustrating a snapshot of the target software"@en;
             rdfs:domain :Software ;
-            rdfs:range :Image .
+            rdfs:range :Image ;
+            rdfs:comment "Image illustrating a snapshot of the target software"@en ;
+            rdfs:label "screenshot"@en .
 
 
 ###  https://w3id.org/okn/o/sd#usefulForCalculatingIndex
@@ -614,7 +614,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
              rdfs:subPropertyOf <http://schema.org/dateCreated> ;
              rdfs:domain :Software ;
              rdfs:range xsd:dateTime ;
-             rdfs:comment "Date when a software component was created"@en;
+             rdfs:comment "Date when a software component was created"@en ;
              rdfs:label "date created"@en .
 
 
@@ -623,7 +623,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                rdfs:subPropertyOf <http://schema.org/datePublished> ;
                rdfs:domain :Software ;
                rdfs:range xsd:dateTime ;
-               rdfs:comment "Date when a software component was published"@en;
+               rdfs:comment "Date when a software component was published"@en ;
                rdfs:label "date published"@en .
 
 
@@ -663,7 +663,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
        rdfs:subPropertyOf <http://schema.org/email> ;
        rdfs:domain :Person ;
        rdfs:range xsd:string ;
-       rdfs:comment "Email of a person"@en;
+       rdfs:comment "Email of a person"@en ;
        rdfs:label "email"@en .
 
 
@@ -947,7 +947,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 :hasTypicalDataSource rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Software ;
                       rdfs:range xsd:anyURI ;
-                      rdfs:comment "Typical data sources that are used by a software component"@en;
+                      rdfs:comment "Typical data sources that are used by a software component"@en ;
                       rdfs:label "has typical data source"@en .
 
 
@@ -1018,7 +1018,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                     rdfs:subPropertyOf <http://schema.org/memoryRequirements> ;
                     rdfs:domain :Software ;
                     rdfs:range xsd:string ;
-                    rdfs:comment "Memory requirements of a software"@en;
+                    rdfs:comment "Memory requirements of a software"@en ;
                     rdfs:label "memory requirements"@en .
 
 
@@ -1035,7 +1035,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:subPropertyOf <http://schema.org/operatingSystems> ;
                   rdfs:domain :Software ;
                   rdfs:range xsd:string ;
-                  rdfs:comment "Operating systems under which a software component can operate"@en;
+                  rdfs:comment "Operating systems under which a software component can operate"@en ;
                   rdfs:label "operating systems"@en .
 
 
@@ -1074,7 +1074,7 @@ In this case the property would capture this as follows:
                        rdfs:subPropertyOf <http://schema.org/processorRequirements> ;
                        rdfs:domain :Software ;
                        rdfs:range xsd:string ;
-                       rdfs:comment "Processor requirements of a software component"@en;
+                       rdfs:comment "Processor requirements of a software component"@en ;
                        rdfs:label "processor requirements"@en .
 
 
@@ -1083,7 +1083,7 @@ In this case the property would capture this as follows:
                      rdfs:subPropertyOf <http://schema.org/programmingLanguage> ;
                      rdfs:domain :SourceCode ;
                      rdfs:range xsd:string ;
-                     rdfs:comment "Language used to code a software component"@en;
+                     rdfs:comment "Language used to code a software component"@en ;
                      rdfs:label "programming language"@en .
 
 
@@ -1127,7 +1127,7 @@ In this case the property would capture this as follows:
                       rdfs:subPropertyOf <http://schema.org/softwareRequirements> ;
                       rdfs:domain :Software ;
                       rdfs:range xsd:string ;
-                      rdfs:comment "Software requirements needed to install a software component"@en;
+                      rdfs:comment "Software requirements needed to install a software component"@en ;
                       rdfs:label "software requirements"@en .
 
 
@@ -1335,7 +1335,7 @@ In this case the property would capture this as follows:
 ###  https://w3id.org/okn/o/sd#Software
 :Software rdf:type owl:Class ;
           rdfs:subClassOf <http://schema.org/SoftwareApplication> ;
-          rdfs:comment "The set of instructions that indicate a machine how to work. In this ontology software is a general concept which acts as a superclass for software versions, docker images, data transformations, etc."@en;
+          rdfs:comment "The set of instructions that indicate a machine how to work. In this ontology software is a general concept which acts as a superclass for software versions, docker images, data transformations, etc."@en ;
           rdfs:label "Software"@en .
 
 
@@ -1400,4 +1400,4 @@ In this case the property would capture this as follows:
                rdfs:label "Visualization"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
