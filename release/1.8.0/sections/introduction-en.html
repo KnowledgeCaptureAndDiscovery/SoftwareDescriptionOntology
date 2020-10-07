@@ -1,5 +1,14 @@
 <html><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown"></span>
+<span class="markdown">
+The Software Description Ontology builds on our previous work  in  <a href="https://ontosoft.org/software">OntoSoft</a>, where we identified the main categories for describing scientific software.  The  main differences  with  previous  work consist of a simplification of the core model, an extension of   its   semantics   to   relate   concepts   instead   of   textual descriptions  and  the  addition  of  variables  and  metadata  to capture how software may be used in composition with other software. 
+
+The ontology was developed in an iterative manner, populating a [list of requirements](https://github.com/KnowledgeCaptureAndDiscovery/SoftwareDescriptionOntology/tree/master/requirements) developed with different domain experts. We  have  favored  the  reuse  of  existing  vocabularies  and standards in our ontology development. We adopt [Codemeta](https://codemeta.github.io/terms/) to  describe  all  basic  software  attribution  terms,  such  as author,  maintainer,  funding, license,associated publications, etc.  Codemeta  is  a  community-driven  initiative  that  uses [Schema.org](https://schema.org/)   as   core   vocabulary   to   represent   software (schema:SoftwareApplication).
+
+As  shown  in  Figure  1,  we extend Schema.org to align our concept to that vocabulary and inherit  all  its  metadata  properties.  An  advantage  of  using Codemeta  is  that  it  has  become  a  reference  vocabulary between  different  code  repositories,  and  hence  it  facilitates interoperability between software metadata entries. We have also extended the [W3C Data Cubes standard](https://www.w3.org/TR/vocab-data-cube/) with dataset specifications (subclass of qb:DataStructureDefinition,  as  indicated  in  Figure  1).  The Data  Cube  standard defines  how  to  structure  n-dimensional cubes  of  observations,  and  although  it  is  tailored  towards representing  the  observed  values,  the  representation  of  the structure    of    a    cube    satisfies    our    needs    for    dataset representation.
+
+Next, we reused NASA’s [Quantities, Units, Dimensions, and Data Types vocabulary (QUDT)](http://qudt.org/ for representing units of variables, enriched  with  the  [canonicalization  compound  unit representation  and  transformation  ontology  (CCUT)](https://github.com/basels/ccut) that provides additional properties to describe how to perform unit transformations.
+
+</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -16,7 +25,6 @@
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
 </tbody>
 </table>
 </div>
