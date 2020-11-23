@@ -580,7 +580,7 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/okn/o/sd#hasDimensionality
 :hasDimensionality rdf:type owl:DatatypeProperty ;
                    rdfs:domain :DatasetSpecification ;
-                   rdfs:range xsd:int ;
+                   rdfs:range xsd:integer ;
                    rdfs:comment "Property to indicate dimensionality of the input or output of a dataset specification"@en ;
                    rdfs:label "has dimensionality"@en .
 
@@ -885,7 +885,7 @@ In this case the property would capture this as follows:
                                       :Parameter
                                     )
                       ] ;
-          rdfs:range xsd:int ;
+          rdfs:range xsd:integer ;
           rdfs:comment "Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution"@en ;
           rdfs:label "position"@en .
 

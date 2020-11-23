@@ -598,7 +598,7 @@ _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://w3id.org/okn/o/sd#hasDimensionality
 <https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#DatasetSpecification> .
-<https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to indicate dimensionality of the input or output of a dataset specification"@en .
 <https://w3id.org/okn/o/sd#hasDimensionality> <http://www.w3.org/2000/01/rdf-schema#label> "has dimensionality"@en .
 # 
@@ -918,7 +918,7 @@ _:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
 _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
 _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/okn/o/sd#position> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/okn/o/sd#position> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/okn/o/sd#position> <http://www.w3.org/2000/01/rdf-schema#comment> "Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution"@en .
 <https://w3id.org/okn/o/sd#position> <http://www.w3.org/2000/01/rdf-schema#label> "position"@en .
 # 
