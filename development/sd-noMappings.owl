@@ -413,6 +413,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
+:availableInRegistry rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :SoftwareImage ;
+                     rdfs:range xsd:anyURI ;
+                     rdfs:comment "Property that indicates in which registry the software image being described can be found. For example, https://hub.docker.com"@en ;
+                     rdfs:label "available in registry"@en .
+
 ###  https://w3id.org/okn/o/sd#citation
 :citation rdf:type owl:DatatypeProperty ;
           rdfs:domain :Software ;
