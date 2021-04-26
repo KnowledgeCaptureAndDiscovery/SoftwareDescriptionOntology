@@ -464,6 +464,22 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                         rdfs:label "was derived from software"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasConstraint
+:hasConstraint rdf:type owl:ObjectProperty ;
+               rdfs:domain :SoftwareConfiguration ;
+               rdfs:range :Constraint ;
+               rdfs:comment "Constraint or rule associated to a  variable or software configuration. For example: \"This model accepts only monthly data\", or \"all inputs of this model configuration must share the same location\". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property"@en ;
+               rdfs:label "has constraint"@en .
+
+
+###  https://w3id.org/okn/o/sd#hasVariable
+:hasVariable rdf:type owl:ObjectProperty ;
+             rdfs:domain :Constraint ;
+             rdfs:range :VariablePresentation ;
+             rdfs:comment "Property that links a rule and the variable that will test it"@en ;
+             rdfs:label "has variable"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -592,6 +608,14 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
           rdfs:label "citation"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasRule
+:hasRule rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Constraint ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Rule that defines this constraint"@en ;
+         rdfs:label "has rule"@en .
+
+
 ###  https://w3id.org/okn/o/sd#codeRepository
 :codeRepository rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf <http://schema.org/codeRepository> ;
@@ -714,18 +738,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                       rdfs:range xsd:anyURI ;
                       rdfs:comment "Location of the aggregation of all the files needed to execute the component. Usually a zip file including the run script and support scripts, including specification files"@en ;
                       rdfs:label "has component location"@en .
-
-
-###  https://w3id.org/okn/o/sd#hasConstraint
-:hasConstraint rdf:type owl:DatatypeProperty ;
-               rdfs:domain [ rdf:type owl:Class ;
-                             owl:unionOf ( :SoftwareConfiguration
-                                           :VariablePresentation
-                                         )
-                           ] ;
-               rdfs:range xsd:string ;
-               rdfs:comment "Constraint or rule associated to a  variable or software configuration. For example: \"This model accepts only monthly data\", or \"all inputs of this model configuration must share the same location\". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property"@en ;
-               rdfs:label "has constraint"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasDataType
@@ -1242,6 +1254,10 @@ In this case the property would capture this as follows:
 ###  http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
 
+###  https://w3id.org/okn/o/sd#Constraint
+:Constraint rdf:type owl:Class ;
+            rdfs:comment "Data constraints of a configuration"@en ;
+            rdfs:label "Constraint"@en .
 
 ###  https://w3id.org/okn/o/sd#CatalogIdentifier
 :CatalogIdentifier rdf:type owl:Class ;

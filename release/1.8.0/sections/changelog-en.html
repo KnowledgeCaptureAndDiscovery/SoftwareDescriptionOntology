@@ -21,6 +21,8 @@
 <li>Added: SubClass of https://w3id.org/okn/o/sd#Parameter</li>
 </ul>
 </li>
+<li><a href="#Constraint">https://w3id.org/okn/o/sd#Constraint</a>
+</li>
 </ul></details><h3 id="changeProp" class="list">Object Properties</h3>
 <details><summary><u>Modified properties</u></summary>
 <ul><li><a href="#author">https://w3id.org/okn/o/sd#author</a>
@@ -107,7 +109,19 @@
 </ul>
 </li>
 </ul></details><details><summary><u>Added properties</u></summary>
-<ul><li><a href="#isTransformedFrom">https://w3id.org/okn/o/sd#isTransformedFrom</a>
+<ul><li><a href="#hasConstraint">https://w3id.org/okn/o/sd#hasConstraint</a>
+<ul>
+<li>Added: domain https://w3id.org/okn/o/sd#SoftwareConfiguration</li>
+<li>Added: Range https://w3id.org/okn/o/sd#Constraint</li>
+</ul>
+</li>
+<li><a href="#hasVariable">https://w3id.org/okn/o/sd#hasVariable</a>
+<ul>
+<li>Added: Range https://w3id.org/okn/o/sd#VariablePresentation</li>
+<li>Added: domain https://w3id.org/okn/o/sd#Constraint</li>
+</ul>
+</li>
+<li><a href="#isTransformedFrom">https://w3id.org/okn/o/sd#isTransformedFrom</a>
 <ul>
 <li>Added: domain https://w3id.org/okn/o/sd#DatasetSpecification</li>
 <li>Added: Range https://w3id.org/okn/o/sd#DatasetSpecification</li>
@@ -138,6 +152,14 @@
 <li>Added: rdfs:comment "Email of a person"@en</li>
 </ul>
 </li>
+<li><a href="#hasDimensionality">https://w3id.org/okn/o/sd#hasDimensionality</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#integer</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#int</li>
+</ul>
+</li>
 <li><a href="#hasTypicalDataSource">https://w3id.org/okn/o/sd#hasTypicalDataSource</a>
 <ul>
 <li>Added: rdfs:comment "Typical data sources that are used by a software component"@en</li>
@@ -151,6 +173,14 @@
 <li><a href="#operatingSystems">https://w3id.org/okn/o/sd#operatingSystems</a>
 <ul>
 <li>Added: rdfs:comment "Operating systems under which a software component can operate"@en</li>
+</ul>
+</li>
+<li><a href="#position">https://w3id.org/okn/o/sd#position</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#integer</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#int</li>
 </ul>
 </li>
 <li><a href="#processorRequirements">https://w3id.org/okn/o/sd#processorRequirements</a>
@@ -177,10 +207,25 @@
 </ul>
 </li>
 </ul></details><details><summary><u>Added data properties</u></summary>
-<ul><li><a href="#status">https://w3id.org/okn/o/sd#status</a>
+<ul><li><a href="#availableInRegistry">https://w3id.org/okn/o/sd#availableInRegistry</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#SoftwareImage</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+</ul>
+</li>
+<li><a href="#hasRule">https://w3id.org/okn/o/sd#hasRule</a>
+<ul>
+<li>Added: Domain https://w3id.org/okn/o/sd#Constraint</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#status">https://w3id.org/okn/o/sd#status</a>
 <ul>
 <li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
 <li>Added: Domain https://w3id.org/okn/o/sd#ConfigurationSetup</li>
 </ul>
+</li>
+</ul></details><details><summary><u>Deleted data properties</u></summary>
+<ul><li><a href="#hasConstraint">https://w3id.org/okn/o/sd#hasConstraint</a>
 </li>
 </ul></details></div>
