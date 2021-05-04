@@ -606,16 +606,16 @@
   } ],
   "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
     "@language" : "en",
-    "@value" : "https://w3id.org/okn/o/sd/1.7.0"
+    "@value" : "https://w3id.org/okn/o/sd/1.8.0"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "https://w3id.org/okn/o/sd/1.7.0"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/okn/o/sd/1.8.0"
   } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/okn/o/sd/1.9.0"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.8.0"
+    "@value" : "1.9.0"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#CatalogIdentifier",

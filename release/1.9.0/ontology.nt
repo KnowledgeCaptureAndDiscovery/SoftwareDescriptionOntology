@@ -1,5 +1,5 @@
 <https://w3id.org/okn/o/sd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/okn/o/sd/1.8.0> .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/okn/o/sd/1.9.0> .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies"@en .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/contributor> "Hernan Vargas" .
 <https://w3id.org/okn/o/sd> <http://purl.org/dc/elements/1.1/contributor> "Maximiliano Osorio" .
@@ -13,9 +13,9 @@
 <https://w3id.org/okn/o/sd> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en .
 <https://w3id.org/okn/o/sd> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/okn/o/sd> .
 <https://w3id.org/okn/o/sd> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies"@en .
-<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> "https://w3id.org/okn/o/sd/1.7.0"@en .
-<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/okn/o/sd/1.7.0> .
-<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionInfo> "1.8.0" .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> "https://w3id.org/okn/o/sd/1.8.0"@en .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/okn/o/sd/1.8.0> .
+<https://w3id.org/okn/o/sd> <http://www.w3.org/2002/07/owl#versionInfo> "1.9.0" .
 # 
 # 
 # #################################################################

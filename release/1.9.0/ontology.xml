@@ -10,7 +10,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/okn/o/sd">
-        <owl:versionIRI rdf:resource="https://w3id.org/okn/o/sd/1.8.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/okn/o/sd/1.9.0"/>
         <dc:abstract xml:lang="en">An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies</dc:abstract>
         <dc:contributor>Hernan Vargas</dc:contributor>
         <dc:contributor>Maximiliano Osorio</dc:contributor>
@@ -24,9 +24,9 @@
         <vann:preferredNamespacePrefix xml:lang="en">sd</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/okn/o/sd"/>
         <rdfs:comment xml:lang="en">An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies</rdfs:comment>
-        <owl:backwardCompatibleWith xml:lang="en">https://w3id.org/okn/o/sd/1.7.0</owl:backwardCompatibleWith>
-        <owl:priorVersion rdf:resource="https://w3id.org/okn/o/sd/1.7.0"/>
-        <owl:versionInfo>1.8.0</owl:versionInfo>
+        <owl:backwardCompatibleWith xml:lang="en">https://w3id.org/okn/o/sd/1.8.0</owl:backwardCompatibleWith>
+        <owl:priorVersion rdf:resource="https://w3id.org/okn/o/sd/1.8.0"/>
+        <owl:versionInfo>1.9.0</owl:versionInfo>
     </owl:Ontology>
     
 

@@ -7,7 +7,7 @@
 @base <https://w3id.org/okn/o/sd> .
 
 <https://w3id.org/okn/o/sd> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://w3id.org/okn/o/sd/1.8.0> ;
+                             owl:versionIRI <https://w3id.org/okn/o/sd/1.9.0> ;
                              <http://purl.org/dc/elements/1.1/abstract> "An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies"@en ;
                              <http://purl.org/dc/elements/1.1/contributor> "Hernan Vargas" ,
                                                                            "Maximiliano Osorio" ;
@@ -21,9 +21,9 @@
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "sd"@en ;
                              <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/okn/o/sd> ;
                              rdfs:comment "An ontology for describing software and their links to inputs, outputs and variables. The ontology extends schema.org and codemeta vocabularies"@en ;
-                             owl:backwardCompatibleWith "https://w3id.org/okn/o/sd/1.7.0"@en ;
-                             owl:priorVersion <https://w3id.org/okn/o/sd/1.7.0> ;
-                             owl:versionInfo "1.8.0" .
+                             owl:backwardCompatibleWith "https://w3id.org/okn/o/sd/1.8.0"@en ;
+                             owl:priorVersion <https://w3id.org/okn/o/sd/1.8.0> ;
+                             owl:versionInfo "1.9.0" .
 
 #################################################################
 #    Annotation properties
