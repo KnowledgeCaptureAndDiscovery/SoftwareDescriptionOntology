@@ -159,6 +159,14 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                   rdfs:label "has configuration"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasConstraint
+:hasConstraint rdf:type owl:ObjectProperty ;
+               rdfs:domain :SoftwareConfiguration ;
+               rdfs:range :Constraint ;
+               rdfs:comment "Constraint or rule associated to a software configuration. For example: \"This model accepts only monthly data\", or \"all inputs of this model configuration must share the same location\". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property"@en ;
+               rdfs:label "has constraint"@en .
+
+
 ###  https://w3id.org/okn/o/sd#hasContactPerson
 :hasContactPerson rdf:type owl:ObjectProperty ;
                   rdfs:domain :Software ;
@@ -320,6 +328,14 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                      rdfs:label "has standard variable"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasVariable
+:hasVariable rdf:type owl:ObjectProperty ;
+             rdfs:domain :Constraint ;
+             rdfs:range :VariablePresentation ;
+             rdfs:comment "Property that links a rule and the variable that will test it"@en ;
+             rdfs:label "has variable"@en .
+
+
 ###  https://w3id.org/okn/o/sd#hasVersion
 :hasVersion rdf:type owl:ObjectProperty ;
             rdfs:domain :Software ;
@@ -409,31 +425,17 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                         rdfs:label "was derived from software"@en .
 
 
-###  https://w3id.org/okn/o/sd#hasConstraint
-:hasConstraint rdf:type owl:ObjectProperty ;
-               rdfs:domain :SoftwareConfiguration ;
-               rdfs:range :Constraint ;
-               rdfs:comment "Constraint or rule associated to a software configuration. For example: \"This model accepts only monthly data\", or \"all inputs of this model configuration must share the same location\". More structured restrictions, such as Jena rules or SWRL rules may also be captured with this property"@en ;
-               rdfs:label "has constraint"@en .
-
-
-###  https://w3id.org/okn/o/sd#hasVariable
-:hasVariable rdf:type owl:ObjectProperty ;
-             rdfs:domain :Constraint ;
-             rdfs:range :VariablePresentation ;
-             rdfs:comment "Property that links a rule and the variable that will test it"@en ;
-             rdfs:label "has variable"@en .
-
-
 #################################################################
 #    Data properties
 #################################################################
 
+###  https://w3id.org/okn/o/sd#availableInRegistry
 :availableInRegistry rdf:type owl:DatatypeProperty ;
                      rdfs:domain :SoftwareImage ;
                      rdfs:range xsd:anyURI ;
                      rdfs:comment "Property that indicates in which registry the software image being described can be found. For example, https://hub.docker.com"@en ;
                      rdfs:label "available in registry"@en .
+
 
 ###  https://w3id.org/okn/o/sd#citation
 :citation rdf:type owl:DatatypeProperty ;
@@ -441,14 +443,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
           rdfs:range xsd:string ;
           rdfs:comment "How to cite this software"@en ;
           rdfs:label "citation"@en .
-
-
-###  https://w3id.org/okn/o/sd#hasRule
-:hasRule rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Constraint ;
-         rdfs:range xsd:string ;
-         rdfs:comment "Rule that defines this constraint"@en ;
-         rdfs:label "has rule"@en .
 
 
 ###  https://w3id.org/okn/o/sd#codeRepository
@@ -543,6 +537,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
                    rdfs:label "has accepted values"@en .
 
 
+###  https://w3id.org/okn/o/sd#hasAcknowledgements
+:hasAcknowledgements rdf:type owl:DatatypeProperty ;
+                     rdfs:comment "String with the people, organizations and other contributors acknowledged by the authors."@en ;
+                     rdfs:label "has acknowledgements"@en .
+
+
 ###  https://w3id.org/okn/o/sd#hasAssumption
 :hasAssumption rdf:type owl:DatatypeProperty ;
                rdfs:domain :Software ;
@@ -557,6 +557,12 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
               rdfs:range xsd:anyURI ;
               rdfs:comment "A file (e.g., Dockerfile) with executable instructions indicating how a Software Image or a Software component is built"@en ;
               rdfs:label "has build file"@en .
+
+
+###  https://w3id.org/okn/o/sd#hasCodeOfConduct
+:hasCodeOfConduct rdf:type owl:DatatypeProperty ;
+                  rdfs:comment "Property linking the software component to the code of conduct to be followed by potential contributors. The range of this property may be a strin or a URI to the target file."@en ;
+                  rdfs:label "has code of conduct"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasComponentLocation
@@ -764,6 +770,14 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
             rdfs:range xsd:string ;
             rdfs:comment "Objective or main functionality that can be achieved by running this software"@en ;
             rdfs:label "has purpose"@en .
+
+
+###  https://w3id.org/okn/o/sd#hasRule
+:hasRule rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Constraint ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Rule that defines this constraint"@en ;
+         rdfs:label "has rule"@en .
 
 
 ###  https://w3id.org/okn/o/sd#hasShortName
@@ -1032,12 +1046,6 @@ In this case the property would capture this as follows:
 #    Classes
 #################################################################
 
-###  https://w3id.org/okn/o/sd#Constraint
-:Constraint rdf:type owl:Class ;
-            rdfs:comment "Data constraints of a configuration"@en ;
-            rdfs:label "Constraint"@en .
-
-
 ###  https://w3id.org/okn/o/sd#CatalogIdentifier
 :CatalogIdentifier rdf:type owl:Class ;
                    rdfs:subClassOf :Parameter ;
@@ -1050,6 +1058,12 @@ In this case the property would capture this as follows:
                     rdfs:subClassOf :SoftwareConfiguration ;
                     rdfs:comment "Special type of configuration in which some of the inputs or parameters are associated to files or values. A configuration may be associated to multiple setups to facilitate its execution."@en ;
                     rdfs:label "Configuration Setup"@en .
+
+
+###  https://w3id.org/okn/o/sd#Constraint
+:Constraint rdf:type owl:Class ;
+            rdfs:comment "Data constraints of a configuration"@en ;
+            rdfs:label "Constraint"@en .
 
 
 ###  https://w3id.org/okn/o/sd#DataTransformation
