@@ -1044,6 +1044,17 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "https://w3id.org/okn/o/sd#hasAcknowledgements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "String with the people, organizations and other contributors acknowledged by the authors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has acknowledgements"
+  } ]
+}, {
   "@id" : "https://w3id.org/okn/o/sd#hasAssumption",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1076,6 +1087,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://w3id.org/okn/o/sd#hasCodeOfConduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property linking the software component to the code of conduct to be followed by potential contributors. The range of this property may be a strin or a URI to the target file."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has code of conduct"
   } ]
 }, {
   "@id" : "https://w3id.org/okn/o/sd#hasComponentLocation",

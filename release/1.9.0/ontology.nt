@@ -679,6 +679,13 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/okn/o/sd#hasAcceptedValues> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that constraints which values are accepted for a parameter. For example, the name of a crop can only be \"Maize\" or \"Sorghum\""@en .
 <https://w3id.org/okn/o/sd#hasAcceptedValues> <http://www.w3.org/2000/01/rdf-schema#label> "has accepted values"@en .
 # 
+# https://w3id.org/okn/o/sd#hasAcknowledgements
+<https://w3id.org/okn/o/sd#hasAcknowledgements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasAcknowledgements> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#hasAcknowledgements> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/okn/o/sd#hasAcknowledgements> <http://www.w3.org/2000/01/rdf-schema#comment> "String with the people, organizations and other contributors acknowledged by the authors."@en .
+<https://w3id.org/okn/o/sd#hasAcknowledgements> <http://www.w3.org/2000/01/rdf-schema#label> "has acknowledgements"@en .
+# 
 # https://w3id.org/okn/o/sd#hasAssumption
 <https://w3id.org/okn/o/sd#hasAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/okn/o/sd#hasAssumption> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
@@ -692,6 +699,21 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://w3id.org/okn/o/sd#hasBuildFile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/okn/o/sd#hasBuildFile> <http://www.w3.org/2000/01/rdf-schema#comment> "A file (e.g., Dockerfile) with executable instructions indicating how a Software Image or a Software component is built"@en .
 <https://w3id.org/okn/o/sd#hasBuildFile> <http://www.w3.org/2000/01/rdf-schema#label> "has build file"@en .
+# 
+# https://w3id.org/okn/o/sd#hasCodeOfConduct
+<https://w3id.org/okn/o/sd#hasCodeOfConduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/okn/o/sd#hasCodeOfConduct> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Software> .
+<https://w3id.org/okn/o/sd#hasCodeOfConduct> <http://www.w3.org/2000/01/rdf-schema#range> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid38 <http://www.w3.org/2002/07/owl#unionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasCodeOfConduct> <http://www.w3.org/2000/01/rdf-schema#comment> "Property linking the software component to the code of conduct to be followed by potential contributors. The range of this property may be a strin or a URI to the target file."@en .
+<https://w3id.org/okn/o/sd#hasCodeOfConduct> <http://www.w3.org/2000/01/rdf-schema#label> "has code of conduct"@en .
 # 
 # https://w3id.org/okn/o/sd#hasComponentLocation
 <https://w3id.org/okn/o/sd#hasComponentLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -709,36 +731,36 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/okn/o/sd#hasDefaultValue
 <https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid38 <http://www.w3.org/2002/07/owl#unionOf> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid41 <http://www.w3.org/2002/07/owl#unionOf> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+<https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid41 <http://www.w3.org/2002/07/owl#unionOf> _:genid43 .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid44 <http://www.w3.org/2002/07/owl#unionOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Default accepted value of a variable presentation (or a parameter)"@en .
 <https://w3id.org/okn/o/sd#hasDefaultValue> <http://www.w3.org/2000/01/rdf-schema#label> "has default value"@en .
 # 
@@ -793,18 +815,18 @@ _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/okn/o/sd#hasExecutionCommand
 <https://w3id.org/okn/o/sd#hasExecutionCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/o/sd#hasExecutionCommand> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid48 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SampleExecution> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SoftwareImage> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasExecutionCommand> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid51 <http://www.w3.org/2002/07/owl#unionOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SampleExecution> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SoftwareImage> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#hasExecutionCommand> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/okn/o/sd#hasExecutionCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "Execution instructions on how to run the image"@en .
 <https://w3id.org/okn/o/sd#hasExecutionCommand> <http://www.w3.org/2000/01/rdf-schema#label> "has execution command"@en .
@@ -819,41 +841,41 @@ _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://w3id.org/okn/o/sd#hasFixedValue
 <https://w3id.org/okn/o/sd#hasFixedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/okn/o/sd#hasFixedValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/okn/o/sd#Parameter> .
-<https://w3id.org/okn/o/sd#hasFixedValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid52 <http://www.w3.org/2002/07/owl#unionOf> _:genid58 .
+<https://w3id.org/okn/o/sd#hasFixedValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid55 <http://www.w3.org/2002/07/owl#unionOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#hasFixedValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Value of a parameter in a software setup."@en .
 <https://w3id.org/okn/o/sd#hasFixedValue> <http://www.w3.org/2000/01/rdf-schema#label> "has fixed value"@en .
 # 
 # https://w3id.org/okn/o/sd#hasFormat
 <https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid59 .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid59 <http://www.w3.org/2002/07/owl#unionOf> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#DatasetSpecification> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Visualization> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid62 <http://www.w3.org/2002/07/owl#unionOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Visualization> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Format followed by a file. For example, txt, nc, etc."@en .
 <https://w3id.org/okn/o/sd#hasFormat> <http://www.w3.org/2000/01/rdf-schema#label> "has format"@en .
@@ -881,53 +903,53 @@ _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/okn/o/sd#hasMaximumAcceptedValue
 <https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid62 .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid62 <http://www.w3.org/2002/07/owl#unionOf> _:genid64 .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid65 .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid65 <http://www.w3.org/2002/07/owl#unionOf> _:genid68 .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+<https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid65 <http://www.w3.org/2002/07/owl#unionOf> _:genid67 .
 _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
 _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid68 <http://www.w3.org/2002/07/owl#unionOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum accepted value of a variable presentation (or a parameter)"@en .
 <https://w3id.org/okn/o/sd#hasMaximumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#label> "has maximum accepted value"@en .
 # 
 # https://w3id.org/okn/o/sd#hasMinimumAcceptedValue
 <https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid69 <http://www.w3.org/2002/07/owl#unionOf> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid72 .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid72 <http://www.w3.org/2002/07/owl#unionOf> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+<https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid72 <http://www.w3.org/2002/07/owl#unionOf> _:genid74 .
 _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
 _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
 _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#VariablePresentation> .
 _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid75 <http://www.w3.org/2002/07/owl#unionOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum accepted value of a variable presentation (or a parameter)"@en .
 <https://w3id.org/okn/o/sd#hasMinimumAcceptedValue> <http://www.w3.org/2000/01/rdf-schema#label> "has minimum accepted value"@en .
 # 
@@ -991,18 +1013,18 @@ _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://w3id.org/okn/o/sd#identifier
 <https://w3id.org/okn/o/sd#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/okn/o/sd#identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/identifier> .
-<https://w3id.org/okn/o/sd#identifier> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid76 .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid76 <http://www.w3.org/2002/07/owl#unionOf> _:genid79 .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Organization> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Person> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Software> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#identifier> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid79 <http://www.w3.org/2002/07/owl#unionOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Organization> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Person> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Software> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/okn/o/sd#identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the resource being described"@en .
 <https://w3id.org/okn/o/sd#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
@@ -1026,15 +1048,15 @@ _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://w3id.org/okn/o/sd#license
 <https://w3id.org/okn/o/sd#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/okn/o/sd#license> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/license> .
-<https://w3id.org/okn/o/sd#license> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid80 .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid80 <http://www.w3.org/2002/07/owl#unionOf> _:genid82 .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Software> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SourceCode> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#license> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid83 <http://www.w3.org/2002/07/owl#unionOf> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Software> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SourceCode> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#license> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/okn/o/sd#license> <http://www.w3.org/2000/01/rdf-schema#comment> "License of a software component or its source code"@en .
 <https://w3id.org/okn/o/sd#license> <http://www.w3.org/2000/01/rdf-schema#label> "license"@en .
@@ -1071,15 +1093,15 @@ _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/okn/o/sd#position
 <https://w3id.org/okn/o/sd#position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/o/sd#position> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid83 .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid83 <http://www.w3.org/2002/07/owl#unionOf> _:genid85 .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#DatasetSpecification> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#position> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid86 <http://www.w3.org/2002/07/owl#unionOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#DatasetSpecification> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Parameter> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#position> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://w3id.org/okn/o/sd#position> <http://www.w3.org/2000/01/rdf-schema#comment> "Position of the parameter or input/output in the model configuration. This property is needed to know how to organize the I/O of the component on execution"@en .
 <https://w3id.org/okn/o/sd#position> <http://www.w3.org/2000/01/rdf-schema#label> "position"@en .
@@ -1155,18 +1177,18 @@ _:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # https://w3id.org/okn/o/sd#tag
 <https://w3id.org/okn/o/sd#tag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/o/sd#tag> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid86 .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid86 <http://www.w3.org/2002/07/owl#unionOf> _:genid89 .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#ConfigurationSetup> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SoftwareVersion> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#tag> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid89 <http://www.w3.org/2002/07/owl#unionOf> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#ConfigurationSetup> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SoftwareConfiguration> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SoftwareVersion> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#tag> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/okn/o/sd#tag> <http://www.w3.org/2000/01/rdf-schema#comment> "Tag used to annotate a version or a software configuration. This annotation is useful to show which version is the latest, or which version is deprecated. Supported tags are: \"latest\", \"deprecated\""@en .
 <https://w3id.org/okn/o/sd#tag> <http://www.w3.org/2000/01/rdf-schema#label> "tag"@en .
@@ -1174,56 +1196,56 @@ _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # https://w3id.org/okn/o/sd#value
 <https://w3id.org/okn/o/sd#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/okn/o/sd#value> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#value> .
-<https://w3id.org/okn/o/sd#value> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid90 .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid90 <http://www.w3.org/2002/07/owl#unionOf> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Image> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SampleResource> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Visualization> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/okn/o/sd#value> <http://www.w3.org/2000/01/rdf-schema#range> _:genid94 .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-_:genid94 <http://www.w3.org/2002/07/owl#unionOf> _:genid100 .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+<https://w3id.org/okn/o/sd#value> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid93 <http://www.w3.org/2002/07/owl#unionOf> _:genid96 .
 _:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Image> .
 _:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
 _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#SampleResource> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Visualization> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#value> <http://www.w3.org/2000/01/rdf-schema#range> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid97 <http://www.w3.org/2002/07/owl#unionOf> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#value> <http://www.w3.org/2000/01/rdf-schema#comment> "Value associated to the described entity"@en .
 <https://w3id.org/okn/o/sd#value> <http://www.w3.org/2000/01/rdf-schema#label> "value"@en .
 # 
 # https://w3id.org/okn/o/sd#website
 <https://w3id.org/okn/o/sd#website> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/okn/o/sd#website> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid101 .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid101 <http://www.w3.org/2002/07/owl#unionOf> _:genid104 .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Organization> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Person> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Software> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/okn/o/sd#website> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid104 <http://www.w3.org/2002/07/owl#unionOf> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Organization> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Person> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/okn/o/sd#Software> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/okn/o/sd#website> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/okn/o/sd#website> <http://www.w3.org/2000/01/rdf-schema#comment> "Website of the software"@en .
 <https://w3id.org/okn/o/sd#website> <http://www.w3.org/2000/01/rdf-schema#label> "website"@en .
@@ -1411,4 +1433,4 @@ _:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://w3id.org/okn/o/sd#Visualization> <http://www.w3.org/2000/01/rdf-schema#comment> "Class to represent any type of visualization related to a software. For example, a dynamic HTML page, a video, etc."@en .
 <https://w3id.org/okn/o/sd#Visualization> <http://www.w3.org/2000/01/rdf-schema#label> "Visualization"@en .
 # 
-# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.14.2020-04-18T20:17:57Z) https://github.com/owlcs/owlapi/
