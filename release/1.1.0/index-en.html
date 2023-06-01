@@ -8,9 +8,9 @@
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/okn/o/sd#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/okn/o/sd#","name":"The Software Description Ontology", "headline":"An ontology for describing software and their links to inputs, outputs and variables", "datePublished":"Wed Jul 10 22:13:37 PDT 2019", "version":"1.1.0", "license":"http://creativecommons.org/licenses/by/2.0/", "author":[{"@type":"Person","name":"Daniel Garijo"},{"@type":"Person","name":"Varun Ratnakar"},{"@type":"Person","name":"Yolanda Gil"},{"@type":"Person","name":"Deborah Khider"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
+<script src="resources/jquery.js"></script>
+<script src="resources/marked.min.js"></script>
+    <script>
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,21 +40,21 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#changelog").load("sections/changelog-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
+      $("#abstract").load("sections/abstract-en.html");
+      $("#introduction").load("sections/introduction-en.html");
+      $("#overview").load("sections/overview-en.html");
+      $("#description").load("sections/description-en.html");
+      $("#references").load("sections/references-en.html");
+      $("#changelog").load("sections/changelog-en.html");
+      $("#crossref").load("sections/crossref-en.html", null, loadHash);
     });
-    </script> 
-  </head> 
+    </script>
+  </head>
 
 <body>
 <div class="container">
@@ -73,7 +73,7 @@ function loadTOC(){
 <dt>Authors:</dt>
 <dd>Daniel Garijo</dd><dd>Varun Ratnakar</dd><dd>Yolanda Gil</dd><dd>Deborah Khider</dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://creativecommons.org/licenses/by/2.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/2.0/-blue.svg" alt="http://creativecommons.org/licenses/by/2.0/" /></a>
+<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://creativecommons.org/licenses/by/2.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/2.0/-blue.svg" alt="http://creativecommons.org/licenses/by/2.0/" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <dt>Cite as:</dt>
 <dd>Daniel Garijo,Varun Ratnakar,Yolanda Gil,Deborah Khider. The Software Description Ontology.Revision: 1.1.0.https://w3id.org/okn/o/sd/1.1.0</dd>
