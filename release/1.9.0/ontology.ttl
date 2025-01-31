@@ -484,10 +484,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://schema.org/citation
-<http://schema.org/citation> rdf:type owl:DatatypeProperty ;
-                             rdfs:isDefinedBy <http://schema.org/> .
-
 
 ###  http://schema.org/codeRepository
 <http://schema.org/codeRepository> rdf:type owl:DatatypeProperty ;
@@ -601,7 +597,6 @@ owl:priorVersion rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/okn/o/sd#citation
 :citation rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf <http://schema.org/citation> ;
           rdfs:domain :Software ;
           rdfs:range xsd:string ;
           rdfs:comment "How to cite this software"@en ;

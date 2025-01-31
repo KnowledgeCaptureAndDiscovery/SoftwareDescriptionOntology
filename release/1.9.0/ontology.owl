@@ -755,17 +755,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-
-    
-
-
-    <!-- http://schema.org/citation -->
-
-
-    <owl:DatatypeProperty rdf:about="http://schema.org/citation">
-        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
-    </owl:DatatypeProperty>
     
 
 
@@ -967,7 +956,6 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/okn/o/sd#citation">
-        <rdfs:subPropertyOf rdf:resource="http://schema.org/citation"/>
         <rdfs:domain rdf:resource="https://w3id.org/okn/o/sd#Software"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">How to cite this software</rdfs:comment>
